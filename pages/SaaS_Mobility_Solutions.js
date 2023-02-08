@@ -1,13 +1,26 @@
+import Image from "next/image"
+import Eis1 from '../public/images/services/Eis1.png'
+import net from '../public/images/services/net-img.png'
+import SAASrss from '../public/images/services/SAASrss.png'
+import SAASnams from '../public/images/services/SAASnams.png'
+import SAASru from '../public/images/services/SAASru.png'
+import SAASrp from '../public/images/services/SAASrp.png'
+import SAASux from '../public/images/services/SAASux.png'
+import SAASacdd from '../public/images/services/SAASacdd.png'
+import SAASadi from '../public/images/services/SAASadi.png'
+import SAASms from '../public/images/services/SAASms.png'
+
+
 const SaaS_Mobility_Solutions = () => {
     return (
         <div className='w-[100%]'>
             <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0">
-                <img className="lg:w-1/4 w-2/4 mt-12" src="images/services/Eis1.png" alt="" />
+                <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
                     <p className="text-justify text-gray-700">To integrate multiple facets of a company&apos;s business through the interchange of information from various business process areas and related databases. Enable your company to retrieve and disseminate mission-critical data throughout the organization, providing management with real-time operating information. Overcoming physical boundaries through solutions of content management, e-commerce & stock management, CRMs, business applications along with legacy project modernisations and expanding them over the web so billions of users have immediate access to it at their disposal.</p>
                 </div>
-                <img className='lg:w-1/4 w-2/4' src="images/services/net-img.png" alt="" />
+                <Image className='lg:w-1/4 w-2/4' src={net} alt="" />
             </div>
 
             <section className="flex w-[100%] justify-around items-center">
@@ -22,7 +35,7 @@ const SaaS_Mobility_Solutions = () => {
             </section>
 
             <div id="RSS" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
-                <img src="images/services/SAASrss.png" className="lg:w-1/4 md:w-[20%] w-2/4" />
+                <Image src={SAASrss} className="lg:w-1/4 md:w-[20%] w-2/4" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Redefining Software Services</h2>
                     <p className="text-justify">
@@ -38,7 +51,7 @@ const SaaS_Mobility_Solutions = () => {
             </div>
 
             <div id="NAMS" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
-                <img src="images/services/SAASnams.png" className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden" />
+                <Image src={SAASnams} className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">New Age Mobility Solutions</h2>
                     <p className="text-justify">
@@ -55,7 +68,7 @@ const SaaS_Mobility_Solutions = () => {
                         information.
                     </p>
                 </div>
-                <img src="images/services/SAASnams.png" className="lg:w-1/4 md:w-[20%] w-2/4 lg:block hidden" />
+                <Image src={SAASnams} className="lg:w-1/4 md:w-[20%] w-2/4 lg:block hidden" />
             </div>
 
             <div className="my-32">
@@ -64,17 +77,17 @@ const SaaS_Mobility_Solutions = () => {
                 <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <img src="images/services/SAASru.png" className="lg:w-[40%] md:w-[15%] w-[25%]" />
+                        <Image src={SAASru} className="lg:w-[40%] md:w-[15%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Requirement Understanding</h2>
                         <p className="text-center"> Understanding the problem statement and developing a concept of the problem and formulating a solution concept. </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <img src="images/services/SAASrp.png" className="lg:w-[40%] md:w-[15%] w-[25%]" />
+                        <Image src={SAASrp} className="lg:w-[40%] md:w-[15%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Rapid Prototyping</h2>
                         <p className="text-center"> Understanding task requirements and building prototypes to quickly visualize the end result through development of MVPs (Minimum Viable Product) </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <img src="images/services/SAASux.png" className="lg:w-[40%] w-[25%]" />
+                        <Image src={SAASux} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">UX/UI Support</h2>
                         <p className="text-center"> Visualization of the problem solution through creating user interface wireframes and flow diagrams with due care given to optimize user experience. </p>
                     </div>
@@ -84,17 +97,17 @@ const SaaS_Mobility_Solutions = () => {
                 <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <img src="images/services/SAASacdd.png" className="lg:w-[40%] w-[25%]" />
+                        <Image src={SAASacdd} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Architectural Consultations & Design Development</h2>
                         <p className="text-center"> Mobile App architecture consultations based on requirements and design initializations. </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <img src="images/services/SAASadi.png" className="lg:w-[40%] w-[25%]" />
+                        <Image src={SAASadi} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Application Development & Integration </h2>
                         <p className="text-center"> The development and integration of all segments of the solutions to culminate the final mobile app solution.</p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <img src="images/services/SAASms.png" className="lg:w-[40%] w-[25%]" />
+                        <Image src={SAASms} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Maintenance & Support</h2>
                         <p className="text-center"> Post deployment periodic maintenance and support provision for smooth sailing of the projects.</p>
                     </div>
