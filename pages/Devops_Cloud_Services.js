@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 const Devops_Cloud_Services = () => {
     return (
         <div className='w-[100%]'>

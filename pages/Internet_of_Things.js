@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 const Internet_of_Things = () => {
     return (
         <div className='w-[100%]'>

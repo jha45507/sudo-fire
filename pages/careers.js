@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Link from 'next/Link'
 import Image from 'next/image'
 import React from 'react'
