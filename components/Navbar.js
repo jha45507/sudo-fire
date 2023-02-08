@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React, { useRef } from 'react'
 import Link from 'next/Link'
 import Image from 'next/image'

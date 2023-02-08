@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 const SaaS_Mobility_Solutions = () => {
     return (
         <div className='w-[100%]'>
