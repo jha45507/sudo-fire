@@ -12,7 +12,7 @@ const Careers = () => {
     <div className='flex flex-col mt-20 md:mt-0'>
       <div className='text-center'>
         <h1 className='text-3xl text-gray-600 my-5 font-bold'>Career</h1>
-        <p className='text-lg text-gray-600'>If you wish to be a part of our amazing team, drop your CV on hr@sudofire.com</p>
+        <p className='text-lg text-gray-600 px-3'>If you wish to be a part of our amazing team, drop your CV on hr@sudofire.com</p>
       </div>
       <div className='mt-10'>
         <div className='flex justify-around flex-col md:flex-row text-xl space-y-20 md:space-y-0 text-gray-600 p-5'>
@@ -36,7 +36,7 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className='flex justify-around flex-col md:flex-row space-y-20  md:space-y-0 my-20 text-xl text-gray-600 p-5'>
+        <div className='flex justify-around flex-col md:flex-row space-y-20  md:space-y-0 mt-20 text-xl text-gray-600 p-5'>
           <div className='flex flex-col items-center shadow-md rounded-md p-2'>
             {/* <img className="w-60" src="/images/career/development.png" alt="" /> */}
             <Image className='w-60' src={development} />

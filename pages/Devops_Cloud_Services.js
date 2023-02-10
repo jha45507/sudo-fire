@@ -37,7 +37,7 @@ const Devops_Cloud_Services = () => {
                     </li>
                 </ul>
             </section>
-            <div id="CL" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CL" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={DCcc} className="w-[40%] md:w-[15%]" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Cloud Consulting</h2>
@@ -58,7 +58,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="CA" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CA" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={DCca} className="w-[40%] md:w-[15%] lg:hidden block" />
 
                 <div className="lg:w-[40%] w-full">
@@ -82,7 +82,7 @@ const Devops_Cloud_Services = () => {
                 <Image src={DCca} className="w-[15%] hidden lg:block" />
             </div>
 
-            <div id="CO" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CO" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={DCco} className="w-[40%] md:w-[15%]" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Cost Optimization</h2>
@@ -104,7 +104,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="M&S" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="M&S" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={DCms} className="md:w-[18%] w-[40%] lg:hidden block" />
 
                 <div className="lg:w-[40%] w-full">
@@ -127,36 +127,36 @@ const Devops_Cloud_Services = () => {
                 <Image src={DCms} className="w-[18%] hidden lg:block" />
             </div>
 
-            <div className="my-32">
-                <h1 className="text-red-400 text-center text-4xl my-10">Our approach to DevOps & Cloud Solutions</h1>
+            <div className="my-16">
+                <h1 className="text-red-400 text-center text-3xl px-2 mt-10">Our approach to DevOps & Cloud Solutions</h1>
 
-                <div className="flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0">
+                <div className="flex justify-around items-center my-20 flex-col lg:flex-row space-y-10 lg:space-y-0">
 
                     <div className="flex flex-col justify-center items-center lg:w-[32%] w-[75%] space-y-3">
                         <Image src={DCaes} className="lg:w-[40%] md:w-[25%] w-[35%]" />
                         <h2 className="text-center text-2xl text-black">Assessing Existing State</h2>
-                        <p className="text-center"> Studying and understanding the current state of readiness to lay a firm foundation for the service solution. </p>
+                        <p className="text-justify"> Studying and understanding the current state of readiness to lay a firm foundation for the service solution. </p>
                     </div>
 
                     <div className="flex flex-col justify-center items-center lg:w-[32%] w-[75%] space-y-3">
                         <Image src={DCpast} className="lg:w-[20%] md:w-[15%] w-[20%]" />
                         <h2 className="text-center text-2xl text-black">Differentiating Between Past & Future </h2>
-                        <p className="text-center"> Identifying the differences between current infrastructure and the infrastructure to deploy for the solution. </p>
+                        <p className="text-justify"> Identifying the differences between current infrastructure and the infrastructure to deploy for the solution. </p>
                     </div>
                 </div>
 
-                <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
+                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={DCac} className="lg:w-[40%] md:w-[30%] w-[40%]" />
                         <h2 className="text-center text-2xl text-black">Architectural Consulting</h2>
-                        <p className="text-center"> Determining the best cloud model for each specific set of requirements through consultations. </p>
+                        <p className="text-justify"> Determining the best cloud model for each specific set of requirements through consultations. </p>
                     </div>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={DCpms} className="lg:w-[40%] md:w-[30%] w-[40%]" />
                         <h2 className="text-center text-2xl text-black">Planning Management & Stability</h2>
-                        <p className="text-center"> Making plans of how the infrastructure will be managed in the long run and how robust the solution will be in terms of stability.</p>
+                        <p className="text-justify"> Making plans of how the infrastructure will be managed in the long run and how robust the solution will be in terms of stability.</p>
                     </div>
                 </div>
             </div>

@@ -27,8 +27,8 @@ const PortFolio = () => {
       <div className="flex justify-around items-center flex-col lg:flex-row ">
 
         <div className="">
-          <h2 className="text-5xl text-center lg:text-left font-bold text-red-500">Portfolio</h2>
-          <p className="text-xl text-center lg:text-left text-gray-600">Our portfolio spans a variety of industries across continents.</p>
+          <h2 className="md:text-5xl text-3xl text-center lg:text-left font-bold text-red-500">Portfolio</h2>
+          <p className="md:text-xl text-lg text-center lg:text-left text-gray-600">Our portfolio spans a variety of industries across continents.</p>
         </div>
 
         <div className="my-5">
@@ -306,11 +306,11 @@ const PortFolio = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
           <div className="">
             <Image src={pmedicause} />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Medicause</h2>
             <p className="text-justify text-gray-600">
               Medicause offers a broad spectrum of e-healthcare services over a single platform. For the
@@ -324,7 +324,7 @@ const PortFolio = () => {
               variety of wedding vendors within minutes. */}
             </p>
             <a rel="noreferrer" href="https:/www.weddinggaadi.com/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
             </a>

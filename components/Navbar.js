@@ -6,11 +6,11 @@ const Navbar = () => {
     const headeRef = useRef();
     const hamRef = useRef();
     const lg_navbar = useRef()
+    const accordion_nav_ref = useRef();
     const first_accordion_show = useRef();
     const second_accordion_show = useRef();
     const third_accordion_show = useRef();
     const fourth_accordion_show = useRef();
-    const accordion_nav_ref = useRef();
 
     const hamclick = () => {
         if (hamRef.current.classList.contains('ham')) {
@@ -33,6 +33,10 @@ const Navbar = () => {
             second_accordion_show.current.classList.replace('show', 'hidden')
             third_accordion_show.current.classList.replace('show', 'hidden')
             fourth_accordion_show.current.classList.replace('show', 'hidden')
+        }
+        if (lg_navbar.current.classList.contains('md:flex')) {
+            lg_navbar.current.classList.remove('md:flex')
+            lg_navbar.current.classList.add('md:hidden')
         }
     }
 
@@ -112,11 +116,11 @@ const Navbar = () => {
         }
     }
     return (
-        <div ref={headeRef} className='md:flex w-full md:sticky absolute md:top-0 top-0 z-20 justify-around items-center shadow-md font-bold h-20 overflow-hidden md:overflow-visible md:backdrop-blur-sm backdrop-blur-md bg-transparent '>
+        <div ref={headeRef} className='md:flex w-full md:sticky absolute md:top-0 top-0 z-20 justify-between lg:px-[100px] items-center shadow-md font-bold h-20 overflow-hidden md:overflow-visible md:backdrop-blur-sm backdrop-blur-md bg-transparent '>
             <div ref={hamRef} className='md:hidden ham' onClick={hamclick} ></div>
 
             <div className='w-[200px] mt-2'>
-                <Link href="/homePage" ><Image src={logo} /> </Link>
+                <Link href="/homePage" onClick={closeNavbar} ><Image src={logo} /> </Link>
             </div>
 
             <div className='text-sm text-center my-10 space-y-10 md:space-y-0 md:space-x-10 flex items-center flex-col md:flex-row text-gray-600'>
@@ -124,7 +128,7 @@ const Navbar = () => {
 
                 <div ref={lg_navbar} className='md:hidden hidden absolute top-20 right-0 overflow-visible bg-white border space-x-10 px-7 py-2 shadow-xl'>
                     <div className='text-left list-none'>
-                        <h1  className='text-lg py-3'><Link href="#">Enterprise IT Solutions</Link></h1>
+                        <h1 className='text-lg py-3'><Link href="#">Enterprise IT Solutions</Link></h1>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#ECM"><p className='py-1 hover:text-red-400'>Enterprise Content Management </p></Link>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#ESM"><p className='py-1 hover:text-red-400'>Ecommerce & Stock Management </p></Link>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#CBA"><p className='py-1 hover:text-red-400'>CRMs & Business Applications </p></Link>
@@ -164,7 +168,7 @@ const Navbar = () => {
                                 <li onClick={closeNavbar} ><Link href="/EnterpriseITSolutions#ECM">Enterprise Content Management</Link></li>
                                 <li><Link href="/EnterpriseITSolutions#ESM"><p className='hover:text-red-400' onClick={closeNavbar}>Ecommerce & Stock Management </p></Link></li>
                                 <li><Link href="/EnterpriseITSolutions#CBA"><p className='hover:text-red-400' onClick={closeNavbar}>CRMs & Business Applications </p></Link></li>
-                                <li><Link  href="/EnterpriseITSolutions#LM"><p className='hover:text-red-400' onClick={closeNavbar}>Legacy Modernisation </p></Link></li>
+                                <li><Link href="/EnterpriseITSolutions#LM"><p className='hover:text-red-400' onClick={closeNavbar}>Legacy Modernisation </p></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -178,8 +182,8 @@ const Navbar = () => {
                         <div ref={second_accordion_show} id="flush-collapseTwo" className="accordion-collapse border-0 hidden collapse" aria-labelledby="flush-headingTwo"
                             data-bs-parent="#accordionFlushExample">
                             <ul className="accordion-body py-4">
-                                <li><Link  href="/Internet_of_Things#HA"><p className='hover:text-red-400' onClick={closeNavbar}>Home Automation</p></Link></li>
-                                <li><Link  href="/Internet_of_Things#IA"><p className='hover:text-red-400' onClick={closeNavbar}>Industrial Automation</p></Link></li>
+                                <li><Link href="/Internet_of_Things#HA"><p className='hover:text-red-400' onClick={closeNavbar}>Home Automation</p></Link></li>
+                                <li><Link href="/Internet_of_Things#IA"><p className='hover:text-red-400' onClick={closeNavbar}>Industrial Automation</p></Link></li>
                                 <li><Link href="/Internet_of_Things#SEI"><p className='hover:text-red-400' onClick={closeNavbar}>Smart Environment Implementation</p></Link></li>
                             </ul>
                         </div>
@@ -194,7 +198,7 @@ const Navbar = () => {
                         <div ref={third_accordion_show} id="flush-collapseThree" className="accordion-collapse hidden collapse" aria-labelledby="flush-headingThree"
                             data-bs-parent="#accordionFlushExample">
                             <ul className="accordion-body py-4">
-                                <li><Link  href="/SaaS_Mobility_Solutions#RSS"><p className='hover:text-red-400' onClick={closeNavbar}>Redefining Software Services</p></Link></li>
+                                <li><Link href="/SaaS_Mobility_Solutions#RSS"><p className='hover:text-red-400' onClick={closeNavbar}>Redefining Software Services</p></Link></li>
                                 <li><Link href="/SaaS_Mobility_Solutions#NAMS"><p className='hover:text-red-400' onClick={closeNavbar}>New Age Mobility Solutions</p></Link></li>
                             </ul>
                         </div>
@@ -209,18 +213,18 @@ const Navbar = () => {
                         <div ref={fourth_accordion_show} id="flush-collapseThree" className="accordion-collapse hidden collapse" aria-labelledby="flush-headingThree"
                             data-bs-parent="#accordionFlushExample">
                             <ul className="accordion-body py-4">
-                                <li><Link  href="/Devops_Cloud_Services#CL"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Consulting</p></Link></li>
-                                <li><Link  href="/Devops_Cloud_Services#CA"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Architecture</p></Link></li>
-                                <li><Link  href="/Devops_Cloud_Services#CO"><p className='hover:text-red-400' onClick={closeNavbar}>Cost Optimization</p></Link></li>
+                                <li><Link href="/Devops_Cloud_Services#CL"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Consulting</p></Link></li>
+                                <li><Link href="/Devops_Cloud_Services#CA"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Architecture</p></Link></li>
+                                <li><Link href="/Devops_Cloud_Services#CO"><p className='hover:text-red-400' onClick={closeNavbar}>Cost Optimization</p></Link></li>
                                 <li><Link href="/Devops_Cloud_Services#M&S"><p className='hover:text-red-400' onClick={closeNavbar}>Migration & Security</p></Link></li>
                             </ul >
                         </div >
                     </div >
                 </div >
-                <Link onClick={closeNavbar} href="/portFolio">PORTFOLIO</Link>
-                <Link onClick={closeNavbar} href="/careers">CAREERS</Link>
-                <Link onClick={closeNavbar} href="/clients">CLIENTS</Link>
-                <Link onClick={closeNavbar} href="/contactUs">CONTACT US</Link>
+                <Link className='' onClick={closeNavbar} href="/portFolio">PORTFOLIO</Link>
+                <Link className='' onClick={closeNavbar} href="/careers">CAREERS</Link>
+                <Link className='' onClick={closeNavbar} href="/clients">CLIENTS</Link>
+                <Link className='' onClick={closeNavbar} href="/contactUs">CONTACT US</Link>
             </div >
         </div >
     )

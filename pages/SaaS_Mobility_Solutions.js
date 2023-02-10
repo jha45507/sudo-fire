@@ -34,7 +34,7 @@ const SaaS_Mobility_Solutions = () => {
                 </ul>
             </section>
 
-            <div id="RSS" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="RSS" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={SAASrss} className="lg:w-1/4 md:w-[20%] w-2/4" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Redefining Software Services</h2>
@@ -50,7 +50,7 @@ const SaaS_Mobility_Solutions = () => {
                 </div>
             </div>
 
-            <div id="NAMS" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="NAMS" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={SAASnams} className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">New Age Mobility Solutions</h2>
@@ -71,45 +71,45 @@ const SaaS_Mobility_Solutions = () => {
                 <Image src={SAASnams} className="lg:w-1/4 md:w-[20%] w-2/4 lg:block hidden" />
             </div>
 
-            <div className="my-32">
-                <h1 className="text-red-400 text-center text-4xl my-10">Our approach to SaaS & Mobility Solutions</h1>
+            <div className="my-16">
+                <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to SaaS & Mobility Solutions</h1>
 
-                <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
+                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={SAASru} className="lg:w-[40%] md:w-[15%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Requirement Understanding</h2>
-                        <p className="text-center"> Understanding the problem statement and developing a concept of the problem and formulating a solution concept. </p>
+                        <p className="text-justify"> Understanding the problem statement and developing a concept of the problem and formulating a solution concept. </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <Image src={SAASrp} className="lg:w-[40%] md:w-[15%] w-[25%]" />
+                        <Image src={SAASrp} className="lg:w-[30%] md:w-[15%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Rapid Prototyping</h2>
-                        <p className="text-center"> Understanding task requirements and building prototypes to quickly visualize the end result through development of MVPs (Minimum Viable Product) </p>
+                        <p className="text-justify"> Understanding task requirements and building prototypes to quickly visualize the end result through development of MVPs (Minimum Viable Product) </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={SAASux} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">UX/UI Support</h2>
-                        <p className="text-center"> Visualization of the problem solution through creating user interface wireframes and flow diagrams with due care given to optimize user experience. </p>
+                        <p className="text-justify"> Visualization of the problem solution through creating user interface wireframes and flow diagrams with due care given to optimize user experience. </p>
                     </div>
 
                 </div>
 
-                <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
+                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={SAASacdd} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Architectural Consultations & Design Development</h2>
-                        <p className="text-center"> Mobile App architecture consultations based on requirements and design initializations. </p>
+                        <p className="text-justify"> Mobile App architecture consultations based on requirements and design initializations. </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={SAASadi} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Application Development & Integration </h2>
-                        <p className="text-center"> The development and integration of all segments of the solutions to culminate the final mobile app solution.</p>
+                        <p className="text-justify"> The development and integration of all segments of the solutions to culminate the final mobile app solution.</p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={SAASms} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Maintenance & Support</h2>
-                        <p className="text-center"> Post deployment periodic maintenance and support provision for smooth sailing of the projects.</p>
+                        <p className="text-justify"> Post deployment periodic maintenance and support provision for smooth sailing of the projects.</p>
                     </div>
 
                 </div>

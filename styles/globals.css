@@ -44,8 +44,30 @@ a {
 .bg-img-banner {
   background: url('../public/images/side-img.png');
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
 }
+
+
+@media only screen and (max-width: 767px) {
+  .side-img{
+    background: url("../public/images/5.png") !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.side-img{
+  background: url("../public/images/side-img.png");
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Home_container__bCOhY{
+  padding: 0% !important;
+}
+
 
 ::-webkit-scrollbar {
   display: none;

@@ -41,7 +41,7 @@ const EnterpriseITSolutions = () => {
                 </ul>
             </section>
             {/* <hr className='w-[90%] border border-gray-600 ' /> */}
-            <div className="flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
+            <div className="flex justify-around items-center my-0 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
                 <Image src={EISecm} className="lg:w-1/4 md:w-[20%] w-2/4" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise Content Management</h2>
@@ -60,7 +60,7 @@ const EnterpriseITSolutions = () => {
                 </div>
             </div>
 
-            <div className="flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
+            <div className="flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
                 <Image src={EISesm} className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Ecommerce & Stock Management</h2>
@@ -79,7 +79,7 @@ const EnterpriseITSolutions = () => {
                 </div>
                 <Image src={EISesm} className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block" />
             </div>
-            <div className="flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
+            <div className="flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
                 <Image src={Group315} className="lg:w-1/4 md:w-[20%] w-2/4" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">CRMs & Business Applications</h2>
@@ -96,7 +96,7 @@ const EnterpriseITSolutions = () => {
                     </p>
                 </div>
             </div>
-            <div className="flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0" id="LM">
+            <div className="flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
                 <Image src={EISlm} className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Legacy Modernization</h2>
@@ -114,11 +114,11 @@ const EnterpriseITSolutions = () => {
                 <Image src={EISlm} className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block" />
             </div>
 
-            <div className="my-32">
+            <div className="my-16">
                 <div className="">
-                    <h1 className="text-red-400 text-center text-4xl my-10">Our approach to Enterprise IT Solutions</h1>
+                    <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to Enterprise IT Solutions</h1>
                 </div>
-                <div className="flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0">
+                <div className="flex justify-around items-center my-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <div className="lg:w-[40%] w-[25%]">
                             <Image src={EIScd} className="" />
@@ -127,7 +127,7 @@ const EnterpriseITSolutions = () => {
                             <h2 className="text-center text-2xl text-black">Concept Development</h2>
                         </div>
                         <div className="">
-                            <p className="text-center">
+                            <p className="text-justify">
                                 Understanding the problem statement and developing a concept of the problem
                                 and
                                 formulating a solution concept.
@@ -142,7 +142,7 @@ const EnterpriseITSolutions = () => {
                             <h2 className="text-center text-2xl text-black">Documenting Requirements</h2>
                         </div>
                         <div className="">
-                            <p className="text-center">
+                            <p className="text-justify">
                                 Understanding task requirements and documenting them all so every
                                 little nitty-gritties are taken care of.
                             </p>
@@ -156,14 +156,14 @@ const EnterpriseITSolutions = () => {
                             <h2 className="text-center text-2xl text-black">UX/UI Support</h2>
                         </div>
                         <div className="">
-                            <p className="text-center">
+                            <p className="text-justify">
                                 Visualization of the problem solution through creating user interface
                                 wireframes, prototypes with due care given to user experience.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-around items-center flex-col lg:flex-row space-y-20 lg:space-y-0">
+                <div className="flex justify-around items-center flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <div className="lg:w-[40%] w-[25%]">
                             <Image src={EISac} className="" />
@@ -172,7 +172,7 @@ const EnterpriseITSolutions = () => {
                             <h2 className="text-center text-2xl text-black">Architectural Consulting</h2>
                         </div>
                         <div className="">
-                            <p className="text-center">
+                            <p className="text-justify">
                                 Setting the foundation for the solution of the problem through architectural
                                 planning along with consultations for the same to discuss and decide the
                                 best
@@ -188,7 +188,7 @@ const EnterpriseITSolutions = () => {
                             <h2 className="text-center text-2xl text-black">Technology Enablement</h2>
                         </div>
                         <div className="">
-                            <p className="text-center">
+                            <p className="text-justify">
                                 Giving structure to the problem solution and enabling deployment
                                 through suitable technologies.
                             </p>
@@ -202,7 +202,7 @@ const EnterpriseITSolutions = () => {
                             <h2 className="text-center text-2xl text-black"> Maintenance & Support</h2>
                         </div>
                         <div className="">
-                            <p className="text-center"> Post deployment periodic maintenance and support provision for smooth sailing of the projects.
+                            <p className="text-justify"> Post deployment periodic maintenance and support provision for smooth sailing of the projects.
                             </p>
                         </div>
                     </div>

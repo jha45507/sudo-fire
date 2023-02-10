@@ -35,7 +35,7 @@ const Internet_of_Things = () => {
                 </ul>
             </section>
 
-            <div id="HA" className="flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0">
+            <div id="HA" className="flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
                 <Image src={IOThome} className="lg:w-1/4 md:w-[20%] w-2/4" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Home Automation</h2>
@@ -43,7 +43,7 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div id="IA" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="IA" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={IOTindustrial} className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Industrial Automation</h2>
@@ -63,7 +63,7 @@ const Internet_of_Things = () => {
                 <Image src={IOTindustrial} className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block" />
             </div>
 
-            <div id="SEI" className='flex justify-around items-center my-32 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="SEI" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <Image src={IOTsmart} className="lg:w-1/4 md:w-[20%] w-2/4" />
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Smart Environment Implementation</h2>
@@ -82,37 +82,37 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div className="my-32">
-                <h1 className="text-red-400 text-center text-4xl my-10">Our approach to IoT Solutions</h1>
+            <div className="my-16">
+                <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to IoT Solutions</h1>
 
-                <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
+                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={IOTrecog} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Recognize IoT Possibilities</h2>
-                        <p className="text-center">Understanding the broader aspect of where IoT can be used as a solution.</p>
+                        <p className="text-justify">Understanding the broader aspect of where IoT can be used as a solution.</p>
                     </div>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={IOTtranslate} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Translate IoT To HarnessRequirements</h2>
-                        <p className="text-center"> Transforming the requirement structure to accommodate IoT to eradicate the problem by using IoT as the solution.</p>
+                        <p className="text-justify"> Transforming the requirement structure to accommodate IoT to eradicate the problem by using IoT as the solution.</p>
                     </div>
 
                 </div>
 
-                <div className='flex justify-around items-center my-20 flex-col lg:flex-row space-y-20 lg:space-y-0'>
+                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={IOTarchitech} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Architecture Formulation</h2>
-                        <p className="text-center"> Setting up the base of the solution after taking all technical aspects into consideration by generating frameworks and architectural diagrams.</p>
+                        <p className="text-justify"> Setting up the base of the solution after taking all technical aspects into consideration by generating frameworks and architectural diagrams.</p>
                     </div>
 
                     <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
                         <Image src={IOTbuild} className="lg:w-[40%] w-[25%]" />
                         <h2 className="text-center text-2xl text-black">Build & Deploy IoT Service</h2>
-                        <p className="text-center"> Giving structure to the problem solution and enabling deployment through suitable technologies. </p>
+                        <p className="text-justify"> Giving structure to the problem solution and enabling deployment through suitable technologies. </p>
                     </div>
 
                 </div>
