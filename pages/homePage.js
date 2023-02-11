@@ -26,13 +26,13 @@ const HomePage = () => {
     let img_third_ref = useRef();
 
     return (
-        <div className="flex items-center md:justify-center justify-end flex-col md:space-y-10 space-y-0 mt-20 md:mt-0">
+        <div className="flex items-center md:justify-center justify-end flex-col md:space-y-6 space-y-0 mt-20 lg:mt-0">
 
             <div className='flex flex-col md:flex-row md:justify-around justify-end items-center bg-img-banner'>
                 <div className="sm:mt-60 md:mt-0">
-                    <h1 className=''><strong className='lg:text-5xl md:text-3xl text-2xl font-bold text-gray-600'>Building Solutions <br /> for Digital Age</strong></h1>
-                    <div className='my-10 lg:text-xl text-md text-center md:text-left'>
-                        <Link href="/portFolio" className="bg-red-500 text-white rounded-full py-2  lg:px-5 px-3">View Case Studies</Link>
+                    <h1 className=''><strong className='xl:text-5xl md:text-3xl text-2xl font-bold text-gray-600'>Building Solutions <br /> for Digital Age</strong></h1>
+                    <div className='xl:my-10 lg:my-5 my-10 lg:text-xl text-md text-center md:text-left'>
+                        <Link href="/portFolio" className="bg-red-500 text-white rounded-full py-2 lg:px-5 px-3">View Case Studies</Link>
                     </div>
                 </div>
                 <div className="md:w-[40%] w-[320px] h-[200px] md:h-auto flex justify-center items-center">
@@ -42,53 +42,56 @@ const HomePage = () => {
 
             <div className="w-full pb-10 pd:mb-0">
                 <h2 className="md:text-4xl text-2xl text-center font-bold text-gray-600 pb-5">Our Services</h2>
-                <div className="flex flex-col md:flex-row justify-center md:items-start items-center w-[100%] lg:space-x-10 md:space-x-3 space-x-0 space-y-10 md:space-y-0 px-3">
-
-                    <div className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
-                        <div className="flex flex-col items-center">
-                            <Image className="w-1/4" src={Group653} alt="" />
-                            <h4 className='text-center lg:text-2xl text-lg my-3 text-gray-800'>Enterprise IT Solutions</h4>
-                            <p className='text-sm text-gray-700 text-justify'>Enabling business to conquer physical boundaries with new age Technologies.</p>
+                <div className="flex flex-col md:flex-row md:justify-center md:items-start items-center w-[100%] lg:space-x-10 md:space-x-3 space-x-0 space-y-10 md:space-y-0">
+                    <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
+                        <div className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                            <div className="flex flex-col items-center">
+                                <Image className="w-1/4 my-3" src={Group653} alt="" />
+                                <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Enterprise IT Solutions</h4>
+                                <p className='text-sm my-3 text-gray-700 text-justify word-spacing'>Enabling business to conquer physical boundaries with new age Technologies.</p>
+                            </div>
+                            <Link className="flex justify-center items-center xl:mt-8 lg:mt-9 mt-10 text-red-600" href="/EnterpriseITSolutions">
+                                <Image className="w-5" src={play_icon} alt="" />
+                                Read More..
+                            </Link>
                         </div>
-                        <Link className="flex justify-center items-center mb-3 mt-8 text-red-600" href="/EnterpriseITSolutions">
-                            <Image className="w-5" src={play_icon} alt="" />
-                            Read More..
-                        </Link>
-                    </div>
-                    <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
-                        <div className="flex flex-col items-center">
-                            <Image className="w-1/4" src={Path483} alt="" />
-                            <h4 className='text-center lg:text-2xl text-lg my-3 text-gray-800'>Internet of Things (IoT)</h4>
-                            <p className='text-justify text-sm text-gray-700'> Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights.</p>
+                        <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                            <div className="flex flex-col items-center">
+                                <Image className="w-1/4 my-3" src={Path483} alt="" />
+                                <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Internet of Things (IoT)</h4>
+                                <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights.</p>
+                            </div>
+                            <Link className="flex justify-center items-center xl:mt-8 lg:mt-5 mt-10 text-red-600" href="/Internet_of_Things">
+                                <Image className="w-5" src={play_icon} alt="" />
+                                Read More..
+                            </Link>
                         </div>
-                        <Link className="flex justify-center items-center my-3 text-red-600" href="/Internet_of_Things">
-                            <Image className="w-5" src={play_icon} alt="" />
-                            Read More..
-                        </Link>
-                    </div>
-                    <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
-                        <div className="flex flex-col items-center">
-                            <Image className="w-1/4" src={Group649} alt="" />
-                            <h4 className='text-center lg:text-2xl text-lg my-3 text-gray-800'>SaaS & Mobility Solutions</h4>
-                            <p className='text-justify text-sm text-gray-700'> On the go solutions for routine business processes enabling remote and in-office management.</p>
-                        </div>
-                        <Link className="flex justify-center items-center my-3 text-red-600" href="/SaaS&SaaS_Mobility_Solutions">
-                            <Image className="w-5" src={play_icon} alt="" />
-                            Read More..
-                        </Link>
-                    </div>
-                    <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
-                        <div className="flex flex-col items-center">
-                            <Image className="w-1/4" src={Group650} alt="" />
-                            <h4 className='text-center lg:text-2xl text-lg my-3 text-gray-800'>Devops & Cloud Services</h4>
-                            <p className='text-justify text-sm text-gray-700'> New age services with flexible architecture and on demand pricing paving way for much needed flexibility.</p>
-                        </div>
-                        <Link className="flex justify-center items-center my-3 text-red-600" href="/Devops&Devops_Cloud_Services">
-                            <Image className="w-5" src={play_icon} alt="" />
-                            Read More..
-                        </Link>
                     </div>
 
+                    <div  className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
+                        <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                            <div className="flex flex-col items-center">
+                                <Image className="w-1/4 my-3" src={Group649} alt="" />
+                                <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
+                                <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> On the go solutions for routine business processes enabling remote and in-office management.</p>
+                            </div>
+                            <Link className="flex justify-center items-center xl:mt-3 lg:mt-4 mt-5 text-red-600" href="/SaaS&SaaS_Mobility_Solutions">
+                                <Image className="w-5" src={play_icon} alt="" />
+                                Read More..
+                            </Link>
+                        </div>
+                        <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                            <div className="flex flex-col items-center">
+                                <Image className="w-1/4 my-3" src={Group650} alt="" />
+                                <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>
+                                <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> New age services with flexible architecture and on demand pricing paving way for much needed flexibility.</p>
+                            </div>
+                            <Link className="flex justify-center items-center xl:mt-3 lg:mt-4 mt-5 text-red-600" href="/Devops&Devops_Cloud_Services">
+                                <Image className="w-5" src={play_icon} alt="" />
+                                Read More..
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='carousel w-[95%] lg:w-3/4 lg:h-[60vh] h-[70vh] items-start justify-center bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>

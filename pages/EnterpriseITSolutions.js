@@ -16,7 +16,7 @@ import Group315 from '../public/images/services/Group 315.png'
 const EnterpriseITSolutions = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0">
+            <div className="bg-blue-100 flex lg:justify-end justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 mb-10 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
@@ -25,7 +25,7 @@ const EnterpriseITSolutions = () => {
                 <Image className='lg:w-1/4 w-2/4' src={net} alt="" />
             </div>
             <section className="flex w-[100%] justify-around items-center ">
-                <ul className="flex w-[100%] justify-around items-center space-y-3 flex-col lg:flex-row">
+                <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
                     <li className="">
                         <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#ECM">Enterprise Content Management</a>
                     </li>
@@ -41,8 +41,10 @@ const EnterpriseITSolutions = () => {
                 </ul>
             </section>
             {/* <hr className='w-[90%] border border-gray-600 ' /> */}
-            <div className="flex justify-around items-center my-0 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
-                <Image src={EISecm} className="lg:w-1/4 md:w-[20%] w-2/4" />
+            <div className="flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
+                    <Image src={EISecm} className="" />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise Content Management</h2>
                     <p className="text-justify">
@@ -61,7 +63,9 @@ const EnterpriseITSolutions = () => {
             </div>
 
             <div className="flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
-                <Image src={EISesm} className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden">
+                    <Image src={EISesm} className="" />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Ecommerce & Stock Management</h2>
                     <p className="text-justify">
@@ -77,10 +81,14 @@ const EnterpriseITSolutions = () => {
                         ecommerce & stock management turns the sales and purchase game around.
                     </p>
                 </div>
-                <Image src={EISesm} className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
+                    <Image src={EISesm} className="" />
+                </div>
             </div>
             <div className="flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
-                <Image src={Group315} className="lg:w-1/4 md:w-[20%] w-2/4" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
+                    <Image src={Group315} className="w-[200px] h-[120px] lg:h-[150px]" />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">CRMs & Business Applications</h2>
                     <p className="text-justify">
@@ -97,7 +105,9 @@ const EnterpriseITSolutions = () => {
                 </div>
             </div>
             <div className="flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
-                <Image src={EISlm} className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
+                    <Image src={EISlm} />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Legacy Modernization</h2>
                     <p className="text-justify">
@@ -111,17 +121,19 @@ const EnterpriseITSolutions = () => {
                         create a better and efficient world.
                     </p>
                 </div>
-                <Image src={EISlm} className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
+                    <Image src={EISlm} className="w-[205px] h-[171px]" />
+                </div>
             </div>
 
-            <div className="my-16">
+            <div className="my-16 w-[100%]">
                 <div className="">
                     <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to Enterprise IT Solutions</h1>
                 </div>
-                <div className="flex justify-around items-center my-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <div className="lg:w-[40%] w-[25%]">
-                            <Image src={EIScd} className="" />
+                <div className="w-[100%] flex justify-around lg:items-start items-center my-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
+                    <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
+                        <div className="">
+                            <Image src={EIScd} className="w-[115px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Concept Development</h2>
@@ -134,9 +146,9 @@ const EnterpriseITSolutions = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <div className="lg:w-[40%] w-[25%]">
-                            <Image src={EISdr} className="" />
+                    <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
+                        <div className="">
+                            <Image src={EISdr} className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Documenting Requirements</h2>
@@ -148,9 +160,9 @@ const EnterpriseITSolutions = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <div className="lg:w-[40%] w-[25%]">
-                            <Image src={EISux} className="icon-fix-height" />
+                    <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
+                        <div className="">
+                            <Image src={EISux} className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">UX/UI Support</h2>
@@ -163,10 +175,10 @@ const EnterpriseITSolutions = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-around items-center flex-col lg:flex-row space-y-10 lg:space-y-0">
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <div className="lg:w-[40%] w-[25%]">
-                            <Image src={EISac} className="" />
+                <div className="flex justify-around lg:items-start items-center flex-col lg:flex-row space-y-10 lg:space-y-0">
+                    <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
+                        <div className="">
+                            <Image src={EISac} className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Architectural Consulting</h2>
@@ -180,23 +192,23 @@ const EnterpriseITSolutions = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <div className="lg:w-[25%] w-[15%]">
-                            <Image src={EISte} className="" />
+                    <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
+                        <div className="">
+                            <Image src={EISte} className="w-[50px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Technology Enablement</h2>
                         </div>
                         <div className="">
-                            <p className="text-justify">
+                            <p className="text-justify word-spacing">
                                 Giving structure to the problem solution and enabling deployment
                                 through suitable technologies.
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <div className="lg:w-[40%] w-[23%]">
-                            <Image src={EISms} className="" />
+                    <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
+                        <div className="">
+                            <Image src={EISms} className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black"> Maintenance & Support</h2>

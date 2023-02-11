@@ -20,6 +20,7 @@ import pnrdc from '../public/images/portfolio/p-nrdc.jpeg'
 import pair from '../public/images/portfolio/p-air.jpeg'
 import pbq from '../public/images/portfolio/p-bq.jpeg'
 import praktdaan from '../public/images/portfolio/p-rd.jpeg'
+import Link from 'next/Link'
 
 const PortFolio = () => {
   return (
@@ -28,7 +29,7 @@ const PortFolio = () => {
 
         <div className="">
           <h2 className="md:text-5xl text-3xl text-center lg:text-left font-bold text-red-500">Portfolio</h2>
-          <p className="md:text-xl text-lg text-center lg:text-left text-gray-600">Our portfolio spans a variety of industries across continents.</p>
+          <p className="md:text-xl text-lg text-center lg:text-left text-gray-600">Our portfolio spans a variety of  <br />industries across continents.</p>
         </div>
 
         <div className="my-5">
@@ -97,11 +98,11 @@ const PortFolio = () => {
               admin can also create an issue call of a procured product by lodging it in the Store Issue
               Book (SIB). */}
             </p>
-            <a rel="noreferrer" href="https:/aircentralstore.org/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://aircentralstore.org/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -128,11 +129,11 @@ const PortFolio = () => {
                             how much royalty received from which party. */}
 
             </p>
-            <a rel="noreferrer" href="http:/nrdcindia.com/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://nrdcindia.com/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -152,11 +153,11 @@ const PortFolio = () => {
               service. Catering the taste buds of both vegetarians and non vegetarians alike, the menu
               along with services really are diverse. */}
             </p>
-            <a rel="noreferrer" href="http:/biryaniqueen.com/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://biryaniqueen.com/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -165,7 +166,7 @@ const PortFolio = () => {
           </div>
           <div className='text-center my-5'>
             <h2 className="text-2xl text-red-500 my-2">Cha Bar</h2>
-            <p className="text-justify text-gray-600">
+            <p className="text-justify text-gray-600 word-spacing">
               Cha Bar is a one-of-a-kind urban contemporary place that made a splash in Kolkata in the
               year 2000, transforming tea from a historical footnote to a trendy beverage.Provision of
               creative graphics designing along with a cutting edge technology enabled web application.
@@ -182,11 +183,11 @@ const PortFolio = () => {
               wide selection available at the Cha Bar or simply unwinding with friends sipping the
               rejuvenating beverage, iced or piping hot! */}
             </p>
-            <a rel="noreferrer" href="http:/chabar.in/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://chabar.in/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -207,11 +208,11 @@ const PortFolio = () => {
                   to provide customers with the whole chain of real estate operation and Corporate
                             Facilities Management Services. */}
             </p>
-            <a rel="noreferrer" href="https:/www.exceamindia.in/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://www.exceamindia.in/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -230,11 +231,11 @@ const PortFolio = () => {
               Our biggest commitment is to nurture human relations while delivering service through
               our seasoned team of 50+ expert dietitians and health coaches. */}
             </p>
-            <a rel="noreferrer" href="https:/instafitness.in/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://instafitness.in/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -253,11 +254,11 @@ const PortFolio = () => {
               a prominent name in the KPO/HR service industry (now taken over by 3i-Infotech Limited
               and known as 3i-infotech BPO). */}
             </p>
-            <a rel="noreferrer" href="http:/iris-corp.com/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://iris-corp.com/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -275,11 +276,11 @@ const PortFolio = () => {
               scope of expanding this foundation into various other medical fields & helping more
               people, it is also incredibly versatile. */}
             </p>
-            <a rel="noreferrer" href="https:/play.google.com/store/apps/details?id=org.rakt_daan.app" className="" target="_blank">
+            <Link rel="noreferrer" href="http://www.raktdaan.canwinn.org/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
@@ -288,7 +289,7 @@ const PortFolio = () => {
           </div>
           <div className='text-center my-5'>
             <h2 className="text-2xl text-red-500 my-2">The Knowledge Bus Global School</h2>
-            <p className="text-justify text-gray-600">
+            <p className="text-justify text-gray-600 word-spacing">
               TKB- Global web application is a comprehensive catalogue for all upcoming events.
               The development of a technically sophisticated web application was
               undertaken with leading edge technology. The Knowledge Bus Global School Greater Mohali in association with The Knowledge Universe Singapore, a chain of over 3000 schools worldwide on the platform... of providing highest standards of education...
@@ -299,11 +300,11 @@ const PortFolio = () => {
                   by technology, the infrastructure also offers 24X7 connectivity to online knowledge
                             banks through Wi-Fi Networks. */}
             </p>
-            <a rel="noreferrer" href="http:/tkbglobalschools.com/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://tkbglobalschools.com/" className="" target="_blank">
               <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center mt-5 w-3/4">
@@ -323,11 +324,11 @@ const PortFolio = () => {
               Get price details, wedding details, affordable wedding packages, ratings & reviews of a
               variety of wedding vendors within minutes. */}
             </p>
-            <a rel="noreferrer" href="https:/www.weddinggaadi.com/" className="" target="_blank">
+            <Link rel="noreferrer" href="http://medicause.in/" className="" target="_blank">
               <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
                 View Project
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

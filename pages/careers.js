@@ -9,7 +9,7 @@ import intern from '../public/images/career/intern-graphics.png'
 
 const Careers = () => {
   return (
-    <div className='flex flex-col mt-20 md:mt-0'>
+    <div className='flex flex-col mt-20 lg:mt-0'>
       <div className='text-center'>
         <h1 className='text-3xl text-gray-600 my-5 font-bold'>Career</h1>
         <p className='text-lg text-gray-600 px-3'>If you wish to be a part of our amazing team, drop your CV on hr@sudofire.com</p>

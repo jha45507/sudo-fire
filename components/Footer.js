@@ -4,10 +4,10 @@ import Image from 'next/image'
 import { FaHome } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { FaPhoneAlt } from 'react-icons/fa'
-import { GrFacebook } from 'react-icons/gr'
-import { GrLinkedin } from 'react-icons/gr'
-import { GrInstagram } from 'react-icons/gr'
-import { FaWhatsappSquare } from 'react-icons/fa'
+import { TfiFacebook } from 'react-icons/tfi'
+import { TfiLinkedin } from 'react-icons/tfi'
+import { RiInstagramFill } from 'react-icons/ri'
+import { RiWhatsappFill } from 'react-icons/ri'
 import { BiCurrentLocation } from 'react-icons/bi'
 import sidelogo from '../public/images/side-logo2.png'
 
@@ -29,8 +29,8 @@ const Footer = () => {
 							efficient with their coding skills.</p>
 					</div>
 					<div className='lg:w-[20%] md:w-[50%] w-[100%] text-center'>
-						<div className='text-center leading-10 text-gray-600'>
-							<h1 className='text-gray-700 font-bold text-lg' >SERVICES</h1>
+						<h1 className='text-gray-700 font-bold text-lg' >SERVICES</h1>
+						<div className='text-center leading-7 text-gray-600'>
 							<Link href="/EnterpriseITSolutions">
 								<p className='text-md hover:text-red-400 mt-3'>Enterprise Content Management</p>
 							</Link>
@@ -48,43 +48,40 @@ const Footer = () => {
 					<div className='lg:w-[20%] md:w-[50%] w-[100%] text-center text-gray-600 flex flex-col items-center'>
 						<h1 className='text-gray-700 text-lg font-bold md:text-left text-center'>CONTACT INFO</h1>
 						<div className='flex flex-col items-start w-[255px] lg:w-'>
-							<div className='flex md:justify-start justify-center items-center space-x-2 mt-4'>
+							<div className='flex md:justify-start justify-center items-center space-x-2 mt-4 hover:text-red-400'>
 								<FaHome className='text-[#f05d58] text-2xl' />
-								<p>WEBSITE: https://sudofire.com</p>
+								<p>WEBSITE: <Link href="https://sudofire.com/">https://sudofire.com</Link></p>
 							</div>
-							{/* <p className=''>https://sudofire.com</p> */}
-							<div className='flex md:justify-start justify-center space-x-2 mt-3'>
+							<div className='flex md:justify-start justify-center space-x-2 mt-3 hover:text-red-400'>
 								<MdEmail className='text-[#f05d58] text-2xl' />
-								<p>EMAIL: sales@sudofire.com</p>
+								<p>EMAIL: <Link href="mailto:hr@sudofire.com">sales@sudofire.com</Link></p>
 							</div>
-							{/* <p className=''>sales@sudofire.com</p> */}
-							<div className='flex md:justify-start justify-center items-center space-x-2 mt-3'>
+							<div className='flex md:justify-start justify-center items-center space-x-2 mt-3 hover:text-red-400'>
 								<FaPhoneAlt className='text-[#f05d58] text-2xl text-left' />
-								<p className='text-left'>PHONE: +91 98114 06941</p>
+								<p className='text-left'>PHONE: <Link href="tel:+91 98114 06941">+91 98114 06941</Link></p>
 							</div>
-							{/* <p>+91 98114 06941</p> */}
 							<div className='flex md:justify-start justify-center items-center space-x-2 mt-3'>
 								<BiCurrentLocation className='text-2xl text-[#f05d58]' />
 								<p className="">OFFICE LOCATION:</p>
 							</div>
-							<p className='text-justify' >Sudofire Technologies, 1st Floor, Landmark Cyberpark, Sector 67, Gurugram, Haryana</p>
+							<p className='text-justify mt-1'>Sudofire Technologies, 1st Floor, Landmark Cyberpark, Sector 67, Gurugram, Haryana</p>
 						</div>
 					</div>
 				</div>
 				<div className='mt-10 pb-10 flex flex-col items-center space-y-5 font-bold text-lg text-gray-800'>
 					<h1>FOLLOW US</h1>
-					<div className='flex flex-row space-x-10 items-center '>
+					<div className='flex flex-row space-x-5 items-center'>
 						<Link href="https://www.facebook.com/sudofire/">
-							<GrFacebook className='text-[#f05d58] rounded-sm w-[32px] h-[32px]' />
+							<TfiFacebook className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
 						</Link>
 						<Link href="https://www.linkedin.com/company/sudofire-technologies/about/">
-							<GrLinkedin className='text-[#f05d58] rounded-sm w-[32px] h-[32px]' />
-						</Link>
-						<Link href="https://www.instagram.com/sudofire_official/">
-							<GrInstagram className='text-[#f05d58] rounded-sm w-[36px] h-[36px]' />
+							<TfiLinkedin className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
 						</Link>
 						<Link href="https://api.whatsapp.com/send?phone=+919811406941&text=Hi, I contacted you through your website.">
-							<FaWhatsappSquare className='text-[#f05d58] rounded-sm w-[37px] h-[37px]' />
+							<RiWhatsappFill className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
+						</Link>
+						<Link href="https://www.instagram.com/sudofire_official/">
+							<RiInstagramFill className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
 						</Link>
 					</div>
 				</div>

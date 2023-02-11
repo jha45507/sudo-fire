@@ -34,20 +34,25 @@ const Navbar = () => {
             third_accordion_show.current.classList.replace('show', 'hidden')
             fourth_accordion_show.current.classList.replace('show', 'hidden')
         }
-        if (lg_navbar.current.classList.contains('md:flex')) {
-            lg_navbar.current.classList.remove('md:flex')
-            lg_navbar.current.classList.add('md:hidden')
+        if (lg_navbar.current.classList.contains('lg:flex')) {
+            lg_navbar.current.classList.remove('lg:flex')
+            lg_navbar.current.classList.add('lg:hidden')
+        }
+
+        if (accordion_nav_ref.current.classList.contains('show')) {
+            accordion_nav_ref.current.classList.remove('show')
+            accordion_nav_ref.current.classList.add('hidden')
         }
     }
 
     const accordion = () => {
-        if (lg_navbar.current.classList.contains('md:hidden')) {
-            lg_navbar.current.classList.remove('md:hidden')
-            lg_navbar.current.classList.add('md:flex')
+        if (lg_navbar.current.classList.contains('lg:hidden')) {
+            lg_navbar.current.classList.remove('lg:hidden')
+            lg_navbar.current.classList.add('lg:flex')
         }
         else {
-            lg_navbar.current.classList.add('md:hidden')
-            lg_navbar.current.classList.remove('md:flex')
+            lg_navbar.current.classList.add('lg:hidden')
+            lg_navbar.current.classList.remove('lg:flex')
         }
         if (accordion_nav_ref.current.classList.contains('hidden')) {
             accordion_nav_ref.current.classList.remove('hidden')
@@ -60,7 +65,6 @@ const Navbar = () => {
     }
 
     const first_accordion = () => {
-        console.log("tclick hare")
         if (first_accordion_show.current.classList.contains('collapse')) {
             first_accordion_show.current.classList.remove('collapse')
             first_accordion_show.current.classList.add('show')
@@ -74,7 +78,6 @@ const Navbar = () => {
         }
     }
     const second_accordion = () => {
-        console.log("tclick hare")
         if (second_accordion_show.current.classList.contains('collapse')) {
             second_accordion_show.current.classList.remove('collapse')
             second_accordion_show.current.classList.add('show')
@@ -88,7 +91,6 @@ const Navbar = () => {
         }
     }
     const third_accordion = () => {
-        console.log("tclick hare")
         if (third_accordion_show.current.classList.contains('collapse')) {
             third_accordion_show.current.classList.remove('collapse')
             third_accordion_show.current.classList.add('show')
@@ -102,7 +104,6 @@ const Navbar = () => {
         }
     }
     const fourth_accordion = () => {
-        console.log("tclick hare")
         if (fourth_accordion_show.current.classList.contains('collapse')) {
             fourth_accordion_show.current.classList.remove('collapse')
             fourth_accordion_show.current.classList.add('show')
@@ -115,38 +116,40 @@ const Navbar = () => {
             fourth_accordion_show.current.classList.add('hidden')
         }
     }
+
     return (
-        <div ref={headeRef} className='md:flex w-full md:sticky absolute md:top-0 top-0 z-20 justify-between lg:px-[100px] items-center shadow-md font-bold h-20 overflow-hidden md:overflow-visible md:backdrop-blur-sm backdrop-blur-md bg-transparent '>
-            <div ref={hamRef} className='md:hidden ham' onClick={hamclick} ></div>
+        <div ref={headeRef} className='lg:flex w-full lg:sticky absolute lg:top-0 top-0 z-20 justify-between lg:px-[100px] items-center shadow-md font-bold h-20 overflow-hidden lg:overflow-visible lg:backdrop-blur-sm backdrop-blur-md bg-transparent '>
+            <div ref={hamRef} className='lg:hidden ham' onClick={hamclick} ></div>
 
             <div className='w-[200px] mt-2'>
-                <Link href="/homePage" onClick={closeNavbar} ><Image src={logo} /> </Link>
+                <Link href="/" onClick={closeNavbar} ><Image src={logo} /> </Link>
             </div>
 
-            <div className='text-sm text-center my-10 space-y-10 md:space-y-0 md:space-x-10 flex items-center flex-col md:flex-row text-gray-600'>
+            <div className='text-sm text-center my-10 space-y-10 lg:space-y-0 lg:space-x-10 flex items-center flex-col lg:flex-row text-gray-600'>
+                <Link onClick={closeNavbar} className="hover:text-red-400" href="/">HOME</Link>
                 <Link onClick={accordion} href="#">SERVICES</Link>
 
-                <div ref={lg_navbar} className='md:hidden hidden absolute top-20 right-0 overflow-visible bg-white border space-x-10 px-7 py-2 shadow-xl'>
+                <div ref={lg_navbar} className='lg:hidden hidden absolute top-20 right-0 overflow-visible bg-white border space-x-10 px-7 py-2 shadow-xl'>
                     <div className='text-left list-none'>
-                        <h1 className='text-lg py-3'><Link href="#">Enterprise IT Solutions</Link></h1>
+                        <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/EnterpriseITSolutions">Enterprise IT Solutions</Link></h1>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#ECM"><p className='py-1 hover:text-red-400'>Enterprise Content Management </p></Link>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#ESM"><p className='py-1 hover:text-red-400'>Ecommerce & Stock Management </p></Link>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#CBA"><p className='py-1 hover:text-red-400'>CRMs & Business Applications </p></Link>
                         <Link onClick={accordion} href="/EnterpriseITSolutions#LM"><p className='py-1 hover:text-red-400'>Legacy Modernisation </p></Link>
                     </div>
                     <div className='text-left list-none'>
-                        <h1 className='text-lg py-3'><Link href="#">Internet of Things (IoT)</Link></h1>
+                        <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/Internet_of_Things">Internet of Things (IoT)</Link></h1>
                         <Link onClick={accordion} className="" href="/Internet_of_Things#HA"><p className="py-1 hover:text-red-400">Home Automation</p></Link>
                         <Link onClick={accordion} className="" href="/Internet_of_Things#IA"><p className="py-1 hover:text-red-400">Industrial Automation</p></Link>
                         <Link onClick={accordion} className="" href="/Internet_of_Things#SEI"><p className="py-1 hover:text-red-400">Smart Environment Implementation</p></Link>
                     </div>
                     <div className='text-left list-none'>
-                        <h1 className='text-lg py-3'><Link href="#">SaaS & Mobility Solutions</Link></h1>
+                        <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/SaaS_Mobility_Solutions">SaaS & Mobility Solutions</Link></h1>
                         <Link onClick={accordion} href="/SaaS_Mobility_Solutions#RSS"><p className='py-1 hover:text-red-400'>Redefining Software Services</p></Link>
                         <Link onClick={accordion} href="/SaaS_Mobility_Solutions#NAMS"><p className='py-1 hover:text-red-400'>New Age Mobility Solutions</p></Link>
                     </div>
                     <div className='text-left list-none'>
-                        <h1 className='text-lg py-3'><Link href="#">Devops & Cloud Services</Link></h1>
+                        <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/Devops_Cloud_Services">Devops & Cloud Services</Link></h1>
                         <Link onClick={accordion} href="/Devops_Cloud_Services#CL"><p className='py-1 hover:text-red-400'>Cloud Consulting</p></Link>
                         <Link onClick={accordion} href="/Devops_Cloud_Services#CA"><p className='py-1 hover:text-red-400'>Cloud Architecture</p></Link>
                         <Link onClick={accordion} href="/Devops_Cloud_Services#CO"><p className='py-1 hover:text-red-400'>Cost Optimization</p></Link>
@@ -154,7 +157,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div ref={accordion_nav_ref} className="accordion accordion-flush bg-transparent md:hidden hidden" id="accordionFlushExample">
+                <div ref={accordion_nav_ref} className="accordion accordion-flush bg-transparent lg:hidden hidden" id="accordionFlushExample">
                     <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none">
                         <h2 className="accordion-header mb-0" id="flush-headingOne">
                             <button onClick={first_accordion} className="accordion-button relative flex items-center justify-center w-full text-base text-gray-800 text-left border-0 rounded-none transition focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
@@ -221,10 +224,10 @@ const Navbar = () => {
                         </div >
                     </div >
                 </div >
-                <Link className='' onClick={closeNavbar} href="/portFolio">PORTFOLIO</Link>
-                <Link className='' onClick={closeNavbar} href="/careers">CAREERS</Link>
-                <Link className='' onClick={closeNavbar} href="/clients">CLIENTS</Link>
-                <Link className='' onClick={closeNavbar} href="/contactUs">CONTACT US</Link>
+                <Link className='hover:text-red-400' onClick={closeNavbar} href="/portFolio">PORTFOLIO</Link>
+                <Link className='hover:text-red-400' onClick={closeNavbar} href="/careers">CAREERS</Link>
+                <Link className='hover:text-red-400' onClick={closeNavbar} href="/clients">CLIENTS</Link>
+                <Link className='hover:text-red-400' onClick={closeNavbar} href="/contactUs">CONTACT US</Link>
             </div >
         </div >
     )

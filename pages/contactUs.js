@@ -20,7 +20,7 @@ const ContactUs = () => {
         }, false);
     }, [])
     return (
-        <div className='p-5 mt-10 md:mt-0'>
+        <div className='p-5 mt-10 lg:mt-0'>
             <Script src="https://www.google.com/recaptcha/api.js"/>
 
             <div className="block p-6 rounded-lg shadow-lg bg-white max-w-2xl my-10 mx-auto ">

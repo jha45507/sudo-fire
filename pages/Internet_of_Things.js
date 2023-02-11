@@ -12,7 +12,7 @@ import IOTbuild from '../public/images/services/IOT-build.png'
 const Internet_of_Things = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0">
+            <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
@@ -22,7 +22,7 @@ const Internet_of_Things = () => {
             </div>
 
             <section className="flex w-[100%] justify-around items-center">
-                <ul className="flex w-[100%] justify-around items-center space-y-3 flex-col lg:flex-row">
+                <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
                     <li className="">
                         <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#HA">Home Automation</a>
                     </li>
@@ -36,7 +36,9 @@ const Internet_of_Things = () => {
             </section>
 
             <div id="HA" className="flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
-                <Image src={IOThome} className="lg:w-1/4 md:w-[20%] w-2/4" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
+                    <Image src={IOThome} className="lg:w-[50%] w-[75%]" />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Home Automation</h2>
                     <p className="text-justify"> With the help of suitable IoT devices, home automation has become very easy and has helped IoT companies to flourish well. In home automation, allowing control of various IoT devices just with a single click and that too without the hassle of manually doing so. Controlling all aspects of a home from lighting, bathroom appliances, to temperature control through air conditioning, garden irrigation, security systems and kitchen appliances from just a mobile phone interface is what makes IoT home automation so favourable by doing these small things right. And to top it all, these are only a selected few IoT applications that are commonly used for making your Home, a smart home. The list is long but distinguished.</p>
@@ -44,7 +46,9 @@ const Internet_of_Things = () => {
             </div>
 
             <div id="IA" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
-                <Image src={IOTindustrial} className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
+                    <Image src={IOTindustrial} />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Industrial Automation</h2>
                     <p className="text-justify"> Interconnected sensors, instruments, and other devices networked together in an industrial setting. This connectivity setup allows for remote access and monitoring, but more importantly, it allows for data acquisition and collection, exchange and analysis of different data sources. This has enormous potential for improving productivity and efficiency. Industrial IoT solutions are characterised by their low cost and fast implementation.<br /><br />
@@ -60,11 +64,15 @@ const Internet_of_Things = () => {
                         </ul>
                     </p>
                 </div>
-                <Image src={IOTindustrial} className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
+                    <Image src={IOTindustrial} />
+                </div>
             </div>
 
             <div id="SEI" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
-                <Image src={IOTsmart} className="lg:w-1/4 md:w-[20%] w-2/4" />
+                <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
+                    <Image src={IOTsmart} className="lg:w-[50%] w-[75%]" />
+                </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Smart Environment Implementation</h2>
                     <p className="text-justify">
@@ -82,19 +90,23 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div className="my-16">
+            <div className="my-16 w-[100%]">
                 <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to IoT Solutions</h1>
 
-                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
+                <div className=' flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <Image src={IOTrecog} className="lg:w-[40%] w-[25%]" />
+                    <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
+                        <div>
+                            <Image src={IOTrecog} className="w-[100px]" />
+                        </div>
                         <h2 className="text-center text-2xl text-black">Recognize IoT Possibilities</h2>
                         <p className="text-justify">Understanding the broader aspect of where IoT can be used as a solution.</p>
                     </div>
 
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <Image src={IOTtranslate} className="lg:w-[40%] w-[25%]" />
+                    <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
+                        <div>
+                            <Image src={IOTtranslate} className="w-[100px]" />
+                        </div>
                         <h2 className="text-center text-2xl text-black">Translate IoT To HarnessRequirements</h2>
                         <p className="text-justify"> Transforming the requirement structure to accommodate IoT to eradicate the problem by using IoT as the solution.</p>
                     </div>
@@ -103,14 +115,18 @@ const Internet_of_Things = () => {
 
                 <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <Image src={IOTarchitech} className="lg:w-[40%] w-[25%]" />
+                    <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
+                        <div>
+                            <Image src={IOTarchitech} className="w-[100px]" />
+                        </div>
                         <h2 className="text-center text-2xl text-black">Architecture Formulation</h2>
                         <p className="text-justify"> Setting up the base of the solution after taking all technical aspects into consideration by generating frameworks and architectural diagrams.</p>
                     </div>
 
-                    <div className="flex flex-col justify-start items-center lg:w-[25%] w-[75%] space-y-3">
-                        <Image src={IOTbuild} className="lg:w-[40%] w-[25%]" />
+                    <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
+                        <div>
+                            <Image src={IOTbuild} className="w-[100px]" />
+                        </div>
                         <h2 className="text-center text-2xl text-black">Build & Deploy IoT Service</h2>
                         <p className="text-justify"> Giving structure to the problem solution and enabling deployment through suitable technologies. </p>
                     </div>
