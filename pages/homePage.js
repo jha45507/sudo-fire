@@ -30,7 +30,7 @@ const HomePage = () => {
 
             <div className='flex flex-col md:flex-row md:justify-around justify-end items-center bg-img-banner'>
                 <div className="sm:mt-60 md:mt-0">
-                    <h1 className=''><strong className='xl:text-5xl md:text-3xl text-2xl font-bold text-gray-600'>Building Solutions <br /> for Digital Age</strong></h1>
+                    <h1 className='text-center md:text-left'><strong className='xl:text-5xl md:text-3xl text-2xl font-bold text-gray-600 '>Building Solutions <br /> for Digital Age</strong></h1>
                     <div className='xl:my-10 lg:my-5 my-10 lg:text-xl text-md text-center md:text-left'>
                         <Link href="/portFolio" className="bg-red-500 text-white rounded-full py-2 lg:px-5 px-3">View Case Studies</Link>
                     </div>
@@ -46,55 +46,55 @@ const HomePage = () => {
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
                         <div className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Group653} alt="" />
+                                <Image className="w-1/4 my-3" src={Group653} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Enterprise IT Solutions</h4>
                                 <p className='text-sm my-3 text-gray-700 text-justify word-spacing'>Enabling business to conquer physical boundaries with new age Technologies.</p>
                             </div>
                             <Link className="flex justify-center items-center xl:mt-8 lg:mt-9 mt-10 text-red-600" href="/EnterpriseITSolutions">
-                                <Image className="w-5" src={play_icon} alt="" />
+                                <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
                         </div>
                         <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Path483} alt="" />
+                                <Image className="w-1/4 my-3" src={Path483} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Internet of Things (IoT)</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights.</p>
                             </div>
                             <Link className="flex justify-center items-center xl:mt-8 lg:mt-5 mt-10 text-red-600" href="/Internet_of_Things">
-                                <Image className="w-5" src={play_icon} alt="" />
+                                <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
                         </div>
                     </div>
 
-                    <div  className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
+                    <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
                         <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Group649} alt="" />
+                                <Image className="w-1/4 my-3" src={Group649} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> On the go solutions for routine business processes enabling remote and in-office management.</p>
                             </div>
                             <Link className="flex justify-center items-center xl:mt-3 lg:mt-4 mt-5 text-red-600" href="/SaaS&SaaS_Mobility_Solutions">
-                                <Image className="w-5" src={play_icon} alt="" />
+                                <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
                         </div>
                         <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Group650} alt="" />
+                                <Image className="w-1/4 my-3" src={Group650} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> New age services with flexible architecture and on demand pricing paving way for much needed flexibility.</p>
                             </div>
                             <Link className="flex justify-center items-center xl:mt-3 lg:mt-4 mt-5 text-red-600" href="/Devops&Devops_Cloud_Services">
-                                <Image className="w-5" src={play_icon} alt="" />
+                                <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='carousel w-[95%] lg:w-3/4 lg:h-[60vh] h-[70vh] items-start justify-center bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
+            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] h-[70vh] items-start justify-center bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
 
                 <h1 className='text-center text-white md:text-4xl text-xl font-bold mt-6'>Industry leaders who vouch for us</h1>
 
@@ -104,7 +104,7 @@ const HomePage = () => {
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={AMSharma} className="bg-white m-auto md:w-[100%] w-[150px] rounded-md" />
-                                    <h3 className='text-left md:text-2xl text-md text-white'>A.MSharma</h3>
+                                    <h3 className='text-left md:text-2xl text-md text-white'>A.M Sharma</h3>
                                 </div>
                                 <div className='flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
                                     <p className='text-justify text-white text-sm md:text-lg' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
