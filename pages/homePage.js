@@ -94,13 +94,13 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] h-[70vh] items-start justify-center bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
+            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] md:h-[70vh] h-[57vh] bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
 
-                <h1 className='text-center text-white md:text-4xl text-xl font-bold mt-12 md:mt-6'>Industry leaders who vouch for us</h1>
+                <h1 className='text-center text-white md:text-4xl text-xl font-bold mt-6'>Industry leaders who vouch for us</h1>
 
                 <Swiper slidesPerView={1} autoplay={{ delay: 2000 }} loop={true} modules={[Thumbs]} thumbs={{ swiper: thumbsSwiper }}>
                     <SwiperSlide>
-                        <div className=' w-[100%] items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_first_ref}>
+                        <div className=' w-[100%] items-start md:items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_first_ref}>
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={AMSharma} className="bg-white m-auto md:w-[100%] w-[150px] rounded-md" />
@@ -114,7 +114,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-[100%] items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_second_ref}>
+                        <div className='w-[100%] items-start md:items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_second_ref}>
                             <div className=' w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={Abhishek_Gautam} className="bg-white md:w-[100%] w-[150px] m-auto rounded-md" />
@@ -128,7 +128,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className=' w-[100%] items-center flex justify-center px-2 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_third_ref}>
+                        <div className=' w-[100%] items-start md:items-center flex justify-center px-2 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_third_ref}>
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={adarshmatta} className="md:w-[100%] w-[150px] bg-white m-auto rounded-md" />
