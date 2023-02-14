@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import Link from 'next/Link'
 import Image from 'next/image'
 import logo from '../public/images/side-logo2.png'
+
+import { RiArrowDropDownLine } from 'react-icons/ri'
 const Navbar = () => {
     const headeRef = useRef();
     const hamRef = useRef();
@@ -127,7 +129,7 @@ const Navbar = () => {
 
             <div className='text-sm text-center my-10 space-y-10 lg:space-y-0 lg:space-x-10 flex items-center flex-col lg:flex-row text-gray-600'>
                 <Link onClick={closeNavbar} className="hover:text-red-400" href="/">HOME</Link>
-                <Link onClick={accordion} href="#">SERVICES</Link>
+                <Link className="flex hover:text-indigo-400" onClick={accordion} href="#">SERVICES <RiArrowDropDownLine className='text-xl m-0 p-0' /> </Link>
 
                 <div ref={lg_navbar} className='lg:hidden hidden absolute top-20 right-0 overflow-visible bg-white border space-x-10 px-7 py-2 shadow-xl'>
                     <div className='text-left list-none'>
