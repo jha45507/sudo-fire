@@ -94,7 +94,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] h-[70vh] bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
+            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] md:h-[70vh] h-[65vh] bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
 
                 <h1 className='text-center text-white md:text-4xl text-xl font-bold mt-6'>Industry leaders who vouch for us</h1>
 
