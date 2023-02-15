@@ -94,7 +94,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] md:h-[70vh] h-[57vh] bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
+            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] h-[70vh] bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300  space-y-5 relative rounded-md overflow-hidden'>
 
                 <h1 className='text-center text-white md:text-4xl text-xl font-bold mt-6'>Industry leaders who vouch for us</h1>
 
@@ -104,11 +104,12 @@ const HomePage = () => {
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={AMSharma} className="bg-white m-auto md:w-[100%] w-[150px] rounded-md" />
-                                    <h3 className='text-left md:text-2xl text-md text-white my-3'>A.M Sharma</h3>
                                 </div>
-                                <div className='md:mt-0 mt-4 flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
-                                    <p className='text-justify text-white text-sm md:text-lg' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
-                                    <p className='text-justify text-white  text-sm md:text-lg'>Assistant Engineer to Director, ALL INDIA RADIO</p>
+                                <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
+
+                                    <h3 className='md:text-left text-center md:text-2xl text-md text-white'>A.M Sharma</h3>
+                                    <p className='text-justify text-white text-sm md:text-lg xl:text-xl'>Assistant Engineer to Director, ALL INDIA RADIO</p>
+                                    <p className='text-justify text-white text-sm xl:text-lg pt-4' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
                                 </div>
                             </div>
                         </div>
@@ -118,11 +119,11 @@ const HomePage = () => {
                             <div className=' w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={Abhishek_Gautam} className="bg-white md:w-[100%] w-[150px] m-auto rounded-md" />
-                                    <h3 className='text-left md:text-2xl text-md text-white my-3'>Abhishek Gautam</h3>
                                 </div>
-                                <div className='md:mt-0 mt-4 flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
-                                    <p className='text-justify text-white  text-sm md:text-lg' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
-                                    <p className='text-justify text-white  text-sm md:text-lg'>IT HEAD, National Research Development Corporation</p>
+                                <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
+                                    <h3 className='md:text-left text-center md:text-2xl text-md text-white'>Abhishek Gautam</h3>
+                                    <p className='text-justify text-white text-sm md:text-lg xl:text-xl'>IT HEAD, National Research Development Corporation</p>
+                                    <p className='text-justify text-white text-sm xl:text-lg pt-4' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
                                 </div>
                             </div>
                         </div>
@@ -132,11 +133,11 @@ const HomePage = () => {
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={adarshmatta} className="md:w-[100%] w-[150px] bg-white m-auto rounded-md" />
-                                    <h3 className='text-left md:text-2xl text-md text-white my-3'>Mr. Adarsh Matta</h3>
                                 </div>
-                                <div className='md:mt-0 mt-4 flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
-                                    <p className='text-justify text-white  text-sm md:text-lg'>We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
-                                    <p className='text-justify text-white  text-sm md:text-lg'>CEO of ETA</p>
+                                <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
+                                    <h3 className='md:text-left text-center md:text-2xl text-md text-white'>Mr. Adarsh Matta</h3>
+                                    <p className='text-justify text-white text-sm md:text-lg xl:text-xl'>CEO of ETA</p>
+                                    <p className='text-justify text-white text-sm xl:text-lg pt-4'>We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
                                 </div>
                             </div>
                         </div>
