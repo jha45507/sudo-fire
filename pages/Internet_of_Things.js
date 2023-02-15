@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Eis1 from '../public/images/services/Eis1.png'
-import net from '../public/images/services/net-img.png'
+import Iot from '../public/images/services/Iot.png'
+import net from '../public/images/services/side_IOT-image.png'
 import IOThome from '../public/images/services/IOT-home.png'
 import IOTindustrial from '../public/images/services/IOT-industrial.png'
 import IOTsmart from '../public/images/services/IOT-smart.png'
@@ -12,13 +12,14 @@ import IOTbuild from '../public/images/services/IOT-build.png'
 const Internet_of_Things = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
-                <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
+            <div className="flex lg:justify-center justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
+                <Image className="lg:w-1/4 w-2/4 mt-12" src={Iot} alt="" />
                 <div className="lg:w-[32%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
-                    <p className="text-justify text-gray-700">To integrate multiple facets of a company&apos;s business through the interchange of information from various business process areas and related databases. Enable your company to retrieve and disseminate mission-critical data throughout the organization, providing management with real-time operating information. Overcoming physical boundaries through solutions of content management, e-commerce & stock management, CRMs, business applications along with legacy project modernisations and expanding them over the web so billions of users have immediate access to it at their disposal.</p>
+                    <h2 className="text-red-400 text-center text-3xl my-3">Internet of Things</h2>
+                    <p className="text-justify text-gray-700">
+                    Enabling enterprise strategies for new beginnings&apos; Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights. IoT-enabled smart city implementation spans multiple fields including contributing to a healthier environment, improving traffic, enhancing public safety and optimizing street lighting. Similarly, IoT home automation is the ability to control domestic appliances by electronically controlled, internet-connected systems. It may include setting complex heating, lighting systems in advance, setting alarms and/or home security controls, all connected by a central hub and remote-controlled by a mobile app.</p>
                 </div>
-                <Image className='lg:w-1/4 w-2/4' src={net} alt="" />
+                <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
 
             <section className="flex w-[100%] justify-around items-center">
@@ -35,7 +36,7 @@ const Internet_of_Things = () => {
                 </ul>
             </section>
 
-            <div id="HA" className="flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
+            <div id="HA" className="scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={IOThome} className="lg:w-[50%] w-[75%]" />
                 </div>
@@ -45,7 +46,7 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div id="IA" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="IA" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
                     <Image src={IOTindustrial} />
                 </div>
@@ -69,7 +70,7 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div id="SEI" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="SEI" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
                     <Image src={IOTsmart} className="lg:w-[50%] w-[75%]" />
                 </div>

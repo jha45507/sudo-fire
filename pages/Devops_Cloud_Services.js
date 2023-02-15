@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Eis1 from '../public/images/services/Eis1.png'
-import net from '../public/images/services/net-img.png'
+import DC from '../public/images/services/D&C.png'
+import net from '../public/images/services/side_Cloud-Image.png'
 import DCcc from '../public/images/services/DC-cc.png'
 import DCca from '../public/images/services/DC-ca.png'
 import DCco from '../public/images/services/DC-co.png'
@@ -12,13 +12,13 @@ import DCpms from '../public/images/services/DC-pms.png'
 const Devops_Cloud_Services = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
-                <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
+            <div className="flex lg:justify-center justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
+                <Image className="lg:w-1/4 w-2/4 mt-12" src={DC} alt="" />
                 <div className="lg:w-[32%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
-                    <p className="text-justify text-gray-700">To integrate multiple facets of a company&apos;s business through the interchange of information from various business process areas and related databases. Enable your company to retrieve and disseminate mission-critical data throughout the organization, providing management with real-time operating information. Overcoming physical boundaries through solutions of content management, e-commerce & stock management, CRMs, business applications along with legacy project modernisations and expanding them over the web so billions of users have immediate access to it at their disposal.</p>
+                    <h2 className="text-red-400 text-center text-3xl my-3">Devops & Cloud Services</h2>
+                    <p className="text-justify text-gray-700">Services available via remote cloud computing server rather than an on-site server enabling remote access&apos; These scalable solutions are managed by solution providers/vendors thereby providing users with access to computing services such as analytics or networking via the internet. Offering powerful benefits through greater productivity and enhanced efficiency to reducing cost significantly and simplifying IT management. Cloud computing also enables mobile services that employees are using increasingly when accessing corporate data and applications. Cloud Services provide added advantages like higher speeds, better security & flexible scaling.</p>
                 </div>
-                <Image className='lg:w-1/4 w-2/4' src={net} alt="" />
+                <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
 
             <section className="flex w-[100%] justify-around items-center">
@@ -37,7 +37,7 @@ const Devops_Cloud_Services = () => {
                     </li>
                 </ul>
             </section>
-            <div id="CL" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CL" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={DCcc} className="" />
                 </div>
@@ -60,7 +60,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="CA" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CA" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="w-[40%] md:w-[15%] lg:hidden block">
                     <Image src={DCca} className="" />
                 </div>
@@ -88,7 +88,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="CO" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CO" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
                     <Image src={DCco} className="" />
                 </div>
@@ -112,7 +112,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="M&S" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="M&S" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="md:w-[18%] w-[40%] lg:hidden block">
                     <Image src={DCms} className="" />
                 </div>

@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Eis1 from '../public/images/services/Eis1.png'
-import net from '../public/images/services/net-img.png'
+import Saas from '../public/images/services/Saas.png'
+import net from '../public/images/services/side_SaaS-Mobility-Image.png'
 import SAASrss from '../public/images/services/SAASrss.png'
 import SAASnams from '../public/images/services/SAASnams.png'
 import SAASru from '../public/images/services/SAASru.png'
@@ -14,13 +14,13 @@ import SAASms from '../public/images/services/SAASms.png'
 const SaaS_Mobility_Solutions = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-end justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
-                <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
+            <div className="flex lg:justify-center justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
+                <Image className="lg:w-1/4 w-2/4 mt-12" src={Saas} alt="" />
                 <div className="lg:w-[32%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
-                    <p className="text-justify text-gray-700">To integrate multiple facets of a company&apos;s business through the interchange of information from various business process areas and related databases. Enable your company to retrieve and disseminate mission-critical data throughout the organization, providing management with real-time operating information. Overcoming physical boundaries through solutions of content management, e-commerce & stock management, CRMs, business applications along with legacy project modernisations and expanding them over the web so billions of users have immediate access to it at their disposal.</p>
+                    <h2 className="text-red-400 text-center text-3xl my-3">SaaS & Mobility Solutions</h2>
+                    <p className="text-justify text-gray-700">Enabling data to be accessed from any device with an internet connection&apos; Plus, vendors take care of hosting and maintaining the servers, databases, and the code that makes up the application. Providing crucial benefits such as reduced time to draw a profit, Lower implementational costs, Scalability & Integration, New Releases & ease of use & ease of performing Proof of Concepts. Mobility solutions provide seamless flow of information on devices linked together. The omnipresent availability of data and the ability to access it anywhere at any time through internet enabled devices like smartphones and portable computers makes the most of what this service has to offer..</p>
                 </div>
-                <Image className='lg:w-1/4 w-2/4' src={net} alt="" />
+                <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
 
             <section className="flex w-[100%] justify-evenly items-center">
@@ -34,7 +34,7 @@ const SaaS_Mobility_Solutions = () => {
                 </ul>
             </section>
 
-            <div id="RSS" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="RSS" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={SAASrss} className="lg:w-[50%] w-[75%]" />
                 </div>
@@ -52,7 +52,7 @@ const SaaS_Mobility_Solutions = () => {
                 </div>
             </div>
 
-            <div id="NAMS" className='flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="NAMS" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden">
                     <Image src={SAASnams} />
                 </div>

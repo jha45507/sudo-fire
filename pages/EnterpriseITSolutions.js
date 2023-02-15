@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Eis1 from '../public/images/services/Eis1.png'
-import net from '../public/images/services/net-img.png'
+import net from '../public/images/services/side_IT-solutions-Image.png'
 import EISecm from '../public/images/services/EISecm.png'
 import EISesm from '../public/images/services/EISesm.png'
 import EISlm from '../public/images/services/EISlm.png'
@@ -16,13 +16,13 @@ import Group315 from '../public/images/services/Group 315.png'
 const EnterpriseITSolutions = () => {
     return (
         <div className='w-[100%]'>
-            <div className="bg-blue-100 flex lg:justify-end justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 mb-10 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
+            <div className="bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 mb-10 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
                     <p className="text-justify text-gray-700">To integrate multiple facets of a company&apos;s business through the interchange of information from various business process areas and related databases. Enable your company to retrieve and disseminate mission-critical data throughout the organization, providing management with real-time operating information. Overcoming physical boundaries through solutions of content management, e-commerce & stock management, CRMs, business applications along with legacy project modernisations and expanding them over the web so billions of users have immediate access to it at their disposal.</p>
                 </div>
-                <Image className='lg:w-1/4 w-2/4' src={net} alt="" />
+                <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
             <section className="flex w-[100%] justify-around items-center ">
                 <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
@@ -41,7 +41,7 @@ const EnterpriseITSolutions = () => {
                 </ul>
             </section>
             {/* <hr className='w-[90%] border border-gray-600 ' /> */}
-            <div className="flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
+            <div className=" scroll-mt-28 flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={EISecm} className="" />
                 </div>
@@ -62,7 +62,7 @@ const EnterpriseITSolutions = () => {
                 </div>
             </div>
 
-            <div className="flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
+            <div className="scroll-mt-28 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden">
                     <Image src={EISesm} className="" />
                 </div>
@@ -85,7 +85,7 @@ const EnterpriseITSolutions = () => {
                     <Image src={EISesm} className="" />
                 </div>
             </div>
-            <div className="flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
+            <div className="scroll-mt-28 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={Group315} className="w-[200px] h-[120px] lg:h-[150px]" />
                 </div>
@@ -104,7 +104,7 @@ const EnterpriseITSolutions = () => {
                     </p>
                 </div>
             </div>
-            <div className="flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
+            <div className="scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
                     <Image src={EISlm} />
                 </div>

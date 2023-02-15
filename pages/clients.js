@@ -71,15 +71,15 @@ import PleasuretoWorkWith from '../public/images/client/Pleasure toWork With.png
 
 const Clients = () => {
   return (
-    <div className='flex justify-between lg:px-[105px] md:px-3 items-center flex-col md:flex-row space-y-10 md:space-y-0 mt-28 lg:my-20 '>
+    <div className='flex justify-between lg:px-[105px] items-center flex-col lg:flex-row space-y-10 lg:space-y-0 mt-28 lg:my-20 '>
       <div className='space-y-2 lg:space-y-0'>
         <h1 className='md:text-5xl text-3xl md:text-start text-center text-red-500'>Our Clients</h1>
         <p className='md:text-2xl text-xl md:text-start text-center text-gray-600'>Pleasure to work with </p>
       </div>
 
-      <div className='scroll-up shadowAnimation rounded-md flex justify-center'>
+      <div className='scroll-up rounded-md flex justify-center'>
         <div className='inner'>
-          <div className="flex space-x-2 mx-2 my-4">
+          <div className="flex space-x-2 my-10 md:space-x-10">
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={nrdc} />
             </div>
@@ -91,7 +91,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={snc} />
             </div>
@@ -103,7 +103,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={instafitnessc} />
             </div>
@@ -115,7 +115,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={raktc} />
             </div>
@@ -127,7 +127,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={airc} />
             </div>
@@ -139,7 +139,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={jskc} />
             </div>
@@ -151,7 +151,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className="shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={mindcastc} />
             </div>
@@ -163,7 +163,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={woofuc} />
             </div>
@@ -175,7 +175,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={abcc} />
             </div>
@@ -187,7 +187,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={porasmotionc} />
             </div>
@@ -199,7 +199,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={exceamc} />
             </div>
@@ -211,7 +211,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
  flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={chabarc} />
@@ -226,7 +226,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
  flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={jttc} />
@@ -241,7 +241,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
  flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={cubicalc} />
@@ -256,7 +256,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
  flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={nublissc} />
@@ -271,7 +271,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
  flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={switcherc} />
@@ -286,7 +286,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex space-x-2 m-2'>
+          <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
             <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
  flex justify-center items-center border rounded-lg bg-gray-200">
               <Image className='p-3' src={wgc} />
