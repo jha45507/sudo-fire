@@ -27,7 +27,7 @@ const PortFolio = () => {
     <div className="mt-28 lg:mt-0">
       <div className="flex justify-around items-center flex-col lg:flex-row ">
 
-        <div className="">
+        <div className="space-y-3 lg:space-y-0">
           <h2 className="md:text-5xl text-3xl text-center lg:text-left font-bold text-red-500">Portfolio</h2>
           <p className="md:text-xl text-lg text-center lg:text-left text-gray-600">Our portfolio spans a variety of  <br />industries across continents.</p>
         </div>

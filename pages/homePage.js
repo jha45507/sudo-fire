@@ -41,7 +41,7 @@ const HomePage = () => {
             </div>
 
             <div className="w-full pb-10 pd:mb-0">
-                <h2 className="md:text-4xl text-2xl text-center font-bold text-gray-600 pb-5">Our Services</h2>
+                <h2 className="md:text-4xl text-2xl text-center font-bold text-gray-600 lg:pb-10 pb-5 md:pt-4 pt-6">Our Services</h2>
                 <div className="flex flex-col md:flex-row md:justify-center md:items-start items-center w-[100%] lg:space-x-10 md:space-x-3 space-x-0 space-y-10 md:space-y-0">
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
                         <div className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
@@ -101,12 +101,12 @@ const HomePage = () => {
                 <Swiper slidesPerView={1} autoplay={{ delay: 2000 }} loop={true} modules={[Thumbs]} thumbs={{ swiper: thumbsSwiper }}>
                     <SwiperSlide>
                         <div className=' w-[100%] items-start md:items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_first_ref}>
-                            <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
+                            <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={AMSharma} className="bg-white m-auto md:w-[100%] w-[150px] rounded-md" />
                                     <h3 className='text-left md:text-2xl text-md text-white my-3'>A.M Sharma</h3>
                                 </div>
-                                <div className='flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
+                                <div className='md:mt-0 mt-4 flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
                                     <p className='text-justify text-white text-sm md:text-lg' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
                                     <p className='text-justify text-white  text-sm md:text-lg'>Assistant Engineer to Director, ALL INDIA RADIO</p>
                                 </div>
@@ -115,12 +115,12 @@ const HomePage = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className='w-[100%] items-start md:items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_second_ref}>
-                            <div className=' w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
+                            <div className=' w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={Abhishek_Gautam} className="bg-white md:w-[100%] w-[150px] m-auto rounded-md" />
                                     <h3 className='text-left md:text-2xl text-md text-white my-3'>Abhishek Gautam</h3>
                                 </div>
-                                <div className='flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
+                                <div className='md:mt-0 mt-4 flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
                                     <p className='text-justify text-white  text-sm md:text-lg' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
                                     <p className='text-justify text-white  text-sm md:text-lg'>IT HEAD, National Research Development Corporation</p>
                                 </div>
@@ -129,12 +129,12 @@ const HomePage = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className=' w-[100%] items-start md:items-center flex justify-center px-2 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_third_ref}>
-                            <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-5 space-x-0'>
+                            <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={adarshmatta} className="md:w-[100%] w-[150px] bg-white m-auto rounded-md" />
                                     <h3 className='text-left md:text-2xl text-md text-white my-3'>Mr. Adarsh Matta</h3>
                                 </div>
-                                <div className='flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
+                                <div className='md:mt-0 mt-4 flex justify-start items-start flex-col md:w-[40%] w-[100%] space-y-5'>
                                     <p className='text-justify text-white  text-sm md:text-lg'>We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
                                     <p className='text-justify text-white  text-sm md:text-lg'>CEO of ETA</p>
                                 </div>

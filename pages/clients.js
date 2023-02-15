@@ -72,7 +72,7 @@ import PleasuretoWorkWith from '../public/images/client/Pleasure toWork With.png
 const Clients = () => {
   return (
     <div className='flex justify-between lg:px-[105px] md:px-3 items-center flex-col md:flex-row space-y-10 md:space-y-0 mt-28 lg:my-20 '>
-      <div>
+      <div className='space-y-2 lg:space-y-0'>
         <h1 className='md:text-5xl text-3xl md:text-start text-center text-red-500'>Our Clients</h1>
         <p className='md:text-2xl text-xl md:text-start text-center text-gray-600'>Pleasure to work with </p>
       </div>

@@ -17,7 +17,7 @@ const Footer = () => {
 	return (
 		<>
 			<div className='mt-12 side-img'>
-				<div className='w-full space-y-10 flex flex-col lg:flex-row md:justify-evenly lg:items-start items-center'>
+				<div className='pt-10 w-full space-y-10 flex flex-col lg:flex-row md:justify-evenly lg:items-start items-center'>
 					<div className='lg:w-[20%] md:w-[50%] w-[80%] leading-7 text-center flex flex-col lg:items-start items-center mt-4 space-y-5'>
 						<Image className='w-[200px]' src={sidelogo} />
 						<p className='text-gray-600 text-justify'>

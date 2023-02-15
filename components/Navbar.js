@@ -129,7 +129,7 @@ const Navbar = () => {
 
             <div className='text-sm text-center my-10 space-y-10 lg:space-y-0 lg:space-x-10 flex items-center flex-col lg:flex-row text-gray-600'>
                 <Link onClick={closeNavbar} className="hover:text-red-400" href="/">HOME</Link>
-                <Link className="flex hover:text-indigo-400" onClick={accordion} href="#">SERVICES <RiArrowDropDownLine className='text-xl m-0 p-0' /> </Link>
+                <Link className="flex hover:text-indigo-400 relative" onClick={accordion} href="#">SERVICES <RiArrowDropDownLine className='text-xl top-0 right-[-20px] absolute' /> </Link>
 
                 <div ref={lg_navbar} className='lg:hidden hidden absolute top-20 right-0 overflow-visible bg-white border space-x-10 px-7 py-2 shadow-xl'>
                     <div className='text-left list-none'>

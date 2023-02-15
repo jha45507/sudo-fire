@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Script from 'next/script'
 import { useEffect, useState } from 'react';
 const ContactUs = () => {
-    const [captcha, setCaptcha] = useState('false')
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [number, setNumber] = useState('')
