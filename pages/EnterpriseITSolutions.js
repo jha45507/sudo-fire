@@ -24,19 +24,19 @@ const EnterpriseITSolutions = () => {
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-            <section className="flex w-[100%] justify-around items-center ">
-                <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#ECM">Enterprise Content Management</a>
+            <section className="w-[100%]">
+                <ul className="flex justify-around items-center space-y-2 flex-col lg:flex-row">
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                        <a className="" href="#ECM">Enterprise Content Management</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#ESM">Ecommerce & Stock Management</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                        <a className="" href="#ESM">Ecommerce & Stock Management</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#CBA">CRMs & Business Applications</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                        <a className="" href="#CBA">CRMs & Business Applications</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#LM">Legacy Modernization</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                        <a className="" href="#LM">Legacy Modernization</a>
                     </li>
                 </ul>
             </section>

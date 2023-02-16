@@ -24,14 +24,14 @@ const Internet_of_Things = () => {
 
             <section className="flex w-[100%] justify-around items-center">
                 <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#HA">Home Automation</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                        <a className="" href="#HA">Home Automation</a>
                     </li>
-                    <li className="">
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
                         <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#IA">Industrial Automation</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#SEI">Smart Environment Implementation</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                        <a className="" href="#SEI">Smart Environment Implementation</a>
                     </li>
                 </ul>
             </section>
@@ -94,7 +94,7 @@ const Internet_of_Things = () => {
             <div className="my-16 w-[100%]">
                 <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to IoT Solutions</h1>
 
-                <div className=' flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
+                <div className=' flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div>
@@ -114,7 +114,7 @@ const Internet_of_Things = () => {
 
                 </div>
 
-                <div className='flex justify-around items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
+                <div className='flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div>

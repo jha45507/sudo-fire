@@ -71,10 +71,10 @@ import PleasuretoWorkWith from '../public/images/client/Pleasure toWork With.png
 
 const Clients = () => {
   return (
-    <div className='flex justify-between lg:px-[105px] items-center flex-col lg:flex-row space-y-10 lg:space-y-0 mt-28 lg:my-20 '>
+    <div className='flex justify-between xl:px-[110px] lg:px-[70px] items-center flex-col lg:flex-row space-y-10 lg:space-y-0 mt-28 lg:my-20 '>
       <div className='space-y-2 lg:space-y-0'>
-        <h1 className='md:text-5xl text-3xl md:text-start text-center text-red-500'>Our Clients</h1>
-        <p className='md:text-2xl text-xl md:text-start text-center text-gray-600'>Pleasure to work with </p>
+        <h1 className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl lg:text-start text-center text-red-400'>Our Clients</h1>
+        <p className='xl:text-2xl lg:text-xl md:text-lg text-md lg:text-start text-center text-gray-600'>Pleasure to work with </p>
       </div>
 
       <div className='scroll-up rounded-md flex justify-center'>

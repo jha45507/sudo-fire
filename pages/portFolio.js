@@ -27,9 +27,9 @@ const PortFolio = () => {
     <div className="mt-28 lg:mt-0">
       <div className="flex justify-around items-center flex-col lg:flex-row ">
 
-        <div className="space-y-3 lg:space-y-0">
-          <h2 className="md:text-5xl text-3xl text-center lg:text-left font-bold text-red-500">Portfolio</h2>
-          <p className="md:text-xl text-lg text-center lg:text-left text-gray-600">Our portfolio spans a variety of  <br />industries across continents.</p>
+        <div className="space-y-3">
+          <h2 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl lg:text-start text-center text-red-400">Portfolio</h2>
+          <p className="xl:text-2xl lg:text-xl md:text-lg text-md lg:text-start text-center text-gray-600">Our portfolio spans a variety of<br />industries across continents.</p>
         </div>
 
         <div className="my-5">
@@ -262,8 +262,8 @@ const PortFolio = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
-          <div className="bg-gray-200 h-[50%]">
-            <Image className='h-[100%]' src={praktdaan} />
+          <div className="bg-gray-200">
+            <Image className='xl:h-[90vh] lg:h-[70vh] md:h-[56vh]' src={praktdaan} />
           </div>
           <div className='text-center my-5'>
             <h2 className="text-2xl text-red-500 my-2">Raktdaan</h2>
