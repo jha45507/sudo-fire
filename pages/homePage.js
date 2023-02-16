@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react'
 import Image from 'next/image'
+
 import homeimg from '../public/images/home-img.png'
-import AMSharma from '../public/images/A.MSharma.png'
-import Abhishek_Gautam from '../public/images/Abhishek Gautam.png'
-import adarshmatta from '../public/images/adarshmatta.png'
+
+import AMSharma from '../public/images/A.MSharma-removebg-preview.png'
+import Abhishek_Gautam from '../public/images/Abhishek_Gautam-removebg-preview.png'
+import adarshmatta from '../public/images/adarshmatta-removebg-preview.png'
 
 import play_icon from '../public/images/play_icon.png'
 import Group653 from '../public/images/Group653.png'
@@ -44,7 +46,7 @@ const HomePage = () => {
                 <h2 className="md:text-4xl text-2xl text-center font-bold text-gray-600 lg:pb-10 pb-5 md:pt-4 pt-6">Our Services</h2>
                 <div className="flex flex-col md:flex-row md:justify-center md:items-start items-center w-[100%] lg:space-x-10 md:space-x-3 space-x-0 space-y-10 md:space-y-0">
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
-                        <div className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        <Link href="/EnterpriseITSolutions" className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
                                 <Image className="w-1/4 my-3" src={Group653} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Enterprise IT Solutions</h4>
@@ -54,8 +56,8 @@ const HomePage = () => {
                                 <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
-                        </div>
-                        <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        </Link>
+                        <Link href="/Internet_of_Things" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
                                 <Image className="w-1/4 my-3" src={Path483} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Internet of Things (IoT)</h4>
@@ -65,11 +67,12 @@ const HomePage = () => {
                                 <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
-                        </div>
+                        </Link>
+
                     </div>
 
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
-                        <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        <Link href="/SaaS&SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
                                 <Image className="w-1/4 my-3" src={Group649} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
@@ -79,8 +82,9 @@ const HomePage = () => {
                                 <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
-                        </div>
-                        <div className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        </Link>
+
+                        <Link href="/Devops&Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
                                 <Image className="w-1/4 my-3" src={Group650} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>
@@ -90,7 +94,7 @@ const HomePage = () => {
                                 <Image className="w-5" src={play_icon} />
                                 Read More..
                             </Link>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -103,7 +107,7 @@ const HomePage = () => {
                         <div className=' w-[100%] items-start md:items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_first_ref}>
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
-                                    <Image src={AMSharma} className="bg-white m-auto md:w-[100%] w-[150px] rounded-md" />
+                                    <Image src={AMSharma} className=" m-auto md:w-[100%] w-[150px] rounded-md bg-white" />
                                 </div>
                                 <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
 
@@ -118,7 +122,7 @@ const HomePage = () => {
                         <div className='w-[100%] items-start md:items-center flex justify-center px-5 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_second_ref}>
                             <div className=' w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
-                                    <Image src={Abhishek_Gautam} className="bg-white md:w-[100%] w-[150px] m-auto rounded-md" />
+                                    <Image src={Abhishek_Gautam} className="md:w-[100%] w-[150px] m-auto rounded-md d bg-white" />
                                 </div>
                                 <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
                                     <h3 className='md:text-left text-center md:text-2xl text-md text-white'>Abhishek Gautam</h3>
@@ -132,7 +136,7 @@ const HomePage = () => {
                         <div className=' w-[100%] items-start md:items-center flex justify-center px-2 rounded-sm lg:h-[48vh] h-[55vh] m-0' ref={img_third_ref}>
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
-                                    <Image src={adarshmatta} className="md:w-[100%] w-[150px] bg-white m-auto rounded-md" />
+                                    <Image src={adarshmatta} className="md:w-[100%] w-[150px] m-auto rounded-md d bg-white" />
                                 </div>
                                 <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
                                     <h3 className='md:text-left text-center md:text-2xl text-md text-white'>Mr. Adarsh Matta</h3>

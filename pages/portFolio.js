@@ -99,7 +99,7 @@ const PortFolio = () => {
               Book (SIB). */}
             </p>
             <Link rel="noreferrer" href="http://aircentralstore.org/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -130,7 +130,7 @@ const PortFolio = () => {
 
             </p>
             <Link rel="noreferrer" href="http://nrdcindia.com/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -154,7 +154,7 @@ const PortFolio = () => {
               along with services really are diverse. */}
             </p>
             <Link rel="noreferrer" href="http://biryaniqueen.com/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -184,7 +184,7 @@ const PortFolio = () => {
               rejuvenating beverage, iced or piping hot! */}
             </p>
             <Link rel="noreferrer" href="http://chabar.in/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -209,7 +209,7 @@ const PortFolio = () => {
                             Facilities Management Services. */}
             </p>
             <Link rel="noreferrer" href="http://www.exceamindia.in/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -232,7 +232,7 @@ const PortFolio = () => {
               our seasoned team of 50+ expert dietitians and health coaches. */}
             </p>
             <Link rel="noreferrer" href="http://instafitness.in/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -255,7 +255,7 @@ const PortFolio = () => {
               and known as 3i-infotech BPO). */}
             </p>
             <Link rel="noreferrer" href="http://iris-corp.com/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -277,7 +277,7 @@ const PortFolio = () => {
               people, it is also incredibly versatile. */}
             </p>
             <Link rel="noreferrer" href="http://www.raktdaan.canwinn.org/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -301,7 +301,7 @@ const PortFolio = () => {
                             banks through Wi-Fi Networks. */}
             </p>
             <Link rel="noreferrer" href="http://tkbglobalschools.com/" className="" target="_blank">
-              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>
@@ -325,7 +325,7 @@ const PortFolio = () => {
               variety of wedding vendors within minutes. */}
             </p>
             <Link rel="noreferrer" href="http://medicause.in/" className="" target="_blank">
-              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
+              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
                 View Project
               </button>
             </Link>

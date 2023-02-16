@@ -7,21 +7,26 @@ const ContactUs = () => {
     const [number, setNumber] = useState('')
     const [massage, setMassage] = useState('')
 
-    const SendMail = () => {
-        console.log("clicked hare")
+    
+    const SendMail = async (e) => {
+        
         e.preventDefault();
-        fetch("https://teamage.in/accounts/api/v1/contact_us", {
-            method: "post",
+        const response = await fetch(`https://teamage.in/accounts/api/v1/contact_us`, {
+            method: 'POST',
             headers: {
-                "Content-Type": "application/json",
+                'Content-Type': 'application/json',
             },
-            body: {
-                "name": name,
-                "email": email,
-                "phone_number": number,
-                "message": massage
-            },
+            body: JSON.stringify({ name, email, number, massage })
         })
+        const data = await response.json()
+        console.log(data)
+
+        setName("")
+        setEmail("")
+        setNumber("")
+        setMassage("")
+
+        alert("Saved your information")
     }
 
     useEffect(() => {
@@ -42,6 +47,8 @@ const ContactUs = () => {
             }
         }, false);
     }, [])
+
+
 
 
     return (
