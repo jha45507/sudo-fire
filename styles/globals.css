@@ -186,6 +186,13 @@ a {
   }
 }
 
+.slider_text{
+  border-radius: 125px;
+background: #bac5fd;
+box-shadow:  -5px 5px 15px #939cc8,
+             5px -5px 15px #e1eeff;
+}
+
 /* ========================= hamburger end =========================== */
 
 

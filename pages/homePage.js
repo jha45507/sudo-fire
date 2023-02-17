@@ -98,7 +98,62 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] md:h-[70vh] h-[65vh] bg-gradient-to-r from-indigo-300 to-red-400  space-y-5 relative rounded-md overflow-hidden'>
+            <div className='carousel w-[95%] md:w-[82%] lg:h-[75vh] h-[82vh] space-y-5 relative rounded-md overflow-hidden flex lg:justify-start justify-center items-center flex-col'>
+                <h1 className='text-center text-gray-600 md:text-4xl text-xl font-bold mt-8'>Industry leaders who vouch for us</h1>
+                <div className='lg:w-[82%] lg:h-[60vh] w-[95%] h-[80vh] bg-indigo-300'>
+                    <Swiper slidesPerView={1} autoplay={{ delay: 2000 }} loop={true} modules={[Thumbs]} thumbs={{ swiper: thumbsSwiper }}>
+                        <SwiperSlide>
+                            <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
+                                <div className='w-[100%] flex flex-col-reverse lg:flex-row justify-center items-center '>
+                                    <div className='lg:w-[45%] shadow-2xl lg:p-[50px] p-3 w-[90%] rounded-xl lg:mt-0 mt-5'>
+                                        <div className=''>
+                                            <p className='text-justify text-white lg:text-lg text-md'>Assistant Engineer to Director, ALL INDIA RADIO</p>
+                                            <p className='text-justify text-white lg:text-md text-sm lg:mt-10 mt-5' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
+                                        </div>
+                                    </div>
+                                    <div className='lg:w-[30%] lg:ml-16 w-[90%] lg:flex-none flex flex-col items-center'>
+                                        <Image src={AMSharma} className="lg:w-[200px] w-[150px] rounded-[50%] shadow-2xl p-2" />
+                                        <h3 className='text-left lg:ml-8 lg:text-2xl text-xl text-white'>A.M Sharma</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
+                                <div className='w-[100%] flex flex-col-reverse lg:flex-row justify-center items-center'>
+                                    <div className='lg:w-[45%] shadow-2xl lg:p-[50px] p-3 w-[90%] rounded-xl lg:mt-0 mt-5'>
+                                        <div className=''>
+                                            <p className='text-justify text-white lg:text-lg text-md'>IT HEAD, National Research Development Corporation</p>
+                                            <p className='text-justify text-white lg:text-md text-sm lg:mt-10 mt-5' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
+                                        </div>
+                                    </div>
+                                    <div className='lg:w-[30%] lg:ml-16 w-[90%] lg:flex-none flex flex-col items-center'>
+                                        <Image src={Abhishek_Gautam} className="lg:w-[200px] w-[150px] rounded-[50%] shadow-2xl p-2" />
+                                        <h3 className='text-left lg:ml-8 lg:text-2xl text-xl text-white'>Abhishek Gautam</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
+                                <div className='w-[100%] flex flex-col-reverse lg:flex-row justify-center items-center'>
+                                    <div className='lg:w-[45%] shadow-2xl lg:p-[50px] p-3 w-[90%] rounded-xl lg:mt-0 mt-5'>
+                                        <div className=''>
+                                            <p className='text-justify text-white lg:text-lg text-md'>CEO of ETA</p>
+                                            <p className='text-justify text-white lg:text-md text-sm lg:mt-10 mt-5' >We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
+                                        </div>
+                                    </div>
+                                    <div className='lg:w-[30%] lg:ml-16 w-[90%] lg:flex-none flex flex-col items-center'>
+                                        <Image src={adarshmatta} className="lg:w-[200px] w-[150px] rounded-[50%] shadow-2xl p-2" />
+                                        <h3 className='text-left lg:ml-8 lg:text-2xl text-xl text-white'>Mr. Adarsh Matta</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
+            {/* <div className='carousel w-[95%] lg:w-3/4 lg:h-[65vh] md:h-[70vh] h-[65vh] bg-gradient-to-r from-indigo-300 to-red-400  space-y-5 relative rounded-md overflow-hidden'>
 
                 <h1 className='text-center text-white md:text-4xl text-xl font-bold mt-8'>Industry leaders who vouch for us</h1>
 
@@ -108,10 +163,9 @@ const HomePage = () => {
                             <div className='w-[100%] flex flex-col md:flex-row justify-center md:items-start items-center md:space-x-20 space-x-0'>
                                 <div className='flex justify-center items-center flex-col space-y-3 lg:w-[24%] md:w-[35%]'>
                                     <Image src={AMSharma} className=" m-auto md:w-[100%] w-[150px] rounded-md bg-white" />
+                                    <h3 className='md:text-left text-center md:text-2xl text-md text-white'>A.M Sharma</h3>
                                 </div>
                                 <div className='md:mt-0 mt-4 flex justify-start items-center md:items-start flex-col md:w-[40%] w-[100%] space-y-5'>
-
-                                    <h3 className='md:text-left text-center md:text-2xl text-md text-white'>A.M Sharma</h3>
                                     <p className='text-justify text-white text-sm md:text-lg xl:text-xl'>Assistant Engineer to Director, ALL INDIA RADIO</p>
                                     <p className='text-justify text-white text-sm xl:text-lg pt-4' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
                                 </div>
@@ -147,7 +201,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                 </Swiper>
-            </div>
+            </div> */}
         </div >
     )
 }
