@@ -12,7 +12,7 @@ import IOTbuild from '../public/images/services/IOT-build.png'
 const Internet_of_Things = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-center justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
+            <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Iot} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Internet of Things</h2>
@@ -22,8 +22,8 @@ const Internet_of_Things = () => {
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
 
-            <section className="flex w-[100%] justify-around items-center">
-                <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
+            <section className="w-[100%] lg:sticky lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white flex justify-around items-center shadow-md">
+                <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
                     <li className="text-gray-400 hover:text-red-400 text-center text-xl">
                         <a className="" href="#HA">Home Automation</a>
                     </li>
@@ -36,7 +36,7 @@ const Internet_of_Things = () => {
                 </ul>
             </section>
 
-            <div id="HA" className="scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
+            <div id="HA" className="scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={IOThome} className="lg:w-[50%] w-[75%]" />
                 </div>
@@ -46,7 +46,7 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div id="IA" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="IA" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
                     <Image src={IOTindustrial} />
                 </div>
@@ -70,7 +70,7 @@ const Internet_of_Things = () => {
                 </div>
             </div>
 
-            <div id="SEI" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="SEI" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
                     <Image src={IOTsmart} className="lg:w-[50%] w-[75%]" />
                 </div>

@@ -4,7 +4,6 @@ import net from '../public/images/services/side_IT-solutions-Image.png'
 import EISecm from '../public/images/services/EISecm.png'
 import EISesm from '../public/images/services/EISesm.png'
 import EISlm from '../public/images/services/EISlm.png'
-// import EISlm from '../public/images/services/EISlm.png'
 import EIScd from '../public/images/services/EIScd.png'
 import EISdr from '../public/images/services/EISdr.png'
 import EISux from '../public/images/services/EISux.png'
@@ -16,7 +15,7 @@ import Group315 from '../public/images/services/Group 315.png'
 const EnterpriseITSolutions = () => {
     return (
         <div className='w-[100%]'>
-            <div className="bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 mb-10 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
+            <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
@@ -24,8 +23,8 @@ const EnterpriseITSolutions = () => {
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-            <section className="w-[100%]">
-                <ul className="flex justify-around items-center space-y-2 flex-col lg:flex-row">
+            <section className="w-[100%] lg:sticky lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white flex justify-around items-center shadow-md">
+                <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
                     <li className="text-gray-400 hover:text-red-400 text-center text-xl">
                         <a className="" href="#ECM">Enterprise Content Management</a>
                     </li>
@@ -41,7 +40,7 @@ const EnterpriseITSolutions = () => {
                 </ul>
             </section>
             {/* <hr className='w-[90%] border border-gray-600 ' /> */}
-            <div className=" scroll-mt-28 flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
+            <div className=" scroll-mt-44 flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={EISecm} className="" />
                 </div>
@@ -62,7 +61,7 @@ const EnterpriseITSolutions = () => {
                 </div>
             </div>
 
-            <div className="scroll-mt-28 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
+            <div className="scroll-mt-44 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden">
                     <Image src={EISesm} className="" />
                 </div>
@@ -85,7 +84,7 @@ const EnterpriseITSolutions = () => {
                     <Image src={EISesm} className="" />
                 </div>
             </div>
-            <div className="scroll-mt-28 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
+            <div className="scroll-mt-44 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={Group315} className="w-[200px] h-[120px] lg:h-[150px]" />
                 </div>
@@ -104,7 +103,7 @@ const EnterpriseITSolutions = () => {
                     </p>
                 </div>
             </div>
-            <div className="scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
+            <div className="scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
                     <Image src={EISlm} />
                 </div>

@@ -12,7 +12,7 @@ import DCpms from '../public/images/services/DC-pms.png'
 const Devops_Cloud_Services = () => {
     return (
         <div className='w-[100%]'>
-            <div className="flex lg:justify-center justify-center lg:space-x-20 space-x-0  items-center my-10 flex-col lg:flex-row px-8 lg:px-0 mt-20 lg:mt-0 mb-10 bg-blue-100">
+            <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={DC} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3">Devops & Cloud Services</h2>
@@ -21,8 +21,8 @@ const Devops_Cloud_Services = () => {
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
 
-            <section className="flex w-[100%] justify-around items-center">
-                <ul className="flex w-[100%] justify-around items-center space-y-2 flex-col lg:flex-row">
+            <section className="w-[100%] lg:sticky lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white flex justify-around items-center shadow-md">
+                <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
                     <li className="">
                         <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#CL">Cloud Consulting</a>
                     </li>
@@ -37,7 +37,7 @@ const Devops_Cloud_Services = () => {
                     </li>
                 </ul>
             </section>
-            <div id="CL" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CL" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={DCcc} className="" />
                 </div>
@@ -60,7 +60,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="CA" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CA" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="w-[40%] md:w-[15%] lg:hidden block">
                     <Image src={DCca} className="" />
                 </div>
@@ -88,7 +88,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="CO" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="CO" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
                     <Image src={DCco} className="" />
                 </div>
@@ -112,7 +112,7 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div id="M&S" className='scroll-mt-28 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
+            <div id="M&S" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="md:w-[18%] w-[40%] lg:hidden block">
                     <Image src={DCms} className="" />
                 </div>
