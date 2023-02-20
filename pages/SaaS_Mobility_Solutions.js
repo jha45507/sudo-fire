@@ -10,26 +10,44 @@ import SAASacdd from '../public/images/services/SAASacdd.png'
 import SAASadi from '../public/images/services/SAASadi.png'
 import SAASms from '../public/images/services/SAASms.png'
 
+import { useRef } from "react"
+import { RiArrowDropDownLine } from 'react-icons/ri'
 
 const SaaS_Mobility_Solutions = () => {
+    
+    const linkRef = useRef()
+    const rotateRef = useRef()
+
+    const clickArrow = () => {
+        if(linkRef.current.classList.contains('link_list') ){
+            linkRef.current.classList.toggle('hidden')
+            linkRef.current.classList.toggle('flex')
+            rotateRef.current.childNodes[0].classList.toggle('rotate-180')
+        }
+    }
     return (
         <div className='w-[100%]'>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Saas} alt="" />
                 <div className="lg:w-[32%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">SaaS & Mobility Solutions</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-blue-100 ">SaaS & Mobility Solutions</h2>
                     <p className="text-justify text-gray-700">Enabling data to be accessed from any device with an internet connection&apos; Plus, vendors take care of hosting and maintaining the servers, databases, and the code that makes up the application. Providing crucial benefits such as reduced time to draw a profit, Lower implementational costs, Scalability & Integration, New Releases & ease of use & ease of performing Proof of Concepts. Mobility solutions provide seamless flow of information on devices linked together. The omnipresent availability of data and the ability to access it anywhere at any time through internet enabled devices like smartphones and portable computers makes the most of what this service has to offer..</p>
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-
-            <section className="w-[100%] lg:sticky lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white flex justify-around items-center shadow-md">
+            <span onClick={clickArrow} className='sticky top-2 ml-auto text-2xl lg:hidden ' ref={rotateRef}>
+            <RiArrowDropDownLine className="arrow" /> 
+            </span>
+            <section className="w-[100%] sticky top-[6vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 link_list" ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#RSS">Redefining Software Services</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#RSS">Redefining Software Services</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#NAMS">New Age Mobility Solutions</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#NAMS">New Age Mobility Solutions</a>
+                    </li>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#approach_SaaS_Mobility_Solutions">approach SaaS Mobility Solutions</a>
                     </li>
                 </ul>
             </section>
@@ -39,7 +57,7 @@ const SaaS_Mobility_Solutions = () => {
                     <Image src={SAASrss} className="lg:w-[50%] w-[75%]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Redefining Software Services</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Redefining Software Services</h2>
                     <p className="text-justify">
                         The on-demand prudence that we’re breathing in has brought in a new generation of
                         Software as a Service (SaaS) occasion and everyday benefit.<br /><br />
@@ -57,7 +75,7 @@ const SaaS_Mobility_Solutions = () => {
                     <Image src={SAASnams} />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">New Age Mobility Solutions</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">New Age Mobility Solutions</h2>
                     <p className="text-justify">
                         Specific mobility solutions to reduce the overall complexities that are actually
                         involved in the management of the company’s data on various mobile devices.
@@ -77,8 +95,8 @@ const SaaS_Mobility_Solutions = () => {
                 </div>
             </div>
 
-            <div className="my-16 w-[100%]">
-                <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to SaaS & Mobility Solutions</h1>
+            <div className="my-16 w-[100%]" id="approach_SaaS_Mobility_Solutions">
+                <h1 className="text-red-400 text-center text-3xl px-2 my-0 lg:static sticky top-0 bg-white">Our approach to SaaS & Mobility Solutions</h1>
 
                 <div className='flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 

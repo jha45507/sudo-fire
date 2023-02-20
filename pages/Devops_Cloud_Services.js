@@ -9,31 +9,52 @@ import DCaes from '../public/images/services/DC-aes.png'
 import DCpast from '../public/images/services/DC-past.png'
 import DCac from '../public/images/services/DC-ac.png'
 import DCpms from '../public/images/services/DC-pms.png'
+
+import { RiArrowDropDownLine } from 'react-icons/ri'
+import { useRef } from "react"
+
 const Devops_Cloud_Services = () => {
+
+    const linkRef = useRef()
+    const rotateRef = useRef()
+
+    const clickArrow = () => {
+        if(linkRef.current.classList.contains('link_list') ){
+            linkRef.current.classList.toggle('hidden')
+            linkRef.current.classList.toggle('flex')
+            rotateRef.current.childNodes[0].classList.toggle('rotate-180')
+        }
+    }
+
     return (
-        <div className='w-[100%]'>
+        <div className='w-[100%] relative '>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={DC} alt="" />
                 <div className="lg:w-[32%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Devops & Cloud Services</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-blue-100 ">Devops & Cloud Services</h2>
                     <p className="text-justify text-gray-700">Services available via remote cloud computing server rather than an on-site server enabling remote access&apos; These scalable solutions are managed by solution providers/vendors thereby providing users with access to computing services such as analytics or networking via the internet. Offering powerful benefits through greater productivity and enhanced efficiency to reducing cost significantly and simplifying IT management. Cloud computing also enables mobile services that employees are using increasingly when accessing corporate data and applications. Cloud Services provide added advantages like higher speeds, better security & flexible scaling.</p>
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-
-            <section className="w-[100%] lg:sticky lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white flex justify-around items-center shadow-md">
+            <span onClick={clickArrow} className='sticky top-2 ml-auto text-2xl lg:hidden ' ref={rotateRef}>
+            <RiArrowDropDownLine className="arrow" /> 
+            </span>
+            <section ref={linkRef} className="w-[100%] sticky lg:top-[12vh] top-[6vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 link_list">
                 <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#CL">Cloud Consulting</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm ">
+                        <a className="" href="#CL">Cloud Consulting</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#CA">Cloud Architecture</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#CA">Cloud Architecture</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#CO">Cost Optimization</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#CO">Cost Optimization</a>
                     </li>
-                    <li className="">
-                        <a className="text-gray-400 hover:text-red-400 text-center text-xl" href="#M&S">Migration & Security</a>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#M&S">Migration & Security</a>
+                    </li>
+                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#DevOps_Solutions">DevOps Solutions</a>
                     </li>
                 </ul>
             </section>
@@ -42,7 +63,7 @@ const Devops_Cloud_Services = () => {
                     <Image src={DCcc} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Cloud Consulting</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Cloud Consulting</h2>
                     <p className="text-justify">
                         By establishing a picture of how technology can help extend business purpose, we align
                         the
@@ -66,7 +87,7 @@ const Devops_Cloud_Services = () => {
                 </div>
 
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3"> Cloud Architecture</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white"> Cloud Architecture</h2>
                     <p className=" text-justify">
                         The whole cloud architecture is point at providing the
                         users with elevated bandwidth, allowing users to have uninterrupted entrance
@@ -93,7 +114,7 @@ const Devops_Cloud_Services = () => {
                     <Image src={DCco} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Cost Optimization</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Cost Optimization</h2>
                     <p className=" text-justify">
                         Cloud cost optimization is the process of bringing down
                         your overall cloud spend by recognizing mismanaged resources, getting rid of
@@ -117,7 +138,7 @@ const Devops_Cloud_Services = () => {
                     <Image src={DCms} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Migration & Security</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Migration & Security</h2>
                     <p className=" text-justify">
                         Operating digital assets like data, workloads, IT resources, or
                         applications, to cloud infrastructure. Cloud migration often refers to
@@ -138,8 +159,8 @@ const Devops_Cloud_Services = () => {
                 </div>
             </div>
 
-            <div className="my-16 w-[100%]">
-                <h1 className="text-red-400 text-center text-3xl px-2 mt-10">Our approach to DevOps & Cloud Solutions</h1>
+            <div className="my-16 w-[100%]" id="DevOps_Solutions">
+                <h1 className="text-red-400 text-center text-3xl px-2 mt-10 lg:static sticky top-0 bg-white">Our approach to DevOps & Cloud Solutions</h1>
                 <div className="w-[100%] flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-center items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">

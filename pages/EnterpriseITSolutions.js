@@ -12,30 +12,62 @@ import EISte from '../public/images/services/EISte.png'
 import EISms from '../public/images/services/EISms.png'
 import Group315 from '../public/images/services/Group 315.png'
 
+import { useEffect, useState } from "react"
+import { useRef } from "react"
+import { RiArrowDropDownLine } from 'react-icons/ri'
+
 const EnterpriseITSolutions = () => {
+    const linkRef = useRef()
+    const rotateRef = useRef()
+
+    const clickArrow = () => {
+        if (linkRef.current.classList.contains('link_list')) {
+            linkRef.current.classList.toggle('hidden')
+            linkRef.current.classList.toggle('flex')
+            rotateRef.current.childNodes[0].classList.toggle('rotate-180')
+        }
+    }
+
+    useEffect(() => {
+        const arrow = document.getElementById("arrow")
+        window.addEventListener("scroll", () => {
+            if( arrow.classList.contains('aaa')){
+                // arrow.classList.remove('hidden')
+                arrow.classList.toggle('show', window.scrollY > 1100)
+                arrow.classList.toggle('hidden', window.scrollY < 1100)
+            }
+        });
+    }, [])
+
     return (
         <div className='w-[100%]'>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Enterprise IT Solutions</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-blue-100 ">Enterprise IT Solutions</h2>
                     <p className="text-justify text-gray-700">To integrate multiple facets of a company&apos;s business through the interchange of information from various business process areas and related databases. Enable your company to retrieve and disseminate mission-critical data throughout the organization, providing management with real-time operating information. Overcoming physical boundaries through solutions of content management, e-commerce & stock management, CRMs, business applications along with legacy project modernisations and expanding them over the web so billions of users have immediate access to it at their disposal.</p>
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-            <section className="w-[100%] lg:sticky lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white flex justify-around items-center shadow-md">
+            <span onClick={clickArrow} className='lg:hidden hidden aaa' ref={rotateRef} id="arrow">
+                <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
+            </span>
+            <section className="w-[100%] sticky top-[6vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden link_list z-50" ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#ECM">Enterprise Content Management</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#ESM">Ecommerce & Stock Management</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#CBA">CRMs & Business Applications</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center text-xl">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#LM">Legacy Modernization</a>
+                    </li>
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                        <a className="" href="#approach_Enterprise_IT_Solutions">approach Enterprise IT Solutions</a>
                     </li>
                 </ul>
             </section>
@@ -45,7 +77,7 @@ const EnterpriseITSolutions = () => {
                     <Image src={EISecm} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Enterprise Content Management</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3 sticky top-0 bg-white lg:static">Enterprise Content Management</h2>
                     <p className="text-justify">
                         A system solution designed to manage an organization’s documents and contents.
                         Unstructured information including Word documents, Excel spreadsheets, PDFs and
@@ -66,7 +98,7 @@ const EnterpriseITSolutions = () => {
                     <Image src={EISesm} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Ecommerce & Stock Management</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3  sticky top-0 bg-white lg:static">Ecommerce & Stock Management</h2>
                     <p className="text-justify">
                         The act of measuring the amount, location, pricing, and mix of products available
                         from and of one’s business. Through ecommerce inventory management, businesses
@@ -89,7 +121,7 @@ const EnterpriseITSolutions = () => {
                     <Image src={Group315} className="w-[200px] h-[120px] lg:h-[150px]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">CRMs & Business Applications</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3  sticky top-0 bg-white lg:static">CRMs & Business Applications</h2>
                     <p className="text-justify">
                         A combination of business strategies, software and processes that help build long
                         lasting relationships between companies and their customers, referring to all
@@ -108,7 +140,7 @@ const EnterpriseITSolutions = () => {
                     <Image src={EISlm} />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3">Legacy Modernization</h2>
+                    <h2 className="text-red-400 text-center text-3xl my-3  sticky top-0 bg-white lg:static">Legacy Modernization</h2>
                     <p className="text-justify">
                         Updating all or some of your IT stack to better support your business goals and
                         processes. Fast applications, systems that support connectivity, and platforms
@@ -125,9 +157,9 @@ const EnterpriseITSolutions = () => {
                 </div>
             </div>
 
-            <div className="my-16 w-[100%]">
-                <div className="">
-                    <h1 className="text-red-400 text-center text-3xl px-2 my-0">Our approach to Enterprise IT Solutions</h1>
+            <div className="my-16 w-[100%]" id="approach_Enterprise_IT_Solutions">
+                <div className="lg:static sticky top-0 bg-white">
+                    <h1 className="text-red-400 text-center text-3xl px-2 my-0 ">Our approach to Enterprise IT Solutions</h1>
                 </div>
                 <div className="w-[100%] flex justify-around lg:items-start items-center my-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
