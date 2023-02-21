@@ -15,7 +15,7 @@ import bg from '../public/images/5.png'
 
 import bgg from '../public/images/side-img.png'
 
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Footer = () => {
 
@@ -27,13 +27,20 @@ const Footer = () => {
     }
 	
 	useEffect(() => {
+		if(window.outerWidth < 768){
+			setBgi(bg.src)
+		}
+		else{
+			setBgi(bgg.src)
+		}
 		window.addEventListener("resize", ()=>{
-			if(window.screen.width < 768){
+			if(window.outerWidth < 768){
 				setBgi(bg.src)
 			}
 			else{
 				setBgi(bgg.src)
 			}
+			console.log(window.outerWidth)
 		});
 	}, [bgi])
 	

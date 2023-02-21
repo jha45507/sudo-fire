@@ -20,7 +20,7 @@ import pnrdc from '../public/images/portfolio/p-nrdc.jpeg'
 import pair from '../public/images/portfolio/p-air.jpeg'
 import pbq from '../public/images/portfolio/p-bq.jpeg'
 import praktdaan from '../public/images/portfolio/p-rd.jpeg'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const PortFolio = () => {
   return (
