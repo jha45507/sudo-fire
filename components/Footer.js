@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import { FaHome } from 'react-icons/fa'
@@ -11,12 +11,35 @@ import { RiWhatsappFill } from 'react-icons/ri'
 import { BiCurrentLocation } from 'react-icons/bi'
 import sidelogo from '../public/images/side-logo2.png'
 
+import bg from '../public/images/5.png'
+
+import bgg from '../public/images/side-img.png'
+
 import Link from 'next/Link'
 
 const Footer = () => {
+
+	const [bgi, setBgi] = useState(bgg.src)
+	let styling = {
+        backgroundImage: `url(${bgi})`,
+        width: '100%',
+        height: '100%',
+    }
+	
+	useEffect(() => {
+		window.addEventListener("resize", ()=>{
+			if(window.screen.width < 768){
+				setBgi(bg.src)
+			}
+			else{
+				setBgi(bgg.src)
+			}
+		});
+	}, [bgi])
+	
 	return (
 		<>
-			<div className='mt-12 side-img'>
+			<div className='mt-12' style={styling}>
 				<div className='pt-10 w-full space-y-10 flex flex-col lg:flex-row md:justify-evenly lg:items-start items-center'>
 					<div className='lg:w-[20%] md:w-[50%] w-[80%] leading-7 text-center flex flex-col lg:items-start items-center mt-4 space-y-5'>
 						<Image className='w-[200px]' src={sidelogo} />

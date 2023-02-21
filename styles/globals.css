@@ -43,7 +43,7 @@ a {
 }
 
 .bg-img-banner {
-  background: url('../public/images/side-img.png');
+  background-image: url('../public/images/side-img.png');
   width: 100vw;
   height: 88vh;
 }

@@ -46,7 +46,7 @@ const HomePage = () => {
     return (
         <div className="flex items-center md:justify-center justify-end flex-col md:space-y-6 space-y-0 mt-20 lg:mt-0">
 
-            <div className='flex flex-col md:flex-row md:justify-around justify-end items-center bg-img-banner'>
+            <div className='flex flex-col md:flex-row md:justify-around justify-end items-center' style={styling}>
                 <div className="sm:mt-60 md:mt-0">
                     <h1 className='text-center md:text-left'><strong className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-gray-600 '>Building Solutions <br /> for Digital Age</strong></h1>
                     <div className='xl:my-8 md:my-5 my-10 xl:text-xl lg:text-lg text-md text-center md:text-left'>
