@@ -29,27 +29,24 @@ const ContactUs = () => {
         alert("Saved your information")
     }
 
-    useEffect(() => {
-        window.onload = function () {
-            var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
-            recaptcha.required = true;
-            recaptcha.oninvalid = function (e) {
-                // do something
-                $(".capchaError").html("Please Check Captcha");
-                return false;
-            }
-        }
-        var form = document.getElementById('contact-form'); // form has to have ID: <form id="formID">
-        // form.noValidate = true;
-        form.addEventListener('submit', function (event) { // listen for form submitting
-            if (!event.target.checkValidity()) {
-                event.preventDefault(); // dismiss the default functionality
-            }
-        }, false);
-    }, [])
-
-
-
+    // useEffect(() => {
+    //     window.onload = function () {
+    //         var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
+    //         recaptcha.required = true;
+    //         recaptcha.oninvalid = function (e) {
+    //             // do something
+    //             $(".capchaError").html("Please Check Captcha");
+    //             return false;
+    //         }
+    //     }
+    //     var form = document.getElementById('contact-form'); // form has to have ID: <form id="formID">
+    //     // form.noValidate = true;
+    //     form.addEventListener('submit', function (event) { // listen for form submitting
+    //         if (!event.target.checkValidity()) {
+    //             event.preventDefault(); // dismiss the default functionality
+    //         }
+    //     }, false);
+    // }, [])
 
     return (
         <div className='p-5 mt-10 lg:mt-0'>

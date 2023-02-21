@@ -49,7 +49,7 @@ const Internet_of_Things = () => {
                 <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
             </span>
             <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center shadow-md hidden lg:lg:z-0 z-50 link_list"ref={linkRef}>
-                <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
+                <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#HA">Home Automation</a>
                     </li>

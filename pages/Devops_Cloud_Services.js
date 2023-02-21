@@ -51,7 +51,7 @@ const Devops_Cloud_Services = () => {
                 <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
             </span>
             <section ref={linkRef} className="w-[100%] sticky lg:top-[12vh] top-[5vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden lg:z-0 z-50 link_list">
-                <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
+                <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm ">
                         <a className="" href="#CL">Cloud Consulting</a>
                     </li>

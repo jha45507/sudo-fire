@@ -26,12 +26,22 @@ import Path483 from '../public/images/Path483.png'
 import Group649 from '../public/images/Group649.png'
 import Group650 from '../public/images/Group650.png'
 
+import bg from '../public/images/side-img.png'
+
+
 const HomePage = () => {
     swiperCore.use([Autoplay])
 
     let img_first_ref = useRef();
     let img_second_ref = useRef();
     let img_third_ref = useRef();
+
+    let styling = {
+        backgroundImage: `url(${bg.src})`,
+        width: '100vw',
+        height: '88vh',
+    }
+
 
     return (
         <div className="flex items-center md:justify-center justify-end flex-col md:space-y-6 space-y-0 mt-20 lg:mt-0">
@@ -104,10 +114,58 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='carousel w-[95%] md:w-[82%] lg:h-[75vh] h-[82vh] space-y-5 relative rounded-md overflow-hidden flex lg:justify-start justify-center items-center flex-col'>
+            <div className='xl:w-2/4 md:w-3/4 w-[95%] h-full'>
+                <h1 className='text-center lg:text-4xl md:text-3xl text-2xl font-bold'>Industry leaders who vouch for us</h1>
+                <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} className="mySwiper"
+                    slidesPerView={1} autoplay={{ delay: 2500 }} loop={true} modules={[Pagination, Navigation]} >
+                    <SwiperSlide>
+                        <div className='w-full h-[50vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                            <div className='w-[60px] mt-8'>
+                                <Image src={AMSharma} className="rounded-full bg-gray-200" />
+                            </div>
+                            <div className='text-center mt-5 md:mb-14 mb-7 lg:w-3/4 w-[90%]'>
+                                <h3 className='text-lg text-gray-700'>A.M Sharma</h3>
+                                <p className='text-sm text-gray-300 lg:underline underline-offset-[20px]'>Assistant Engineer to Director, ALL INDIA RADIO</p>
+                            </div>
+                            <div className='text-center text-gray-400 text-sm lg:w-3/4 w-[90%] leading-6'>
+                                <p className='' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='w-full h-[50vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                            <div className='w-[60px] mt-8'>
+                                <Image src={Abhishek_Gautam} className="rounded-full bg-gray-200" />
+                            </div>
+                            <div className='text-center mt-5 md:mb-14 mb-7 lg:w-3/4 w-[90%]'>
+                                <h3 className='text-lg text-gray-700'>Abhishek Gautam</h3>
+                                <p className='text-sm text-gray-300 lg:underline underline-offset-[20px]'>IT HEAD, National Research Development Corporation</p>
+                            </div>
+                            <div className='text-center text-gray-400 text-sm lg:w-3/4 w-[90%] leading-6'>
+                                <p className='' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='w-full h-[50vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                            <div className='w-[60px] mt-8'>
+                                <Image src={adarshmatta} className="rounded-full bg-gray-200" />
+                            </div>
+                            <div className='text-center mt-5 md:mb-14 mb-7 lg:w-3/4 w-[90%]'>
+                                <h3 className='text-lg text-gray-700'>Mr. Adarsh Matta</h3>
+                                <p className='text-sm text-gray-300 lg:underline underline-offset-[20px]'>CEO of ETA</p>
+                            </div>
+                            <div className='text-center text-gray-400 text-sm lg:w-3/4 w-[90%] leading-6'>
+                                <p className='' >We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+            {/* <div className='carousel w-[95%] md:w-[82%] lg:h-[75vh] h-[82vh] space-y-5 relative rounded-md overflow-hidden flex lg:justify-start justify-center items-center flex-col'>
                 <h1 className='text-center text-gray-600 md:text-4xl text-xl font-bold mt-8'>Industry leaders who vouch for us</h1>
                 <div className='lg:w-[82%] lg:h-[60vh] w-[95%] h-[80vh] bg-indigo-300'>
-                    <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} FclassName="mySwiper" 
+                    <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} FclassName="mySwiper"
                         slidesPerView={1} autoplay={{ delay: 2500 }} loop={true} modules={[Pagination, Navigation]} >
                         <SwiperSlide>
                             <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
@@ -159,7 +217,7 @@ const HomePage = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-            </div>
+            </div> */}
         </div >
     )
 }
