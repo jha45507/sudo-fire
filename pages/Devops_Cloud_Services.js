@@ -11,7 +11,7 @@ import DCac from '../public/images/services/DC-ac.png'
 import DCpms from '../public/images/services/DC-pms.png'
 
 import { RiArrowDropDownLine } from 'react-icons/ri'
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 const Devops_Cloud_Services = () => {
 
@@ -26,6 +26,17 @@ const Devops_Cloud_Services = () => {
         }
     }
 
+    useEffect(() => {
+        const arrow = document.getElementById("arrow")
+        window.addEventListener("scroll", () => {
+            if( arrow.classList.contains('aaa')){
+                // arrow.classList.remove('hidden')
+                arrow.classList.toggle('show', window.scrollY > 1100)
+                arrow.classList.toggle('hidden', window.scrollY < 1100)
+            }
+        });
+    }, [])
+
     return (
         <div className='w-[100%] relative '>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
@@ -36,24 +47,24 @@ const Devops_Cloud_Services = () => {
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-            <span onClick={clickArrow} className='sticky top-2 ml-auto text-2xl lg:hidden ' ref={rotateRef}>
-            <RiArrowDropDownLine className="arrow" /> 
+            <span onClick={clickArrow} className='lg:hidden hidden aaa' ref={rotateRef} id="arrow">
+                <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
             </span>
-            <section ref={linkRef} className="w-[100%] sticky lg:top-[12vh] top-[6vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 link_list">
+            <section ref={linkRef} className="w-[100%] sticky lg:top-[12vh] top-[5vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden lg:z-0 z-50 link_list">
                 <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm ">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm ">
                         <a className="" href="#CL">Cloud Consulting</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#CA">Cloud Architecture</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#CO">Cost Optimization</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#M&S">Migration & Security</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#DevOps_Solutions">DevOps Solutions</a>
                     </li>
                 </ul>
@@ -63,7 +74,7 @@ const Devops_Cloud_Services = () => {
                     <Image src={DCcc} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Cloud Consulting</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Cloud Consulting</h2>
                     <p className="text-justify">
                         By establishing a picture of how technology can help extend business purpose, we align
                         the
@@ -87,7 +98,7 @@ const Devops_Cloud_Services = () => {
                 </div>
 
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white"> Cloud Architecture</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white"> Cloud Architecture</h2>
                     <p className=" text-justify">
                         The whole cloud architecture is point at providing the
                         users with elevated bandwidth, allowing users to have uninterrupted entrance
@@ -114,7 +125,7 @@ const Devops_Cloud_Services = () => {
                     <Image src={DCco} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Cost Optimization</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Cost Optimization</h2>
                     <p className=" text-justify">
                         Cloud cost optimization is the process of bringing down
                         your overall cloud spend by recognizing mismanaged resources, getting rid of
@@ -138,7 +149,7 @@ const Devops_Cloud_Services = () => {
                     <Image src={DCms} className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Migration & Security</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Migration & Security</h2>
                     <p className=" text-justify">
                         Operating digital assets like data, workloads, IT resources, or
                         applications, to cloud infrastructure. Cloud migration often refers to
@@ -160,7 +171,7 @@ const Devops_Cloud_Services = () => {
             </div>
 
             <div className="my-16 w-[100%]" id="DevOps_Solutions">
-                <h1 className="text-red-400 text-center text-3xl px-2 mt-10 lg:static sticky top-0 bg-white">Our approach to DevOps & Cloud Solutions</h1>
+                <h1 className="text-red-400 text-center lg:text-3xl text-2xl px-2 mt-10 lg:static sticky top-0 bg-white">Our approach to DevOps & Cloud Solutions</h1>
                 <div className="w-[100%] flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-center items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">

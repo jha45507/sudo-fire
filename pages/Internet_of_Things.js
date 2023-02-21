@@ -9,7 +9,7 @@ import IOTtranslate from '../public/images/services/IOT-translate.png'
 import IOTarchitech from '../public/images/services/IOT-architech.png'
 import IOTbuild from '../public/images/services/IOT-build.png'
 
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { RiArrowDropDownLine } from 'react-icons/ri'
 
 const Internet_of_Things = () => {
@@ -24,6 +24,16 @@ const Internet_of_Things = () => {
             rotateRef.current.childNodes[0].classList.toggle('rotate-180')
         }
     }
+    useEffect(() => {
+        const arrow = document.getElementById("arrow")
+        window.addEventListener("scroll", () => {
+            if( arrow.classList.contains('aaa')){
+                // arrow.classList.remove('hidden')
+                arrow.classList.toggle('show', window.scrollY > 1100)
+                arrow.classList.toggle('hidden', window.scrollY < 1100)
+            }
+        });
+    }, [])
     return (
         <div className='w-[100%]'>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
@@ -35,21 +45,21 @@ const Internet_of_Things = () => {
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-            <span onClick={clickArrow} className='sticky top-2 ml-auto text-2xl lg:hidden ' ref={rotateRef}>
-            <RiArrowDropDownLine className="arrow" /> 
+            <span onClick={clickArrow} className='lg:hidden hidden aaa' ref={rotateRef} id="arrow">
+                <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
             </span>
-            <section className="w-[100%] sticky top-[6vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 link_list"ref={linkRef}>
+            <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center shadow-md hidden lg:lg:z-0 z-50 link_list"ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#HA">Home Automation</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#IA">Industrial Automation</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#SEI">Smart Environment Implementation</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#approach_to_IoT_Solutions">approach to IoT Solutions</a>
                     </li>
                 </ul>
@@ -60,7 +70,7 @@ const Internet_of_Things = () => {
                     <Image src={IOThome} className="lg:w-[50%] w-[75%]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 sticky top-0 bg-white lg:static">Home Automation</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Home Automation</h2>
                     <p className="text-justify"> With the help of suitable IoT devices, home automation has become very easy and has helped IoT companies to flourish well. In home automation, allowing control of various IoT devices just with a single click and that too without the hassle of manually doing so. Controlling all aspects of a home from lighting, bathroom appliances, to temperature control through air conditioning, garden irrigation, security systems and kitchen appliances from just a mobile phone interface is what makes IoT home automation so favourable by doing these small things right. And to top it all, these are only a selected few IoT applications that are commonly used for making your Home, a smart home. The list is long but distinguished.</p>
                 </div>
             </div>
@@ -70,7 +80,7 @@ const Internet_of_Things = () => {
                     <Image src={IOTindustrial} />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 sticky top-0 bg-white lg:static">Industrial Automation</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Industrial Automation</h2>
                     <p className="text-justify"> Interconnected sensors, instruments, and other devices networked together in an industrial setting. This connectivity setup allows for remote access and monitoring, but more importantly, it allows for data acquisition and collection, exchange and analysis of different data sources. This has enormous potential for improving productivity and efficiency. Industrial IoT solutions are characterised by their low cost and fast implementation.<br /><br />
                         <ul>
                             Some of the key features of IIoT include:
@@ -94,7 +104,7 @@ const Internet_of_Things = () => {
                     <Image src={IOTsmart} className="lg:w-[50%] w-[75%]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 sticky top-0 bg-white lg:static">Smart Environment Implementation</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Smart Environment Implementation</h2>
                     <p className="text-justify">
                         The main features and services in key smart environments
                         include but are not
@@ -111,7 +121,7 @@ const Internet_of_Things = () => {
             </div>
 
             <div className="my-16 w-[100%]" id="approach_to_IoT_Solutions">
-                <h1 className="text-red-400 text-center text-3xl px-2 my-0 lg:static sticky top-0 bg-white">Our approach to IoT Solutions</h1>
+                <h1 className="text-red-400 text-center lg:text-3xl text-2xl px-2 my-0 lg:static sticky top-0 bg-white">Our approach to IoT Solutions</h1>
 
                 <div className=' flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 

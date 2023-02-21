@@ -10,7 +10,7 @@ import SAASacdd from '../public/images/services/SAASacdd.png'
 import SAASadi from '../public/images/services/SAASadi.png'
 import SAASms from '../public/images/services/SAASms.png'
 
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { RiArrowDropDownLine } from 'react-icons/ri'
 
 const SaaS_Mobility_Solutions = () => {
@@ -25,6 +25,16 @@ const SaaS_Mobility_Solutions = () => {
             rotateRef.current.childNodes[0].classList.toggle('rotate-180')
         }
     }
+    useEffect(() => {
+        const arrow = document.getElementById("arrow")
+        window.addEventListener("scroll", () => {
+            if( arrow.classList.contains('aaa')){
+                // arrow.classList.remove('hidden')
+                arrow.classList.toggle('show', window.scrollY > 1100)
+                arrow.classList.toggle('hidden', window.scrollY < 1100)
+            }
+        });
+    }, [])
     return (
         <div className='w-[100%]'>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
@@ -35,18 +45,18 @@ const SaaS_Mobility_Solutions = () => {
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
-            <span onClick={clickArrow} className='sticky top-2 ml-auto text-2xl lg:hidden ' ref={rotateRef}>
-            <RiArrowDropDownLine className="arrow" /> 
+            <span onClick={clickArrow} className='lg:hidden hidden aaa' ref={rotateRef} id="arrow">
+                <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
             </span>
-            <section className="w-[100%] sticky top-[6vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 link_list" ref={linkRef}>
+            <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 lg:z-0 link_list" ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 flex-col lg:flex-row">
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#RSS">Redefining Software Services</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#NAMS">New Age Mobility Solutions</a>
                     </li>
-                    <li className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
+                    <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#approach_SaaS_Mobility_Solutions">approach SaaS Mobility Solutions</a>
                     </li>
                 </ul>
@@ -57,7 +67,7 @@ const SaaS_Mobility_Solutions = () => {
                     <Image src={SAASrss} className="lg:w-[50%] w-[75%]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">Redefining Software Services</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Redefining Software Services</h2>
                     <p className="text-justify">
                         The on-demand prudence that we’re breathing in has brought in a new generation of
                         Software as a Service (SaaS) occasion and everyday benefit.<br /><br />
@@ -75,7 +85,7 @@ const SaaS_Mobility_Solutions = () => {
                     <Image src={SAASnams} />
                 </div>
                 <div className="lg:w-[40%] w-full">
-                    <h2 className="text-red-400 text-center text-3xl my-3 lg:static sticky top-0 bg-white">New Age Mobility Solutions</h2>
+                    <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">New Age Mobility Solutions</h2>
                     <p className="text-justify">
                         Specific mobility solutions to reduce the overall complexities that are actually
                         involved in the management of the company’s data on various mobile devices.
@@ -96,7 +106,7 @@ const SaaS_Mobility_Solutions = () => {
             </div>
 
             <div className="my-16 w-[100%]" id="approach_SaaS_Mobility_Solutions">
-                <h1 className="text-red-400 text-center text-3xl px-2 my-0 lg:static sticky top-0 bg-white">Our approach to SaaS & Mobility Solutions</h1>
+                <h1 className="text-red-400 text-center lg:text-3xl text-2xl px-2 my-0 lg:static sticky top-0 bg-white">Our approach to SaaS & Mobility Solutions</h1>
 
                 <div className='flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
 
