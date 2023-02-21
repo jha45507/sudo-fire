@@ -115,7 +115,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className='xl:w-2/4 md:w-3/4 w-[95%] h-full'>
-                <h1 className='text-center lg:text-4xl md:text-3xl text-2xl font-bold'>Industry leaders who vouch for us</h1>
+                <h1 className='text-center lg:text-4xl md:text-3xl text-2xl font-bold text-gray-600'>Industry leaders who vouch for us</h1>
                 <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} className="mySwiper"
                     slidesPerView={1} autoplay={{ delay: 2500 }} loop={true} modules={[Pagination, Navigation]} >
                     <SwiperSlide>
