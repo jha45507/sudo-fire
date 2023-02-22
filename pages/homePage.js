@@ -118,7 +118,7 @@ const HomePage = () => {
                 <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} className="mySwiper"
                     slidesPerView={1} autoplay={{ delay: 2500 }} loop={true} modules={[Pagination, Navigation]} >
                     <SwiperSlide>
-                        <div className='w-full h-[50vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                        <div className='w-full xl:h-[50vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
                             <div className='w-[60px] mt-8'>
                                 <Image src={AMSharma} className="rounded-full bg-gray-200" />
                             </div>
