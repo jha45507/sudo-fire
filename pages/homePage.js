@@ -132,7 +132,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-full h-[50vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                        <div className='w-full xl:h-[50vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
                             <div className='w-[60px] mt-8'>
                                 <Image src={Abhishek_Gautam} className="rounded-full bg-gray-200" />
                             </div>
@@ -146,7 +146,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-full h-[50vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                        <div className='w-full xl:h-[50vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
                             <div className='w-[60px] mt-8'>
                                 <Image src={adarshmatta} className="rounded-full bg-gray-200" />
                             </div>
