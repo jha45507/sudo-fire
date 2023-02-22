@@ -63,7 +63,7 @@ const HomePage = () => {
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
                         <Link href="/EnterpriseITSolutions" className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Group653} />
+                                <Image className="w-[53px] h-[53px] my-3" src={Group653} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Enterprise IT Solutions</h4>
                                 <p className='text-sm my-3 text-gray-700 text-justify word-spacing'>Enabling business to conquer physical boundaries with new age Technologies.</p>
                             </div>
@@ -74,7 +74,7 @@ const HomePage = () => {
                         </Link>
                         <Link href="/Internet_of_Things" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Path483} />
+                                <Image className="w-[53px] h-[53px] my-3" src={Path483} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Internet of Things (IoT)</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights.</p>
                             </div>
@@ -89,7 +89,7 @@ const HomePage = () => {
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
                         <Link href="/SaaS&SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Group649} />
+                                <Image className="w-[53px] h-[53px] my-3" src={Group649} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> On the go solutions for routine business processes enabling remote and in-office management.</p>
                             </div>
@@ -101,7 +101,7 @@ const HomePage = () => {
 
                         <Link href="/Devops&Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
                             <div className="flex flex-col items-center">
-                                <Image className="w-1/4 my-3" src={Group650} />
+                                <Image className="w-[53px] h-[53px] my-3" src={Group650} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> New age services with flexible architecture and on demand pricing paving way for much needed flexibility.</p>
                             </div>
@@ -118,7 +118,7 @@ const HomePage = () => {
                 <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} className="mySwiper"
                     slidesPerView={1} autoplay={{ delay: 2500 }} loop={true} modules={[Pagination, Navigation]} >
                     <SwiperSlide>
-                        <div className='w-full xl:h-[50vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                        <div className='w-full xl:h-[53vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
                             <div className='w-[60px] mt-8'>
                                 <Image src={AMSharma} className="rounded-full bg-gray-200" />
                             </div>
@@ -132,7 +132,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-full xl:h-[50vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                        <div className='w-full xl:h-[53vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
                             <div className='w-[60px] mt-8'>
                                 <Image src={Abhishek_Gautam} className="rounded-full bg-gray-200" />
                             </div>
@@ -146,7 +146,7 @@ const HomePage = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='w-full xl:h-[50vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
+                        <div className='w-full xl:h-[53vh] h-[50vh] lg:h-[60vh] flex flex-col items-center m-auto mt-16 border-t-8 border-blue-100 bg-gray-100' ref={img_first_ref}>
                             <div className='w-[60px] mt-8'>
                                 <Image src={adarshmatta} className="rounded-full bg-gray-200" />
                             </div>

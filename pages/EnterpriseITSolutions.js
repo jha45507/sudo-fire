@@ -67,7 +67,7 @@ const EnterpriseITSolutions = () => {
                         <a className="" href="#LM">Legacy Modernization</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#approach_Enterprise_IT_Solutions">approach Enterprise IT Solutions</a>
+                        <a className="" href="#approach_Enterprise_IT_Solutions">Approach Enterprise IT Solutions</a>
                     </li>
                 </ul>
             </section>
