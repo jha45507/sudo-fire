@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Script from 'next/script'
+import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react';
 const ContactUs = () => {
     const [name, setName] = useState('')
@@ -7,10 +8,27 @@ const ContactUs = () => {
     const [number, setNumber] = useState('')
     const [massage, setMassage] = useState('')
 
-    
+    const [token, setToken] = useState('')
+
+
     const SendMail = async (e) => {
-        
         e.preventDefault();
+        if (!name) {
+            alert("please fill name")
+            return
+        }
+        if (!email) {
+            alert("please fill email")
+            return
+        }
+        if (!number) {
+            alert("please fill number")
+            return
+        }
+        if (name && email && number && !token) {
+            alert("please check reCaptcha")
+            return
+        }
         const response = await fetch(`https://teamage.in/accounts/api/v1/contact_us`, {
             method: 'POST',
             headers: {
@@ -29,29 +47,16 @@ const ContactUs = () => {
         alert("Saved your information")
     }
 
-    // useEffect(() => {
-    //     window.onload = function () {
-    //         var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
-    //         recaptcha.required = true;
-    //         recaptcha.oninvalid = function (e) {
-    //             // do something
-    //             $(".capchaError").html("Please Check Captcha");
-    //             return false;
-    //         }
-    //     }
-    //     var form = document.getElementById('contact-form'); // form has to have ID: <form id="formID">
-    //     // form.noValidate = true;
-    //     form.addEventListener('submit', function (event) { // listen for form submitting
-    //         if (!event.target.checkValidity()) {
-    //             event.preventDefault(); // dismiss the default functionality
-    //         }
-    //     }, false);
-    // }, [])
+
+
+    function onRecaptchaChange(token) {
+        setToken(token)
+    }
 
     return (
         <div className='p-5 mt-10 lg:mt-0'>
-            <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" />
-            <Script src="https://www.google.com/recaptcha/api.js" />
+            {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> */}
+            {/* <Script src="https://www.google.com/recaptcha/api.js" /> */}
             <div className="block p-6 rounded-lg shadow-lg bg-white max-w-2xl my-10 mx-auto ">
                 <h1 className='text-center text-3xl text-gray-600 my-5 font-bold' >CONTACT US</h1>
                 <form action="" onSubmit={SendMail} method="post" id="contact-form">
@@ -75,9 +80,10 @@ const ContactUs = () => {
                         </textarea>
                     </div >
                     <div className='form-group mb-6'>
-                        <div className="g-recaptcha pt-2 d-flex justify-center" data-sitekey="6LdWOhciAAAAAK8_H2WUcMee5gg4U3K5WPohz402"></div>
-                        <p className="capchaError text-red"></p>
-                        <p id="errorMsg" className="text-danger text-center"></p>
+                        <ReCAPTCHA sitekey="6LdWOhciAAAAAK8_H2WUcMee5gg4U3K5WPohz402" onChange={onRecaptchaChange} />
+                        {/* <div className="g-recaptcha pt-2 d-flex justify-center" data-sitekey="6LdWOhciAAAAAK8_H2WUcMee5gg4U3K5WPohz402"></div> */}
+                        {/* <p className="capchaError text-red"></p> */}
+                        {/* <p id="errorMsg" className="text-danger text-center"></p> */}
                     </div>
                     <button type="submit" onClick={SendMail} className="w-full px-6 py-2.5 bg-[#f05d58] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#f05d58] active:shadow-lg transition duration-150 ease-in-out">SUBMIT</button>
                 </form>
