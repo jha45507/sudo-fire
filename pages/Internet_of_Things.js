@@ -60,7 +60,7 @@ const Internet_of_Things = () => {
                         <a className="" href="#SEI">Smart Environment Implementation</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#approach_to_IoT_Solutions">Approach to IoT Solutions</a>
+                        <a className="" href="#approach_to_IoT_Solutions">Our Approach</a>
                     </li>
                 </ul>
             </section>

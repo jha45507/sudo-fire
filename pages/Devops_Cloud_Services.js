@@ -65,7 +65,7 @@ const Devops_Cloud_Services = () => {
                         <a className="" href="#M&S">Migration & Security</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#DevOps_Solutions">DevOps Solutions</a>
+                        <a className="" href="#DevOps_Solutions">Our Approach</a>
                     </li>
                 </ul>
             </section>

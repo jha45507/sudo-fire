@@ -199,7 +199,7 @@ box-shadow:  -5px 5px 15px #939cc8,
 /* =========================== Image component scroll start ========================*/
 
 .scroll-up {
-  height: 500px;
+  height: 380px;
   overflow: hidden;
   position: relative;
 }

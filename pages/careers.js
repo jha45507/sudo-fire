@@ -19,7 +19,7 @@ const Careers = () => {
           <div className='flex flex-col items-center shadow-md rounded-md p-2'>
             <Image className='w-60' src={python} alt="python" />
             <h6 className="">Python-Django Developer</h6>
-            <p className="">(Experience: 1-3 years)</p>
+            <p className="">(Experience: 3-5 years)</p>
             <button type="submit" name="submit" id="submit" className="my-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm">
               <Link className="text-white" href="mailto:hr@sudofire.com"> Apply Now</Link>
             </button>

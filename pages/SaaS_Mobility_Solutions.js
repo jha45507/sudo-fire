@@ -57,7 +57,7 @@ const SaaS_Mobility_Solutions = () => {
                         <a className="" href="#NAMS">New Age Mobility Solutions</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#approach_SaaS_Mobility_Solutions">Approach SaaS Mobility Solutions</a>
+                        <a className="" href="#approach_SaaS_Mobility_Solutions">Our Approach</a>
                     </li>
                 </ul>
             </section>
