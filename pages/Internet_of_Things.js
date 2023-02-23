@@ -32,6 +32,31 @@ const Internet_of_Things = () => {
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
+            
+            if(window.scrollY > 500 && window.scrollY < 900){
+                document.querySelector("#ha_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#ha_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 900 && window.scrollY < 1300){
+                document.querySelector("#ia_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#ia_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1300 && window.scrollY < 1700){
+                document.querySelector("#sei_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#sei_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1700 && window.scrollY < 2200){
+                document.querySelector("#oa_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
+            }
         });
     }, [])
     return (
@@ -51,16 +76,16 @@ const Internet_of_Things = () => {
             <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center shadow-md hidden lg:lg:z-0 z-50 link_list"ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#HA">Home Automation</a>
+                        <a className="" href="#HA" id="ha_smooth_links">Home Automation</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#IA">Industrial Automation</a>
+                        <a className="" href="#IA" id="ia_smooth_links">Industrial Automation</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#SEI">Smart Environment Implementation</a>
+                        <a className="" href="#SEI" id="sei_smooth_links">Smart Environment Implementation</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#approach_to_IoT_Solutions">Our Approach</a>
+                        <a className="" href="#approach_to_IoT_Solutions" id="oa_smooth_links">Our Approach</a>
                     </li>
                 </ul>
             </section>

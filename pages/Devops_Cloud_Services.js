@@ -34,6 +34,37 @@ const Devops_Cloud_Services = () => {
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
+            
+            if(window.scrollY > 500 && window.scrollY < 900){
+                document.querySelector("#cc_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#cc_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 900 && window.scrollY < 1300){
+                document.querySelector("#ca_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#ca_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1300 && window.scrollY < 1700){
+                document.querySelector("#co_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#co_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1700 && window.scrollY < 2100){
+                document.querySelector("#ms_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#ms_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 2100 && window.scrollY < 2600){
+                document.querySelector("#oa_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
+            }
         });
     }, [])
 
@@ -53,19 +84,19 @@ const Devops_Cloud_Services = () => {
             <section ref={linkRef} className="w-[100%] sticky lg:top-[12vh] top-[5vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden lg:z-0 z-50 link_list">
                 <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm ">
-                        <a className="" href="#CL">Cloud Consulting</a>
+                        <a className="" href="#CL" id="cc_smooth_links">Cloud Consulting</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#CA">Cloud Architecture</a>
+                        <a className="" href="#CA" id="ca_smooth_links">Cloud Architecture</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#CO">Cost Optimization</a>
+                        <a className="" href="#CO" id="co_smooth_links">Cost Optimization</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#M&S">Migration & Security</a>
+                        <a className="" href="#M&S" id="ms_smooth_links">Migration & Security</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#DevOps_Solutions">Our Approach</a>
+                        <a className="" href="#DevOps_Solutions" id="oa_smooth_links">Our Approach</a>
                     </li>
                 </ul>
             </section>

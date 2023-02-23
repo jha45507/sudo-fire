@@ -69,6 +69,12 @@ import wgc from '../public/images/client/wg-c.png'
 import gifolac from '../public/images/client/gifola-c.png'
 import PleasuretoWorkWith from '../public/images/client/Pleasure toWork With.png'
 
+import IE from '../public/images/client/IE_logo.png'
+import Queen from '../public/images/client/Queen_Logo.png'
+import logoblack from '../public/images/client/logo-black-01.png'
+import Flourish from '../public/images/client/Flourish_logo.png'
+import CG_logo from '../public/images/client/CG_logo.png'
+
 const Clients = () => {
   return (
     <>
@@ -305,8 +311,8 @@ const Clients = () => {
         </div>
       </div>
       <div className='rounded-md flex justify-center'>
-        <div className='w-full m-auto'>
-          <div className="flex justify-evenly items-center">
+        <div className='w-full mt-10'>
+          <div className="flex justify-evenly items-center flex-wrap">
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='p-7' src={nrdc} />
             </div>
@@ -316,12 +322,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={tkbc} />
             </div>
-            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={snc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-3 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={logslm} />
             </div>
@@ -333,7 +339,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3'>
+          <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={touchlifec} />
             </div>
@@ -343,12 +349,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={instafitnessc} />
             </div>
-            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='p-6' src={airc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={vizhenc} />
             </div>
@@ -360,7 +366,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3'>
+          <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className="shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={wealthrockc} />
             </div>
@@ -370,12 +376,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={woofuc} />
             </div>
-            <div className="shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={primorisc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={etac} />
             </div>
@@ -387,7 +393,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3'>
+          <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={logoplusofficesc} />
             </div>
@@ -397,12 +403,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={corritc} />
             </div>
-            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={abcc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={exceamc} />
             </div>
@@ -414,7 +420,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3'>
+          <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='p-8' src={chabarc} />
             </div>
@@ -424,12 +430,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='p-6' src={alsacec} />
             </div>
-            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={porasmotionc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={cubicalc} />
             </div>
@@ -441,7 +447,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3'>
+          <div className='flex justify-evenly items-center m-5 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={navisitec} />
             </div>
@@ -451,12 +457,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='p-5' src={dcbc} />
             </div>
-            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={samsbrosc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={biryaniqueenc} />
             </div>
@@ -468,7 +474,7 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3'>
+          <div className='flex justify-evenly items-center m-5 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={sendbestgiftc} />
             </div>
@@ -478,12 +484,12 @@ const Clients = () => {
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={switcherc} />
             </div>
-            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={harimanc} />
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center my-3 md:m-20'>
+          <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
               <Image className='' src={prmc} />
             </div>
@@ -495,12 +501,23 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className='flex justify-evenly items-center'>
+          <div className='flex justify-evenly items-center flex-wrap m-5 md:m-0'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={gifolac} />
+              <Image className='p-1' src={gifolac} />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={PleasuretoWorkWith} />
+              <Image className='p-10' src={IE} />
+            </div>
+            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+              <Image className='p-8' src={Queen} />
+            </div>
+            <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+              <Image className='p-5' src={Flourish} />
+            </div>
+          </div>
+          <div className='flex justify-evenly items-center md:m-20'>
+            <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
+              <Image className='p-2' src={CG_logo} />
             </div>
           </div>
         </div>

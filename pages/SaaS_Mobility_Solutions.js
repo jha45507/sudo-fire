@@ -33,6 +33,24 @@ const SaaS_Mobility_Solutions = () => {
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
+            if(window.scrollY > 500 && window.scrollY < 800){
+                document.querySelector("#rss_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#rss_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 800 && window.scrollY < 1200){
+                document.querySelector("#nms_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#nms_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1200 && window.scrollY < 1700){
+                document.querySelector("#oa_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
+            }
         });
     }, [])
     return (
@@ -51,13 +69,13 @@ const SaaS_Mobility_Solutions = () => {
             <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden z-50 lg:z-0 link_list" ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#RSS">Redefining Software Services</a>
+                        <a className="" href="#RSS" id="rss_smooth_links">Redefining Software Services</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#NAMS">New Age Mobility Solutions</a>
+                        <a className="" href="#NAMS" id="nms_smooth_links">New Age Mobility Solutions</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#approach_SaaS_Mobility_Solutions">Our Approach</a>
+                        <a className="" href="#approach_SaaS_Mobility_Solutions" id="oa_smooth_links">Our Approach</a>
                     </li>
                 </ul>
             </section>

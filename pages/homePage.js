@@ -61,7 +61,7 @@ const HomePage = () => {
                 <h2 className="md:text-4xl text-2xl text-center font-bold text-gray-600 lg:pb-10 pb-5 md:pt-4 pt-6">Our Services</h2>
                 <div className="flex flex-col md:flex-row md:justify-center md:items-start items-center w-[100%] lg:space-x-10 md:space-x-3 space-x-0 space-y-10 md:space-y-0">
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
-                        <Link href="/EnterpriseITSolutions" className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        <Link href="/EnterpriseITSolutions" className="flex flex-col service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group653} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Enterprise IT Solutions</h4>
@@ -72,7 +72,7 @@ const HomePage = () => {
                                 Read More..
                             </Link>
                         </Link>
-                        <Link href="/Internet_of_Things" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        <Link href="/Internet_of_Things" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Path483} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Internet of Things (IoT)</h4>
@@ -87,7 +87,7 @@ const HomePage = () => {
                     </div>
 
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
-                        <Link href="/SaaS&SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        <Link href="/SaaS&SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group649} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
@@ -99,7 +99,7 @@ const HomePage = () => {
                             </Link>
                         </Link>
 
-                        <Link href="/Devops&Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px]">
+                        <Link href="/Devops&Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group650} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>
@@ -123,10 +123,10 @@ const HomePage = () => {
                                 <Image src={AMSharma} className="rounded-full bg-gray-200" />
                             </div>
                             <div className='text-center mt-5 md:mb-14 mb-7 lg:w-3/4 w-[90%]'>
-                                <h3 className='text-lg text-gray-700'>A.M Sharma</h3>
-                                <p className='text-sm text-gray-300 lg:underline underline-offset-[20px]'>Assistant Engineer to Director, ALL INDIA RADIO</p>
+                                <h3 className='text-lg text-gray-900'>A.M Sharma</h3>
+                                <p className='text-sm text-gray-400 lg:underline underline-offset-[20px] p-2'>Assistant Engineer to Director, ALL INDIA RADIO</p>
                             </div>
-                            <div className='text-center text-gray-400 text-sm lg:w-3/4 w-[90%] leading-6'>
+                            <div className='text-center text-gray-600 text-sm lg:w-3/4 w-[90%] leading-6'>
                                 <p className='' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
                             </div>
                         </div>
@@ -137,10 +137,10 @@ const HomePage = () => {
                                 <Image src={Abhishek_Gautam} className="rounded-full bg-gray-200" />
                             </div>
                             <div className='text-center mt-5 md:mb-14 mb-7 lg:w-3/4 w-[90%]'>
-                                <h3 className='text-lg text-gray-700'>Abhishek Gautam</h3>
-                                <p className='text-sm text-gray-300 lg:underline underline-offset-[20px]'>IT HEAD, National Research Development Corporation</p>
+                                <h3 className='text-lg text-gray-900'>Abhishek Gautam</h3>
+                                <p className='text-sm text-gray-400 lg:underline underline-offset-[20px] p-2'>IT HEAD, National Research Development Corporation</p>
                             </div>
-                            <div className='text-center text-gray-400 text-sm lg:w-3/4 w-[90%] leading-6'>
+                            <div className='text-center text-gray-600 text-sm lg:w-3/4 w-[90%] leading-6'>
                                 <p className='' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
                             </div>
                         </div>
@@ -151,10 +151,10 @@ const HomePage = () => {
                                 <Image src={adarshmatta} className="rounded-full bg-gray-200" />
                             </div>
                             <div className='text-center mt-5 md:mb-14 mb-7 lg:w-3/4 w-[90%]'>
-                                <h3 className='text-lg text-gray-700'>Mr. Adarsh Matta</h3>
-                                <p className='text-sm text-gray-300 lg:underline underline-offset-[20px]'>CEO of ETA</p>
+                                <h3 className='text-lg text-gray-900'>Mr. Adarsh Matta</h3>
+                                <p className='text-sm text-gray-400 lg:underline underline-offset-[20px]'>CEO of ETA</p>
                             </div>
-                            <div className='text-center text-gray-400 text-sm lg:w-3/4 w-[90%] leading-6'>
+                            <div className='text-center text-gray-600 text-sm lg:w-3/4 w-[90%] leading-6'>
                                 <p className='' >We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
                             </div>
                         </div>

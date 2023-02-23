@@ -36,6 +36,37 @@ const EnterpriseITSolutions = () => {
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
+
+            if(window.scrollY > 500 && window.scrollY < 900){
+                document.querySelector("#ecm_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#ecm_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 900 && window.scrollY < 1300){
+                document.querySelector("#esm_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#esm_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1300 && window.scrollY < 1700){
+                document.querySelector("#eba_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#eba_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 1700 && window.scrollY < 2000){
+                document.querySelector("#lm_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#lm_smooth_links").style.color = '#BDBDBD';
+            }
+            if(window.scrollY > 2000 && window.scrollY < 2600){
+                document.querySelector("#oa_smooth_links").style.color = '#F87272';
+            }
+            else{
+                document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
+            }
         });
     }, [])
 
@@ -55,19 +86,19 @@ const EnterpriseITSolutions = () => {
             <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center lg:shadow-md hidden link_list lg:z-0 z-50" ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#ECM">Enterprise Content Management</a>
+                        <a className="" href="#ECM" id="ecm_smooth_links">Enterprise Content Management</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#ESM">Ecommerce & Stock Management</a>
+                        <a className="" href="#ESM" id="esm_smooth_links">Ecommerce & Stock Management</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#CBA">CRMs & Business Applications</a>
+                        <a className="" href="#CBA" id="eba_smooth_links">CRMs & Business Applications</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#LM">Legacy Modernization</a>
+                        <a className="" href="#LM" id="lm_smooth_links">Legacy Modernization</a>
                     </li>
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
-                        <a className="" href="#approach_Enterprise_IT_Solutions">Our Approach</a>
+                        <a className="" href="#approach_Enterprise_IT_Solutions" id="oa_smooth_links">Our Approach</a>
                     </li>
                 </ul>
             </section>
