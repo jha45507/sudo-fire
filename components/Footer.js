@@ -94,7 +94,7 @@ const Footer = () => {
 								<BiCurrentLocation className='text-2xl text-[#f05d58]' />
 								<p className="">OFFICE LOCATION:</p>
 							</div>
-							<p className='text-justify mt-1'>Sudofire Technologies, 1st Floor, Landmark Cyberpark, Sector 67, Gurugram, Haryana</p>
+							<p className='text-justify mt-1 ml-[30px]'>Sudofire Technologies, 1st Floor, Landmark Cyberpark, Sector 67, Gurugram, Haryana</p>
 						</div>
 					</div>
 				</div>

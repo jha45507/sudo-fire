@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Head from 'next/head'
+
 import Iot from '../public/images/services/Iot.png'
 import net from '../public/images/services/side_IOT-image.png'
 import IOThome from '../public/images/services/IOT-home.png'
@@ -13,12 +15,12 @@ import { useEffect, useRef } from "react"
 import { RiArrowDropDownLine } from 'react-icons/ri'
 
 const Internet_of_Things = () => {
-    
+
     const linkRef = useRef()
     const rotateRef = useRef()
 
     const clickArrow = () => {
-        if(linkRef.current.classList.contains('link_list') ){
+        if (linkRef.current.classList.contains('link_list')) {
             linkRef.current.classList.toggle('hidden')
             linkRef.current.classList.toggle('flex')
             rotateRef.current.childNodes[0].classList.toggle('rotate-180')
@@ -27,53 +29,60 @@ const Internet_of_Things = () => {
     useEffect(() => {
         const arrow = document.getElementById("arrow")
         window.addEventListener("scroll", () => {
-            if( arrow.classList.contains('aaa')){
+            if (arrow.classList.contains('aaa')) {
                 // arrow.classList.remove('hidden')
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
-            
-            if(window.scrollY > 500 && window.scrollY < 900){
+
+            if (window.scrollY > 500 && window.scrollY < 900) {
                 document.querySelector("#ha_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#ha_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 900 && window.scrollY < 1300){
+            if (window.scrollY > 900 && window.scrollY < 1300) {
                 document.querySelector("#ia_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#ia_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1300 && window.scrollY < 1700){
+            if (window.scrollY > 1300 && window.scrollY < 1700) {
                 document.querySelector("#sei_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#sei_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1700 && window.scrollY < 2200){
+            if (window.scrollY > 1700 && window.scrollY < 2200) {
                 document.querySelector("#oa_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
             }
         });
     }, [])
     return (
         <div className='w-[100%]'>
+            <Head>
+                <title>IOT solutions</title>
+                <meta name="description" content="Get Dedicated It Services For Enterprise Software, Mobile Applications, Saas Solutions, Iot Solutions, Ai Solutions We Are One Of The Top It Outsourcing Company In India For Msmes" />
+                <meta name="title" content="IOT solutions" />
+                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Iot} alt="" />
                 <div className="lg:w-[32%] w-full">
                     <h2 className="text-red-400 text-center text-3xl my-3lg:static sticky top-0 bg-blue-100 ">Internet of Things</h2>
                     <p className="text-justify text-gray-700">
-                    Enabling enterprise strategies for new beginnings&apos; Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights. IoT-enabled smart city implementation spans multiple fields including contributing to a healthier environment, improving traffic, enhancing public safety and optimizing street lighting. Similarly, IoT home automation is the ability to control domestic appliances by electronically controlled, internet-connected systems. It may include setting complex heating, lighting systems in advance, setting alarms and/or home security controls, all connected by a central hub and remote-controlled by a mobile app.</p>
+                        Enabling enterprise strategies for new beginnings&apos; Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights. IoT-enabled smart city implementation spans multiple fields including contributing to a healthier environment, improving traffic, enhancing public safety and optimizing street lighting. Similarly, IoT home automation is the ability to control domestic appliances by electronically controlled, internet-connected systems. It may include setting complex heating, lighting systems in advance, setting alarms and/or home security controls, all connected by a central hub and remote-controlled by a mobile app.</p>
                 </div>
                 <Image className='lg:w-[15%] md:w-[25%] w-[32%] lg:my-0 my-5' src={net} alt="" />
             </div>
             <span onClick={clickArrow} className='lg:hidden hidden aaa' ref={rotateRef} id="arrow">
                 <RiArrowDropDownLine className="arrow sticky top-2 text-3xl ml-auto " />
             </span>
-            <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center shadow-md hidden lg:lg:z-0 z-50 link_list"ref={linkRef}>
+            <section className="w-[100%] sticky top-[5vh] lg:top-[12vh] bg-scroll xl:h-[12vh] bg-white lg:flex justify-around items-center shadow-md hidden lg:lg:z-0 z-50 link_list" ref={linkRef}>
                 <ul className="w-[100%] flex justify-around items-center space-y-2 lg:space-y-0 flex-col lg:flex-row">
                     <li onClick={clickArrow} className="text-gray-400 hover:text-red-400 text-center lg:text-md text-sm">
                         <a className="" href="#HA" id="ha_smooth_links">Home Automation</a>

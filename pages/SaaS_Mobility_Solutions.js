@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Head from 'next/head'
+
 import Saas from '../public/images/services/Saas.png'
 import net from '../public/images/services/side_SaaS-Mobility-Image.png'
 import SAASrss from '../public/images/services/SAASrss.png'
@@ -10,16 +12,17 @@ import SAASacdd from '../public/images/services/SAASacdd.png'
 import SAASadi from '../public/images/services/SAASadi.png'
 import SAASms from '../public/images/services/SAASms.png'
 
+
 import { useEffect, useRef } from "react"
 import { RiArrowDropDownLine } from 'react-icons/ri'
 
 const SaaS_Mobility_Solutions = () => {
-    
+
     const linkRef = useRef()
     const rotateRef = useRef()
 
     const clickArrow = () => {
-        if(linkRef.current.classList.contains('link_list') ){
+        if (linkRef.current.classList.contains('link_list')) {
             linkRef.current.classList.toggle('hidden')
             linkRef.current.classList.toggle('flex')
             rotateRef.current.childNodes[0].classList.toggle('rotate-180')
@@ -28,33 +31,40 @@ const SaaS_Mobility_Solutions = () => {
     useEffect(() => {
         const arrow = document.getElementById("arrow")
         window.addEventListener("scroll", () => {
-            if( arrow.classList.contains('aaa')){
+            if (arrow.classList.contains('aaa')) {
                 // arrow.classList.remove('hidden')
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
-            if(window.scrollY > 500 && window.scrollY < 800){
+            if (window.scrollY > 500 && window.scrollY < 800) {
                 document.querySelector("#rss_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#rss_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 800 && window.scrollY < 1200){
+            if (window.scrollY > 800 && window.scrollY < 1200) {
                 document.querySelector("#nms_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#nms_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1200 && window.scrollY < 1700){
+            if (window.scrollY > 1200 && window.scrollY < 1700) {
                 document.querySelector("#oa_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
             }
         });
     }, [])
     return (
         <div className='w-[100%]'>
+            <Head>
+                <title> saas company</title>
+                <meta name="description" content="Get Dedicated It Services For Enterprise Software, Mobile Applications, Saas Solutions, Iot Solutions, Ai Solutions We Are One Of The Top It Outsourcing Company In India For Msmes"/>
+                <meta name="title" content=" saas company" />
+                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Saas} alt="" />
                 <div className="lg:w-[32%] w-full">

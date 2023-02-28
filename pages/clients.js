@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 
 import nrdc from '../public/images/client/nrdc-c.png'
 import saral from '../public/images/client/saral jyotish-c.png'
@@ -79,6 +80,11 @@ const Clients = () => {
   return (
     <>
       <div className='flex justify-between xl:px-[110px] lg:px-[70px] items-center flex-col lg:flex-row space-y-10 lg:space-y-0 mt-28 lg:my-20 '>
+        <Head>
+          <title>IT solutions service</title>
+          <meta name="description" content="" />
+          <link rel="shortcut icon" href="/favicon.ico" />
+        </Head>
         <div className='space-y-2 lg:space-y-0'>
           <h1 className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl lg:text-start text-center text-red-400'>Our Clients</h1>
           <p className='xl:text-2xl lg:text-xl md:text-lg text-md lg:text-start text-center text-gray-600'>Pleasure to work with </p>

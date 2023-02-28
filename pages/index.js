@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Sudofire-IT Solutions</title>
+        <title>IT Services Company in Gurgaon</title>
         <meta name="description" content="" />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>

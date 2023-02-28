@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Script from 'next/script'
+
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react';
 const ContactUs = () => {
@@ -55,6 +56,11 @@ const ContactUs = () => {
 
     return (
         <div className='p-5 mt-10 lg:mt-0'>
+                       <Head>
+                <title>IT solutions service</title>
+                <meta name="description" content="" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> */}
             {/* <Script src="https://www.google.com/recaptcha/api.js" /> */}
             <div className="block p-6 rounded-lg shadow-lg bg-white max-w-2xl my-10 mx-auto ">

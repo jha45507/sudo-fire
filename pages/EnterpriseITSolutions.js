@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Head from 'next/head'
+
 import Eis1 from '../public/images/services/Eis1.png'
 import net from '../public/images/services/side_IT-solutions-Image.png'
 import EISecm from '../public/images/services/EISecm.png'
@@ -31,40 +33,40 @@ const EnterpriseITSolutions = () => {
     useEffect(() => {
         const arrow = document.getElementById("arrow")
         window.addEventListener("scroll", () => {
-            if( arrow.classList.contains('aaa')){
+            if (arrow.classList.contains('aaa')) {
                 // arrow.classList.remove('hidden')
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
 
-            if(window.scrollY > 500 && window.scrollY < 900){
+            if (window.scrollY > 500 && window.scrollY < 900) {
                 document.querySelector("#ecm_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#ecm_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 900 && window.scrollY < 1300){
+            if (window.scrollY > 900 && window.scrollY < 1300) {
                 document.querySelector("#esm_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#esm_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1300 && window.scrollY < 1700){
+            if (window.scrollY > 1300 && window.scrollY < 1700) {
                 document.querySelector("#eba_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#eba_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1700 && window.scrollY < 2000){
+            if (window.scrollY > 1700 && window.scrollY < 2000) {
                 document.querySelector("#lm_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#lm_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 2000 && window.scrollY < 2600){
+            if (window.scrollY > 2000 && window.scrollY < 2600) {
                 document.querySelector("#oa_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
             }
         });
@@ -72,6 +74,13 @@ const EnterpriseITSolutions = () => {
 
     return (
         <div className='w-[100%]'>
+            <Head>
+                <title> Enterprise mobility solutions</title>
+                <meta name="description" content="Get Dedicated It Services For Enterprise Software, Mobile Applications, Saas Solutions, Iot Solutions, Ai Solutions We Are An It Company In Gurgaon Providing Cloud Services And Devops Services" />
+                <meta name="title" content="Enterprise mobility solutions" />
+                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={Eis1} alt="" />
                 <div className="lg:w-[32%] w-full">

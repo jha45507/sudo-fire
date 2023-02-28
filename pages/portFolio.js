@@ -20,11 +20,23 @@ import pnrdc from '../public/images/portfolio/p-nrdc.jpeg'
 import pair from '../public/images/portfolio/p-air.jpeg'
 import pbq from '../public/images/portfolio/p-bq.jpeg'
 import praktdaan from '../public/images/portfolio/p-rd.jpeg'
+
+import col from '../public/images/portfolio/Laptop-screens-1.jpg'
+import flourish from '../public/images/portfolio/Laptop-screens-2.jpg'
+import queens from '../public/images/portfolio/Laptop-screens-3.jpg'
+import tnstaeats from '../public/images/portfolio/Laptop-screens-4.jpg'
+
 import Link from 'next/link'
+import Head from 'next/head'
 
 const PortFolio = () => {
   return (
     <div className="mt-28 lg:mt-0">
+                 <Head>
+                <title>IT solutions service</title>
+                <meta name="description" content="" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
       <div className="flex justify-around items-center flex-col lg:flex-row ">
 
         <div className="space-y-3">
@@ -331,9 +343,72 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
+        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+          <div className="">
+            <Image src={col} />
+          </div>
+          <div className='text-center mt-5'>
+            <h2 className="text-2xl text-red-500 my-2">Coalgenie</h2>
+            <p className="text-justify text-gray-600">
+            Coalgenie is an e-business platform catering to the requirements for all coal commodities. From the time of its inception in July 2021, we have thrived to address all the pain points in the coal trade and simultaneously provide customized solutions for related issues
+            </p>
+            <Link rel="noreferrer" href="https://www.coalgenie.com/" className="" target="_blank">
+              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
+                View Project
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+          <div className="">
+            <Image src={flourish} />
+          </div>
+          <div className='text-center mt-5'>
+            <h2 className="text-2xl text-red-500 my-2">Flourish</h2>
+            <p className="text-justify text-gray-600">
+            The house of flourish, a luxury jewellery brand is home to eco-friend]y and guilt-free pleasures in precious jewellery that help you make your style statement. Both through everyday luxury jewellery and occasion-specific statement pieces. We believe in empowering you through what you carry and at the House of Flourish, right from choosing the design of your jewellery to styling it the way you want, whenever you want, everything reflects - YOU!
+            </p>
+            <Link rel="noreferrer" href="http://flourishbygunjanjain.com" className="" target="_blank">
+              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
+                View Project
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+          <div className="">
+            <Image src={queens} />
+          </div>
+          <div className='text-center mt-5'>
+            <h2 className="text-2xl text-red-500 my-2">Queen’s Gynecology</h2>
+            <p className="text-justify text-gray-600">
+            Queen’s Gynecology was created with the vision of empowering women by providing equal health opportunities, where women and girls live in dignity, are healthy and have choices. Our customized treatment protocols make us the best PCOS specialist in Delhi.
+            </p>
+            <Link rel="noreferrer" href="http://queensgynecology.in" className="" target="_blank">
+              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
+                View Project
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+          <div className="">
+            <Image src={tnstaeats} />
+          </div>
+          <div className='text-center mt-5'>
+            <h2 className="text-2xl text-red-500 my-2">InstaEats</h2>
+            <p className="text-justify text-gray-600">
+            We at InstaEats are a team of food experts and experienced dieticians who aim to make India healthy and nutritious. We help people fulfil their daily micronutrient requirements and manage their lifestyle diseases like Diabetes, PCOD and Thyroid naturally through our scientifically customized & healthiest superfood mix and Dietary consultation.
+            </p>
+            <Link rel="noreferrer" href="https://www.instaeats.in/" className="" target="_blank">
+              <button className="mt-2 px-4 py-1 hover:bg-orange-600 active:bg-[#f05d58] bg-[#f05d58] rounded-full text-sm text-white">
+                View Project
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
-
 export default PortFolio

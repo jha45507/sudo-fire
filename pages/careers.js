@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
+import Head from 'next/head'
 
 import python from '../public/images/career/python.png'
 import frontend from '../public/images/career/frontend.png'
@@ -10,6 +11,11 @@ import intern from '../public/images/career/intern-graphics.png'
 const Careers = () => {
   return (
     <div className='flex flex-col mt-20 lg:mt-0 lg:flex-row lg:justify-between items-start'>
+      <Head>
+        <title>IT solutions service</title>
+        <meta name="description" content="" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <div className='text-center lg:text-left lg:w-[40%] w-auto xl:pl-[110px] lg:pl-[30px] xl:mt-[200px] lg:mt-[200px]'>
         <h1 className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl lg:text-start text-center text-red-500 mt-6 lg:mt-0'>Career</h1>
         <p className='mt-4 xl:text-2xl lg:text-xl md:text-lg text-md lg:text-start text-center text-gray-600 px-3 md:px-0'>If you wish to be a part of our amazing team, drop your CV on hr@sudofire.com</p>

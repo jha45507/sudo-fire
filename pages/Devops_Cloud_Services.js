@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Head from 'next/head'
+
 import DC from '../public/images/services/D&C.png'
 import net from '../public/images/services/side_Cloud-Image.png'
 import DCcc from '../public/images/services/DC-cc.png'
@@ -19,7 +21,7 @@ const Devops_Cloud_Services = () => {
     const rotateRef = useRef()
 
     const clickArrow = () => {
-        if(linkRef.current.classList.contains('link_list') ){
+        if (linkRef.current.classList.contains('link_list')) {
             linkRef.current.classList.toggle('hidden')
             linkRef.current.classList.toggle('flex')
             rotateRef.current.childNodes[0].classList.toggle('rotate-180')
@@ -29,40 +31,40 @@ const Devops_Cloud_Services = () => {
     useEffect(() => {
         const arrow = document.getElementById("arrow")
         window.addEventListener("scroll", () => {
-            if( arrow.classList.contains('aaa')){
+            if (arrow.classList.contains('aaa')) {
                 // arrow.classList.remove('hidden')
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
-            
-            if(window.scrollY > 500 && window.scrollY < 900){
+
+            if (window.scrollY > 500 && window.scrollY < 900) {
                 document.querySelector("#cc_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#cc_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 900 && window.scrollY < 1300){
+            if (window.scrollY > 900 && window.scrollY < 1300) {
                 document.querySelector("#ca_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#ca_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1300 && window.scrollY < 1700){
+            if (window.scrollY > 1300 && window.scrollY < 1700) {
                 document.querySelector("#co_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#co_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 1700 && window.scrollY < 2100){
+            if (window.scrollY > 1700 && window.scrollY < 2100) {
                 document.querySelector("#ms_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#ms_smooth_links").style.color = '#BDBDBD';
             }
-            if(window.scrollY > 2100 && window.scrollY < 2600){
+            if (window.scrollY > 2100 && window.scrollY < 2600) {
                 document.querySelector("#oa_smooth_links").style.color = '#F87272';
             }
-            else{
+            else {
                 document.querySelector("#oa_smooth_links").style.color = '#BDBDBD';
             }
         });
@@ -70,6 +72,13 @@ const Devops_Cloud_Services = () => {
 
     return (
         <div className='w-[100%] relative '>
+            <Head>
+                <title>Cloud & DevOps services</title>
+                <meta name="description" content="We are an IT company in Gurgaon providing Cloud services and devops services We Are One Of The Top It Outsourcing Company In India For Msmes" />
+                <meta name="title" content="Cloud & DevOps services" />
+                <meta name="keywords" content="cloud & devops, IT solutions, IT services, iot, saas, mobility solutions, software services, AI Service company" />
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
                 <Image className="lg:w-1/4 w-2/4 mt-12" src={DC} alt="" />
                 <div className="lg:w-[32%] w-full">
