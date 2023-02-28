@@ -87,7 +87,7 @@ const HomePage = () => {
                     </div>
 
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
-                        <Link href="/SaaS&SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
+                        <Link href="/SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group649} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
@@ -99,7 +99,7 @@ const HomePage = () => {
                             </Link>
                         </Link>
 
-                        <Link href="/Devops&Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
+                        <Link href="/Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group650} />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>
