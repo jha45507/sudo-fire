@@ -7,7 +7,7 @@ module.exports = {
     production : {
       key: 'key.pem',
       user : 'ubuntu',
-      host : '52.194.229.180',
+      host : '35.75.162.246',
       ref  : 'origin/main',
       repo : 'https://github.com/jha45507/sudo-fire.git',
       path : '/home/ubuntu',
