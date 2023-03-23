@@ -56,9 +56,11 @@ const ContactUs = () => {
 
     return (
         <div className='p-5 mt-10 lg:mt-0'>
-                       <Head>
-                <title>IT solutions service</title>
-                <meta name="description" content="" />
+            <Head>
+            <title>Contact Us | Get in Touch with Sudofire</title>
+                <meta name="title" content="Join Our Team | Career Opportunities at Sudofire" />
+                <meta name="description" content="Have a question or want to learn more about Sudofire's services? Contact us today and our team of experts will be happy to assist you. We specialize in creating custom digital solutions that drive business growth and success. Fill out our contact form or give us a call to start the conversation."/>
+                <meta name="keywords" content="Enterprise IT Solutions, Internet of Things, SaaS, Mobility Solutions, DevOps, Cloud Services, Ecommerce Portal Development, Mobile App development, Web Development."/>
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> */}

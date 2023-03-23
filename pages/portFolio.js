@@ -32,11 +32,13 @@ import Head from 'next/head'
 const PortFolio = () => {
   return (
     <div className="mt-28 lg:mt-0">
-                 <Head>
-                <title>IT solutions service</title>
-                <meta name="description" content="" />
-                <link rel="shortcut icon" href="/favicon.ico" />
-            </Head>
+        <Head>
+          <title>Our Portfolio | Sudofire</title>
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <meta name="title" content="Our Portfolio | Sudofire" />
+          <meta name="description" content="Check out Sudofire's portfolio to see our latest work in web design, app development & Software. Our team of experts crafts unique and effective solutions to help our clients achieve their business goals. Browse our portfolio now to see how we can elevate your brand and online presence."/>
+          <meta name="keywords" content="Portfolio, Sudofire, online presence, IT Solutions Gurgaon/Gurugram, Enterprise IT Solutions, Internet of Things, SaaS, Mobility Solutions, DevOps, Cloud Services"/>
+        </Head>
       <div className="flex justify-around items-center flex-col lg:flex-row ">
 
         <div className="space-y-3">

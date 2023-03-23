@@ -87,7 +87,7 @@ a {
 /* ========================= hamburger =========================== */
 :root {
   --ham-width: 30px;
-  --ham-bgc: #f05d58;
+  --ham-bgc: white;
 }
 
 .ham {

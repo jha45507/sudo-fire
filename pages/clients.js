@@ -81,8 +81,10 @@ const Clients = () => {
     <>
       <div className='flex justify-between xl:px-[110px] lg:px-[70px] items-center flex-col lg:flex-row space-y-10 lg:space-y-0 mt-28 lg:my-20 '>
         <Head>
-          <title>IT solutions service</title>
-          <meta name="description" content="" />
+        <title>Our Clients | Sudofire</title>
+          <meta name="description" content="At Sudofire, we take pride in the relationships we build with our clients. We work closely with each client to understand their unique needs and develop custom solutions that exceed their expectations. Learn more about our clients and the projects we've completed for them. Contact us today to see how we can help your business grow."/>
+          <meta name="title" content="Our Clients | Sudofire" />
+          <meta name="keywords" content="clients, portfolio, web design, software, IT solutions, IT services, branding, client list, Sudofire, startups, dedicated IT team, custom IT solutions, development team."/>
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <div className='space-y-2 lg:space-y-0'>
