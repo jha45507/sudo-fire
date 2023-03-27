@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -44,7 +45,13 @@ const HomePage = () => {
 
     return (
         <div className="flex items-center md:justify-center justify-end flex-col md:space-y-6 space-y-0 mt-20 lg:mt-0">
-
+        <Head>
+            <title>IT Services Company in Gurgaon</title>
+            <meta name="title" content="Homepage | Sudofire" />
+            <meta name="description" content="Get dedicated IT services for Enterprise Software, Mobile Applications, Saas solutions, IOT solutions, AI solutions. We are an IT company in Gurgaon providing  Cloud services and devops services. We are one of the top IT Outsourcing companies in India for MSMEs." />
+            <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company, Ecommerce Portal Development, Web Development" />
+            <link rel="shortcut icon" href="/favicon.ico" />
+        </Head>
             <div className='flex flex-col md:flex-row md:justify-around justify-end items-center md:h-[88vh] h-[60vh]' style={styling}>
                 <div className="sm:mt-60 md:mt-0">
                     <h1 className='text-center md:text-left'><strong className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-gray-600 '>Building Solutions <br /> for Digital Age</strong></h1>

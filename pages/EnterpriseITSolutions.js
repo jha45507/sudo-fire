@@ -75,10 +75,10 @@ const EnterpriseITSolutions = () => {
     return (
         <div className='w-[100%]'>
             <Head>
-                <title> Enterprise mobility solutions</title>
-                <meta name="description" content="Get Dedicated It Services For Enterprise Software, Mobile Applications, Saas Solutions, Iot Solutions, Ai Solutions We Are An It Company In Gurgaon Providing Cloud Services And Devops Services" />
-                <meta name="title" content="Enterprise mobility solutions" />
-                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company" />
+                <title>Enterprise IT Solutions | Sudofire</title>
+                <meta name="description" content="Get dedicated IT services for Enterprise Software, Mobile Applications, Saas solutions, IOT solutions, AI solutions. We are one of the top IT Outsourcing companies in India for MSMEs. We are an IT company in Gurgaon providing Cloud services and devops services." />
+                <meta name="title" content="Enterprise IT Solutions | Sudofire" />
+                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company, Ecommerce Portal Development, Web Development" />
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">

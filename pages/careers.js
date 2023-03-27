@@ -12,7 +12,7 @@ const Careers = () => {
   return (
     <div className='flex flex-col mt-20 lg:mt-0 lg:flex-row lg:justify-between items-start'>
       <Head>
-      <title>Join Our Team | Career Opportunities at Sudofire</title>
+        <title>Join Our Team | Career Opportunities at Sudofire</title>
         <meta name="description" content="Interested in joining a dynamic and innovative team? Sudofire is always looking for talented individuals to help us create amazing digital experiences for our clients. Explore our current career opportunities and discover how you can bring your skills and expertise to Sudofire. Apply today and take the first step towards a rewarding career in digital marketing and web design."/>
         <meta name="title" content="Join Our Team | Career Opportunities at Sudofire" />
         <meta name="keywords" content="career opportunities, job openings, python jobs, django jobs, coding jobs, IT hiring, Sudofire, join our team, apply for a job, app design, jobs in Gurgaon/Gurugram/Delhi NCR" />

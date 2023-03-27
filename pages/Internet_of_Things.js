@@ -64,10 +64,10 @@ const Internet_of_Things = () => {
     return (
         <div className='w-[100%]'>
             <Head>
-                <title>IOT solutions</title>
-                <meta name="description" content="Get Dedicated It Services For Enterprise Software, Mobile Applications, Saas Solutions, Iot Solutions, Ai Solutions We Are One Of The Top It Outsourcing Company In India For Msmes" />
-                <meta name="title" content="IOT solutions" />
-                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company" />
+                <title>Internet of things | Sudofire</title>
+                <meta name="description" content=" Get dedicated IT services for IOT solutions, Enterprise Software, Mobile Applications, Saas solutions, AI solutions. We are one of the top IT Outsourcing companies in India for MSMEs. We are an IT company in Gurgaon providing Cloud services and devops services." />
+                <meta name="title" content="Internet of things | Sudofire" />
+                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company, Ecommerce Portal Development, Web Development" />
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">

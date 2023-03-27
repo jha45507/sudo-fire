@@ -73,10 +73,10 @@ const Devops_Cloud_Services = () => {
     return (
         <div className='w-[100%] relative '>
             <Head>
-                <title>Cloud & DevOps services</title>
-                <meta name="description" content="We are an IT company in Gurgaon providing Cloud services and devops services We Are One Of The Top It Outsourcing Company In India For Msmes" />
-                <meta name="title" content="Cloud & DevOps services" />
-                <meta name="keywords" content="cloud & devops, IT solutions, IT services, iot, saas, mobility solutions, software services, AI Service company" />
+                <title>Devops & Cloud Services | Sudofire</title>
+                <meta name="description" content="Get dedicated IT services for Enterprise Software, Mobile Applications, Saas solutions, IOT solutions, AI solutions. We are an IT company in Gurgaon providing Cloud services and devops services. We are one of the top IT Outsourcing companies in India for MSMEs." />
+                <meta name="title" content="Devops & Cloud Services | Sudofire" />
+                <meta name="keywords" content="IT solutions, IT services, cloud & devops, iot, saas, mobility solutions, software services, AI Service company, Ecommerce Portal Development, Web Development" />
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             <div className="xl:h-[75vh] bg-blue-100 flex lg:justify-center justify-center lg:space-x-20 space-x-0 items-center mt-20 lg:mt-0 flex-col lg:flex-row px-8 lg:px-0 opacity-100">
