@@ -131,7 +131,7 @@ function MyApp({ Component, pageProps }) {
   }
   return (<>
     <div>
-      <div ref={headeRef} className='lg:flex w-full lg:sticky absolute lg:top-0 top-0 z-20 justify-between xl:px-[110px] lg:px-[66px] md:px-[35px] items-center shadow-md font-bold h-20 overflow-hidden lg:overflow-visible lg:backdrop-blur-sm backdrop-blur-lg bg-transparent '>
+      <div ref={headeRef} className='lg:flex w-full sticky lg:top-0 top-0 z-20 justify-between xl:px-[110px] lg:px-[66px] md:px-[35px] items-center shadow-md font-bold h-20 overflow-hidden lg:overflow-visible lg:backdrop-blur-sm backdrop-blur-lg bg-transparent '>
         <div ref={hamRef} className='lg:hidden ham' onClick={hamclick} ></div>
 
         <div className='w-[200px] mt-2'>

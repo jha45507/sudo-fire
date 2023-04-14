@@ -44,7 +44,7 @@ const HomePage = () => {
     }
 
     return (
-        <div className="flex items-center md:justify-center justify-end flex-col md:space-y-6 space-y-0 mt-20 lg:mt-0">
+        <div className="flex items-center md:justify-center justify-end flex-col md:space-y-6 space-y-0 lg:mt-0">
         <Head>
             <title>IT Services Company in Gurgaon</title>
             <meta name="title" content="Homepage | Sudofire" />

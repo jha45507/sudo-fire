@@ -31,7 +31,7 @@ import Head from 'next/head'
 
 const PortFolio = () => {
   return (
-    <div className="mt-28 lg:mt-0">
+    <div className="mt-8 lg:mt-0">
         <Head>
           <title>Our Portfolio | Sudofire</title>
           <link rel="shortcut icon" href="/favicon.ico" />

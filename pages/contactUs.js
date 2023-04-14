@@ -55,7 +55,7 @@ const ContactUs = () => {
     }
 
     return (
-        <div className='p-5 mt-10 lg:mt-0'>
+        <div className='p-5 lg:mt-0'>
             <Head>
             <title>Contact Us | Get in Touch with Sudofire</title>
                 <meta name="title" content="Join Our Team | Career Opportunities at Sudofire" />
@@ -65,7 +65,7 @@ const ContactUs = () => {
             </Head>
             {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> */}
             {/* <Script src="https://www.google.com/recaptcha/api.js" /> */}
-            <div className="block p-6 rounded-lg shadow-lg bg-white max-w-2xl my-10 mx-auto ">
+            <div className="block p-6 rounded-lg shadow-lg bg-white max-w-2xl mb-10 mx-auto ">
                 <h1 className='text-center text-3xl text-gray-600 my-5 font-bold' >CONTACT US</h1>
                 <form action="" onSubmit={SendMail} method="post" id="contact-form">
                     <div className="form-group mb-6">
