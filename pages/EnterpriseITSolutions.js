@@ -111,7 +111,6 @@ const EnterpriseITSolutions = () => {
                     </li>
                 </ul>
             </section>
-            {/* <hr className='w-[90%] border border-gray-600 ' /> */}
             <div className=" scroll-mt-44 flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
                     <Image src={EISecm} className="" />

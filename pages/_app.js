@@ -258,7 +258,7 @@ function MyApp({ Component, pageProps }) {
         </div>
         <div>
           <a href="https://bit.ly/2u5ap36" className='flex flex-col items-center space-y-1'>
-            <MdNavigation className='text-[25px] text-red-500' />
+            <MdNavigation className='text-[25px] text-red-500 rotate-45' />
             <p className='text-[12px] text-red-500'>Navigate</p>
           </a>
         </div>

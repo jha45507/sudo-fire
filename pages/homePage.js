@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {useRef} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -12,8 +12,6 @@ import swiperCore, { Autoplay } from 'swiper';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
 
 import homeimg from '../public/images/home-img.png'
 
@@ -33,8 +31,6 @@ import bg from '../public/images/side-img.png'
 const HomePage = () => {
     
     let img_first_ref = useRef();
-    let img_second_ref = useRef();
-    let img_third_ref = useRef();
     swiperCore.use([Autoplay])
 
     let styling = {
@@ -53,7 +49,7 @@ const HomePage = () => {
             <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
             <div className='flex flex-col md:flex-row md:justify-around justify-end items-center md:h-[88vh] h-[60vh]' style={styling}>
-                <div className="sm:mt-60 md:mt-0">
+                <div className="sm:mt-60 md:mt-0 z-30">
                     <h1 className='text-center md:text-left'><strong className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-gray-600 '>Building Solutions <br /> for Digital Age</strong></h1>
                     <div className='xl:my-8 md:my-5 my-10 xl:text-xl lg:text-lg text-md text-center md:text-left'>
                         <Link href="/portFolio" className="bg-red-500 text-white rounded-full xl:py-2 lg:py-1 py-1 md:py-2 xl:px-5 px-3 hover:text-red-400 hover:bg-gray-200">View Case Studies</Link>
@@ -168,62 +164,6 @@ const HomePage = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            {/* <div className='carousel w-[95%] md:w-[82%] lg:h-[75vh] h-[82vh] space-y-5 relative rounded-md overflow-hidden flex lg:justify-start justify-center items-center flex-col'>
-                <h1 className='text-center text-gray-600 md:text-4xl text-xl font-bold mt-8'>Industry leaders who vouch for us</h1>
-                <div className='lg:w-[82%] lg:h-[60vh] w-[95%] h-[80vh] bg-indigo-300'>
-                    <Swiper centeredSlides={true} pagination={{ clickable: true, }} navigation={true} FclassName="mySwiper"
-                        slidesPerView={1} autoplay={{ delay: 2500 }} loop={true} modules={[Pagination, Navigation]} >
-                        <SwiperSlide>
-                            <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
-                                <div className='w-[100%] flex flex-col-reverse lg:flex-row justify-center items-center '>
-                                    <div className='lg:w-[45%] shadow-2xl lg:p-[50px] p-3 w-[90%] rounded-xl lg:mt-0 mt-5'>
-                                        <div className=''>
-                                            <p className='text-justify text-white lg:text-lg text-md'>Assistant Engineer to Director, ALL INDIA RADIO</p>
-                                            <p className='text-justify text-white lg:text-md text-sm lg:mt-10 mt-5' >We really liked the enthusiasm and professionalism of the team at Sudofire. They did a wonderful job with our IMS. Good Luck to their future endeavors.</p>
-                                        </div>
-                                    </div>
-                                    <div className='lg:w-[30%] lg:ml-16 w-[90%] lg:flex-none flex flex-col items-center'>
-                                        <Image src={AMSharma} className="lg:w-[200px] w-[150px] rounded-[50%] shadow-2xl p-2" />
-                                        <h3 className='text-left lg:ml-8 lg:text-2xl text-xl text-white'>A.M Sharma</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
-                                <div className='w-[100%] flex flex-col-reverse lg:flex-row justify-center items-center'>
-                                    <div className='lg:w-[45%] shadow-2xl lg:p-[50px] p-3 w-[90%] rounded-xl lg:mt-0 mt-5'>
-                                        <div className=''>
-                                            <p className='text-justify text-white lg:text-lg text-md'>IT HEAD, National Research Development Corporation</p>
-                                            <p className='text-justify text-white lg:text-md text-sm lg:mt-10 mt-5' >Good Team to deliver good solutions. Not only the delivery but post deployment support is also their USP. I as a buyer really enjoyed working with Sudofire.</p>
-                                        </div>
-                                    </div>
-                                    <div className='lg:w-[30%] lg:ml-16 w-[90%] lg:flex-none flex flex-col items-center'>
-                                        <Image src={Abhishek_Gautam} className="lg:w-[200px] w-[150px] rounded-[50%] shadow-2xl p-2" />
-                                        <h3 className='text-left lg:ml-8 lg:text-2xl text-xl text-white'>Abhishek Gautam</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className=' w-[100%] lg:h-[60vh] h-[80vh] items-center flex justify-center m-auto' ref={img_first_ref}>
-                                <div className='w-[100%] flex flex-col-reverse lg:flex-row justify-center items-center'>
-                                    <div className='lg:w-[45%] shadow-2xl lg:p-[50px] p-3 w-[90%] rounded-xl lg:mt-0 mt-5'>
-                                        <div className=''>
-                                            <p className='text-justify text-white lg:text-lg text-md'>CEO of ETA</p>
-                                            <p className='text-justify text-white lg:text-md text-sm lg:mt-10 mt-5' >We developed a great association with Sudofire and their dedication towards managing our software is commendable. We appreciate their attention to detail and creative approach. Kudos! Sudofire Team.</p>
-                                        </div>
-                                    </div>
-                                    <div className='lg:w-[30%] lg:ml-16 w-[90%] lg:flex-none flex flex-col items-center'>
-                                        <Image src={adarshmatta} className="lg:w-[200px] w-[150px] rounded-[50%] shadow-2xl p-2" />
-                                        <h3 className='text-left lg:ml-8 lg:text-2xl text-xl text-white'>Mr. Adarsh Matta</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </div> */}
         </div >
     )
 }

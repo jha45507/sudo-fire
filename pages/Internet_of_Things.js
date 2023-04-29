@@ -30,7 +30,6 @@ const Internet_of_Things = () => {
         const arrow = document.getElementById("arrow")
         window.addEventListener("scroll", () => {
             if (arrow.classList.contains('aaa')) {
-                // arrow.classList.remove('hidden')
                 arrow.classList.toggle('show', window.scrollY > 1100)
                 arrow.classList.toggle('hidden', window.scrollY < 1100)
             }
