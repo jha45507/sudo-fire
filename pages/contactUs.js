@@ -29,7 +29,7 @@ const ContactUs = () => {
             alert("please check reCaptcha")
             return
         }
-        const response = await fetch(`https://teamage.in/accounts/api/v1/contact_us`, {
+        const response = await fetch(`https://teamage.sudofire.com/accounts/api/v1/email_us`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,12 @@ const ContactUs = () => {
         setNumber("")
         setMassage("")
 
-        alert("Saved your information")
+        // if (response.status == 200) {
+        //     contact_form.current.classList.replace('show', 'hidden')
+        //     mail_send_sms.current.classList.replace('hidden', 'show')
+        //     mail_deskTop_send_sms.current.classList.replace('hidden', 'show')
+        //     contactForm_div.current.classList.replace('h-[325px]', 'auto')
+        //   }
     }
 
     function onRecaptchaChange(token) {
