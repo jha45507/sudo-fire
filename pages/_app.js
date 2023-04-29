@@ -1,13 +1,15 @@
 import '../styles/globals.css'
-// import Navbar from '../components/Navbar'
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/images/side-logo2.png'
 import { RiArrowDropDownLine } from 'react-icons/ri'
+import { HiMail } from 'react-icons/hi'
+import { MdNavigation } from 'react-icons/md'
+import { MdCall } from 'react-icons/md'
+import { RiWhatsappFill } from 'react-icons/ri'
 
 import Footer from '../components/Footer'
-// import ServicesPopup from '../components/ServicesPopup'
 function MyApp({ Component, pageProps }) {
   const headeRef = useRef();
   const hamRef = useRef();
@@ -243,11 +245,35 @@ function MyApp({ Component, pageProps }) {
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/contactUs">CONTACT US</Link>
         </div >
       </div >
-      {/* <Navbar /> */}
-      {/* <ServicesPopup /> */}
       <div onClick={closePopup}>
         <Component {...pageProps} />
         <Footer />
+      </div>
+      <div className='flex justify-around text-center py-2 fixed bottom-0 w-full bg-white z-50 border_style md:hidden'>
+        <div>
+          <a href="mailto:sales@sudofire.com" className='flex flex-col items-center space-y-1'>
+            <HiMail className='text-[25px] text-red-500' />
+            <p className='text-[12px] text-red-500'>Get Quote</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://bit.ly/2u5ap36" className='flex flex-col items-center space-y-1'>
+            <MdNavigation className='text-[25px] text-red-500' />
+            <p className='text-[12px] text-red-500'>Navigate</p>
+          </a>
+        </div>
+        <div>
+          <a href="tel:+919811406941" className='flex flex-col items-center space-y-1'>
+            <MdCall className='text-[25px] text-red-500' />
+            <p className='text-[12px] text-red-500'>Call</p>
+          </a>
+        </div>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=+919811406941&text=Hi, I contacted you through your website." className='flex flex-col items-center space-y-1'>
+            <RiWhatsappFill className='text-[25px] text-red-500' />
+            <p className='text-[12px] text-red-500'>Whatsapp</p>
+          </a>
+        </div>
       </div>
     </div>
   </>

@@ -4,13 +4,12 @@ import Script from 'next/script'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react';
 const ContactUs = () => {
+    const [token, setToken] = useState('')
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [number, setNumber] = useState('')
     const [massage, setMassage] = useState('')
-
-    const [token, setToken] = useState('')
-
 
     const SendMail = async (e) => {
         e.preventDefault();
@@ -48,8 +47,6 @@ const ContactUs = () => {
         alert("Saved your information")
     }
 
-
-
     function onRecaptchaChange(token) {
         setToken(token)
     }
@@ -63,8 +60,6 @@ const ContactUs = () => {
                 <meta name="keywords" content="Enterprise IT Solutions, Internet of Things, SaaS, Mobility Solutions, DevOps, Cloud Services, Ecommerce Portal Development, Mobile App development, Web Development."/>
                 <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
-            {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> */}
-            {/* <Script src="https://www.google.com/recaptcha/api.js" /> */}
             <div className="block p-6 rounded-lg shadow-lg bg-white max-w-2xl mb-10 mx-auto ">
                 <h1 className='text-center text-3xl text-gray-600 my-5 font-bold' >CONTACT US</h1>
                 <form action="" onSubmit={SendMail} method="post" id="contact-form">
@@ -73,12 +68,12 @@ const ContactUs = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                         <div className="form-group mb-6">
-                            <input type="email" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput123" aria-describedby="emailHelp123" placeholder="Enter Email" value={email} required onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput123" aria-describedby="emailHelp123" placeholder="Enter Email" value={email} required onChange={(e) => setEmail(e.target.value)} name="email" />
                         </div>
                         <div className="form-group mb-6">
-                            <input type="number" className="form-control  block  w-full  px-3  py-1.5  text-base  font-normal  text-gray-700  bg-white bg-clip-padding  border border-solid border-gray-300  rounded  transition  ease-in-out  m-0  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput124"
-                                aria-describedby="emailHelp124" placeholder="Contact No."
-                                value={number} required onChange={(e) => setNumber(e.target.value)} />
+                            <input type="text" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput124" name="number"
+                                aria-describedby="emailHelp124" placeholder="Contact No." minLength={10} maxLength={10}  min={10} max={10}
+                                value={number} required onChange={(e) => setNumber(e.target.value.replace(/[^0-9]/g,''))} />
                         </div>
                     </div>
                     <div className="form-group mb-6" >
@@ -89,9 +84,6 @@ const ContactUs = () => {
                     </div >
                     <div className='form-group mb-6'>
                         <ReCAPTCHA sitekey="6LdWOhciAAAAAK8_H2WUcMee5gg4U3K5WPohz402" onChange={onRecaptchaChange} />
-                        {/* <div className="g-recaptcha pt-2 d-flex justify-center" data-sitekey="6LdWOhciAAAAAK8_H2WUcMee5gg4U3K5WPohz402"></div> */}
-                        {/* <p className="capchaError text-red"></p> */}
-                        {/* <p id="errorMsg" className="text-danger text-center"></p> */}
                     </div>
                     <button type="submit" onClick={SendMail} className="w-full px-6 py-2.5 bg-[#f05d58] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-orange-700 hover:shadow-lg focus:bg-orange-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#f05d58] active:shadow-lg transition duration-150 ease-in-out">SUBMIT</button>
                 </form>

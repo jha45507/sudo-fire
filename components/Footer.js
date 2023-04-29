@@ -98,20 +98,20 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className='mt-10 pb-10 flex flex-col items-center space-y-5 font-bold text-lg text-gray-800'>
+				<div className='mt-10 pb-20 md:pb-10 flex flex-col items-center space-y-5 font-bold text-lg text-gray-800'>
 					<h1>FOLLOW US</h1>
 					<div className='flex flex-row space-x-5 items-center'>
 						<Link href="https://www.facebook.com/sudofire/">
-							<TfiFacebook className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
+							<TfiFacebook className='w-[30px] h-[30px] text-red-500 hover:text-indigo-400' />
 						</Link>
 						<Link href="https://www.linkedin.com/company/sudofire-technologies/about/">
-							<TfiLinkedin className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
+							<TfiLinkedin className='w-[30px] h-[30px] text-red-500 hover:text-indigo-400' />
 						</Link>
 						<Link href="https://api.whatsapp.com/send?phone=+919811406941&text=Hi, I contacted you through your website.">
-							<RiWhatsappFill className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
+							<RiWhatsappFill className='w-[30px] h-[30px] text-red-500 hover:text-indigo-400' />
 						</Link>
 						<Link href="https://www.instagram.com/sudofire_official/">
-							<RiInstagramFill className='w-[30px] h-[30px] text-red-400 hover:text-indigo-400' />
+							<RiInstagramFill className='w-[30px] h-[30px] text-red-500 hover:text-indigo-400' />
 						</Link>
 					</div>
 				</div>
