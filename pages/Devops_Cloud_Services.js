@@ -71,7 +71,7 @@ const Devops_Cloud_Services = () => {
     }, [])
 
     return (
-        <div className='w-[100%] relative '>
+        <div className='w-[100%] relative mt-20 lg:mt-0'>
             <Head>
                 <title>Devops & Cloud Services | Sudofire</title>
                 <meta name="description" content="Get dedicated IT services for Enterprise Software, Mobile Applications, Saas solutions, IOT solutions, AI solutions. We are an IT company in Gurgaon providing Cloud services and devops services. We are one of the top IT Outsourcing companies in India for MSMEs." />
@@ -111,7 +111,7 @@ const Devops_Cloud_Services = () => {
             </section>
             <div id="CL" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
-                    <Image src={DCcc} className="" />
+                    <Image src={DCcc} alt='' className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Cloud Consulting</h2>
@@ -134,7 +134,7 @@ const Devops_Cloud_Services = () => {
 
             <div id="CA" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="w-[40%] md:w-[15%] lg:hidden block">
-                    <Image src={DCca} className="" />
+                    <Image src={DCca} alt='' className="" />
                 </div>
 
                 <div className="lg:w-[40%] w-full">
@@ -156,13 +156,13 @@ const Devops_Cloud_Services = () => {
                     </p>
                 </div>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
-                    <Image src={DCca} className="" />
+                    <Image src={DCca} alt='' className="" />
                 </div>
             </div>
 
             <div id="CO" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
-                    <Image src={DCco} className="" />
+                    <Image src={DCco} alt='' className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Cost Optimization</h2>
@@ -186,7 +186,7 @@ const Devops_Cloud_Services = () => {
 
             <div id="M&S" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="md:w-[18%] w-[40%] lg:hidden block">
-                    <Image src={DCms} className="" />
+                    <Image src={DCms} alt='' className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Migration & Security</h2>
@@ -206,7 +206,7 @@ const Devops_Cloud_Services = () => {
                     </p>
                 </div>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
-                    <Image src={DCms} className="" />
+                    <Image src={DCms} alt='' className="" />
                 </div>
             </div>
 
@@ -215,7 +215,7 @@ const Devops_Cloud_Services = () => {
                 <div className="w-[100%] flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-center items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={DCaes} className="w-[100px]" />
+                            <Image src={DCaes} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Assessing Existing State</h2>
                         <p className="text-justify"> Studying and understanding the current state of readiness to lay a firm foundation for the service solution. </p>
@@ -223,7 +223,7 @@ const Devops_Cloud_Services = () => {
 
                     <div className="flex flex-col justify-center items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={DCpast} className="w-[38px]" />
+                            <Image src={DCpast} alt='' className="w-[38px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Differentiating Between Past & Future </h2>
                         <p className="text-justify"> Identifying the differences between current infrastructure and the infrastructure to deploy for the solution. </p>
@@ -233,7 +233,7 @@ const Devops_Cloud_Services = () => {
                 <div className=' w-[100%] flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={DCac} className="w-[130px]" />
+                            <Image src={DCac} alt='' className="w-[130px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Architectural Consulting</h2>
                         <p className="text-justify word-spacing"> Determining the best cloud model for each specific set of requirements through consultations. </p>
@@ -241,7 +241,7 @@ const Devops_Cloud_Services = () => {
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={DCpms} className="w-[100px]" />
+                            <Image src={DCpms} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Planning Management & Stability</h2>
                         <p className="text-justify"> Making plans of how the infrastructure will be managed in the long run and how robust the solution will be in terms of stability.</p>

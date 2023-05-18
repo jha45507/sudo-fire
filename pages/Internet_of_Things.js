@@ -61,7 +61,7 @@ const Internet_of_Things = () => {
         });
     }, [])
     return (
-        <div className='w-[100%]'>
+        <div className='w-[100%] mt-20 lg:mt-0'>
             <Head>
                 <title>Internet of things | Sudofire</title>
                 <meta name="description" content=" Get dedicated IT services for IOT solutions, Enterprise Software, Mobile Applications, Saas solutions, AI solutions. We are one of the top IT Outsourcing companies in India for MSMEs. We are an IT company in Gurgaon providing Cloud services and devops services." />
@@ -100,7 +100,7 @@ const Internet_of_Things = () => {
 
             <div id="HA" className="scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
-                    <Image src={IOThome} className="lg:w-[50%] w-[75%]" />
+                    <Image src={IOThome} alt='' className="lg:w-[50%] w-[75%]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Home Automation</h2>
@@ -110,7 +110,7 @@ const Internet_of_Things = () => {
 
             <div id="IA" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
-                    <Image src={IOTindustrial} />
+                    <Image src={IOTindustrial} alt='' />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Industrial Automation</h2>
@@ -128,13 +128,13 @@ const Internet_of_Things = () => {
                     </p>
                 </div>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
-                    <Image src={IOTindustrial} />
+                    <Image src={IOTindustrial} alt='' />
                 </div>
             </div>
 
             <div id="SEI" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center ">
-                    <Image src={IOTsmart} className="lg:w-[50%] w-[75%]" />
+                    <Image src={IOTsmart} alt='' className="lg:w-[50%] w-[75%]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Smart Environment Implementation</h2>
@@ -160,7 +160,7 @@ const Internet_of_Things = () => {
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={IOTrecog} className="w-[100px]" />
+                            <Image src={IOTrecog} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Recognize IoT Possibilities</h2>
                         <p className="text-justify">Understanding the broader aspect of where IoT can be used as a solution.</p>
@@ -168,7 +168,7 @@ const Internet_of_Things = () => {
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={IOTtranslate} className="w-[100px]" />
+                            <Image src={IOTtranslate} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Translate IoT To HarnessRequirements</h2>
                         <p className="text-justify"> Transforming the requirement structure to accommodate IoT to eradicate the problem by using IoT as the solution.</p>
@@ -180,7 +180,7 @@ const Internet_of_Things = () => {
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={IOTarchitech} className="w-[100px]" />
+                            <Image src={IOTarchitech} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Architecture Formulation</h2>
                         <p className="text-justify"> Setting up the base of the solution after taking all technical aspects into consideration by generating frameworks and architectural diagrams.</p>
@@ -188,7 +188,7 @@ const Internet_of_Things = () => {
 
                     <div className="flex flex-col justify-start items-center lg:w-[38%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={IOTbuild} className="w-[100px]" />
+                            <Image src={IOTbuild} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Build & Deploy IoT Service</h2>
                         <p className="text-justify"> Giving structure to the problem solution and enabling deployment through suitable technologies. </p>

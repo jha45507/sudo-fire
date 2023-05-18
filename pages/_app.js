@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import React, { useRef } from 'react'
+import Script from 'next/script';
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/images/side-logo2.png'
@@ -133,11 +134,10 @@ function MyApp({ Component, pageProps }) {
   }
   return (<>
     <div>
-      <div ref={headeRef} className='lg:flex w-full sticky lg:top-0 top-0 z-20 justify-between xl:px-[110px] lg:px-[66px] md:px-[35px] items-center shadow-md font-bold h-20 overflow-hidden lg:overflow-visible lg:backdrop-blur-sm backdrop-blur-lg bg-transparent '>
+      <div ref={headeRef} className='lg:flex w-full fixed lg:sticky lg:top-0 top-0 z-20 justify-between xl:px-[110px] lg:px-[66px] md:px-[35px] items-center shadow-md font-bold h-20 overflow-hidden lg:overflow-visible lg:backdrop-blur-sm backdrop-blur-lg bg-transparent '>
         <div ref={hamRef} className='lg:hidden ham' onClick={hamclick} ></div>
-
         <div className='w-[200px] mt-2'>
-          <Link href="/" onClick={closeNavbar} ><Image src={logo} /> </Link>
+          <Link href="/" onClick={closeNavbar} ><Image src={logo} alt='' /> </Link>
         </div>
 
         <div className='text-sm text-center my-10 space-y-10 lg:space-y-0 lg:space-x-10 flex items-center flex-col lg:flex-row text-gray-600'>
@@ -239,7 +239,7 @@ function MyApp({ Component, pageProps }) {
               </div >
             </div >
           </div >
-          <Link className='hover:text-red-400' onClick={closeNavbar} href="/portFolio">PORTFOLIO</Link>
+          <Link className='hover:text-red-400' onClick={closeNavbar} href="/portfolio">PORTFOLIO</Link>
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/careers">CAREERS</Link>
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/clients">CLIENTS</Link>
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/contactUs">CONTACT US</Link>

@@ -56,7 +56,7 @@ const SaaS_Mobility_Solutions = () => {
         });
     }, [])
     return (
-        <div className='w-[100%]'>
+        <div className='w-[100%] mt-20 lg:mt-0'>
             <Head>
                 <title>Saas & Mobility Solutions | Sudofire</title>
                 <meta name="description" content="Get dedicated IT services for Saas solutions, Enterprise Software, Mobile Applications, IOT solutions, AI solutions. We are one of the top IT Outsourcing companies in India for MSMEs. We are an IT company in Gurgaon providing Cloud services and devops services."/>
@@ -91,7 +91,7 @@ const SaaS_Mobility_Solutions = () => {
 
             <div id="RSS" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
-                    <Image src={SAASrss} className="lg:w-[50%] w-[75%]" />
+                    <Image src={SAASrss} className="lg:w-[50%] w-[75%]" alt='' />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">Redefining Software Services</h2>
@@ -109,7 +109,7 @@ const SaaS_Mobility_Solutions = () => {
 
             <div id="NAMS" className='scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0'>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden">
-                    <Image src={SAASnams} />
+                    <Image src={SAASnams} alt='' />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 lg:static sticky top-0 bg-white">New Age Mobility Solutions</h2>
@@ -128,63 +128,58 @@ const SaaS_Mobility_Solutions = () => {
                     </p>
                 </div>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:block hidden">
-                    <Image src={SAASnams} className="w-[50%]" />
+                    <Image src={SAASnams} alt='' className="w-[50%]" />
                 </div>
             </div>
 
             <div className="my-16 w-[100%]" id="approach_SaaS_Mobility_Solutions">
                 <h1 className="text-red-400 text-center lg:text-3xl text-2xl px-2 my-0 lg:static sticky top-0 bg-white">Our approach to SaaS & Mobility Solutions</h1>
-
                 <div className='flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
-
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={SAASru} className="w-[80px]" />
+                            <Image src={SAASru} alt='' className="w-[80px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Requirement Understanding</h2>
                         <p className="text-justify"> Understanding the problem statement and developing a concept of the problem and formulating a solution concept. </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={SAASms} className="w-[100px]" />
+                            <Image src={SAASms} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Maintenance & Support</h2>
                         <p className="text-justify"> Post deployment periodic maintenance and support provision for smooth sailing of the projects.</p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={SAASux} className="w-[120px]" />
+                            <Image src={SAASux} alt='' className="w-[120px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">UX/UI Support</h2>
                         <p className="text-justify"> Visualization of the problem solution through creating user interface wireframes and flow diagrams with due care given to optimize user experience. </p>
                     </div>
-
                 </div>
 
                 <div className='flex justify-around lg:items-start items-center mt-10 flex-col lg:flex-row space-y-10 lg:space-y-0'>
-
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={SAASacdd} className="w-[100px]" />
+                            <Image src={SAASacdd} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Architectural Consultations & Design Development</h2>
                         <p className="text-justify"> Mobile App architecture consultations based on requirements and design initializations. </p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={SAASadi} className="w-[100px]" />
+                            <Image src={SAASadi} alt='' className="w-[100px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Application Development & Integration </h2>
                         <p className="text-justify"> The development and integration of all segments of the solutions to culminate the final mobile app solution.</p>
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div>
-                            <Image src={SAASrp} className="w-[50px]" />
+                            <Image src={SAASrp} alt='' className="w-[50px]" />
                         </div>
                         <h2 className="text-center text-2xl text-black">Rapid Prototyping</h2>
                         <p className="text-justify"> Understanding task requirements and building prototypes to quickly visualize the end result through development of MVPs (Minimum Viable Product) </p>
                     </div>
-
                 </div>
             </div>
         </div>

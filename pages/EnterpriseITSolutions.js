@@ -73,7 +73,7 @@ const EnterpriseITSolutions = () => {
     }, [])
 
     return (
-        <div className='w-[100%]'>
+        <div className='w-[100%] mt-20 lg:mt-0'>
             <Head>
                 <title>Enterprise IT Solutions | Sudofire</title>
                 <meta name="description" content="Get dedicated IT services for Enterprise Software, Mobile Applications, Saas solutions, IOT solutions, AI solutions. We are one of the top IT Outsourcing companies in India for MSMEs. We are an IT company in Gurgaon providing Cloud services and devops services." />
@@ -113,7 +113,7 @@ const EnterpriseITSolutions = () => {
             </section>
             <div className=" scroll-mt-44 flex justify-around items-center mt-10 flex-col lg:flex-row px-8 lg:px-0" id="ECM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
-                    <Image src={EISecm} className="" />
+                    <Image src={EISecm} alt='' className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Enterprise Content Management</h2>
@@ -134,7 +134,7 @@ const EnterpriseITSolutions = () => {
 
             <div className="scroll-mt-44 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="ESM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 block lg:hidden">
-                    <Image src={EISesm} className="" />
+                    <Image src={EISesm} alt='' className="" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3  sticky top-0 bg-white lg:static">Ecommerce & Stock Management</h2>
@@ -152,12 +152,12 @@ const EnterpriseITSolutions = () => {
                     </p>
                 </div>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
-                    <Image src={EISesm} className="" />
+                    <Image src={EISesm} alt='' className="" />
                 </div>
             </div>
             <div className="scroll-mt-44 flex justify-around items-center my-16 flex-col lg:flex-row px-8 lg:px-0" id="CBA">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 flex justify-center items-center">
-                    <Image src={Group315} className="w-[200px] h-[120px] lg:h-[150px]" />
+                    <Image src={Group315} alt='' className="w-[200px] h-[120px] lg:h-[150px]" />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3  sticky top-0 bg-white lg:static">CRMs & Business Applications</h2>
@@ -176,7 +176,7 @@ const EnterpriseITSolutions = () => {
             </div>
             <div className="scroll-mt-44 flex justify-around items-center mt-16 flex-col lg:flex-row px-8 lg:px-0" id="LM">
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 lg:hidden block">
-                    <Image src={EISlm} />
+                    <Image src={EISlm} alt='' />
                 </div>
                 <div className="lg:w-[40%] w-full">
                     <h2 className="text-red-400 text-center lg:text-3xl text-2xl my-3 sticky top-0 bg-white lg:static">Legacy Modernization</h2>
@@ -192,7 +192,7 @@ const EnterpriseITSolutions = () => {
                     </p>
                 </div>
                 <div className="lg:w-1/4 md:w-[20%] w-2/4 hidden lg:block">
-                    <Image src={EISlm} className="w-[205px] h-[171px]" />
+                    <Image src={EISlm} alt='' className="w-[205px] h-[171px]" />
                 </div>
             </div>
 
@@ -203,7 +203,7 @@ const EnterpriseITSolutions = () => {
                 <div className="w-[100%] flex justify-around lg:items-start items-center my-10 flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={EIScd} className="w-[115px]" />
+                            <Image src={EIScd} alt='' className="w-[115px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Concept Development</h2>
@@ -218,7 +218,7 @@ const EnterpriseITSolutions = () => {
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={EISdr} className="w-[100px]" />
+                            <Image src={EISdr} alt='' className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Documenting Requirements</h2>
@@ -232,7 +232,7 @@ const EnterpriseITSolutions = () => {
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={EISux} className="w-[100px]" />
+                            <Image src={EISux} alt='' className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">UX/UI Support</h2>
@@ -248,7 +248,7 @@ const EnterpriseITSolutions = () => {
                 <div className="flex justify-around lg:items-start items-center flex-col lg:flex-row space-y-10 lg:space-y-0">
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={EISac} className="w-[100px]" />
+                            <Image src={EISac} alt='' className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Architectural Consulting</h2>
@@ -264,7 +264,7 @@ const EnterpriseITSolutions = () => {
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={EISte} className="w-[50px]" />
+                            <Image src={EISte} alt='' className="w-[50px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black">Technology Enablement</h2>
@@ -278,7 +278,7 @@ const EnterpriseITSolutions = () => {
                     </div>
                     <div className="flex flex-col justify-start items-center lg:w-[25%] md:w-[50%] w-[75%] space-y-3">
                         <div className="">
-                            <Image src={EISms} className="w-[100px]" />
+                            <Image src={EISms} alt='' className="w-[100px]" />
                         </div>
                         <div>
                             <h2 className="text-center text-2xl text-black"> Maintenance & Support</h2>

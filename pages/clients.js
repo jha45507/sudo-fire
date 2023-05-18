@@ -96,223 +96,223 @@ const Clients = () => {
           <div className='inner'>
             <div className="flex space-x-2 my-10 md:space-x-10">
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={nrdc} />
+                <Image className='p-3' src={nrdc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={saral} />
+                <Image className='p-3' src={saral} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={tkbc} />
-              </div>
-            </div>
-
-            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={snc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={logslm} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={smc} />
+                <Image className='p-3' src={tkbc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={instafitnessc} />
+                <Image className='p-3' src={snc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={tbsc} />
+                <Image className='p-3' src={logslm} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={svc} />
-              </div>
-            </div>
-
-            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={raktc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={touchlifec} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={haimc} />
+                <Image className='p-3' src={smc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={airc} />
+                <Image className='p-3' src={instafitnessc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={etac} />
+                <Image className='p-3' src={tbsc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={vizhenc} />
+                <Image className='p-3' src={svc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={jskc} />
+                <Image className='p-3' src={raktc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={dcbc} />
+                <Image className='p-3' src={touchlifec} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={iriscorpc} />
+                <Image className='p-3' src={haimc} alt='' />
+              </div>
+            </div>
+
+            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={airc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={etac} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={vizhenc} alt='' />
+              </div>
+            </div>
+
+            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={jskc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={dcbc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={iriscorpc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className="shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={mindcastc} />
+                <Image className='p-3' src={mindcastc} alt='' />
               </div>
               <div className="shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={primorisc} />
+                <Image className='p-3' src={primorisc} alt='' />
               </div>
               <div className="shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={wealthrockc} />
+                <Image className='p-3' src={wealthrockc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={woofuc} />
+                <Image className='p-3' src={woofuc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={navisitec} />
+                <Image className='p-3' src={navisitec} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={bhartic} />
+                <Image className='p-3' src={bhartic} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={abcc} />
+                <Image className='p-3' src={abcc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={logoplusofficesc} />
+                <Image className='p-3' src={logoplusofficesc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={ns3c} />
+                <Image className='p-3' src={ns3c} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={porasmotionc} />
+                <Image className='p-3' src={porasmotionc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={samsbrosc} />
+                <Image className='p-3' src={samsbrosc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={corritc} />
+                <Image className='p-3' src={corritc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={exceamc} />
+                <Image className='p-3' src={exceamc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={xaltc} />
+                <Image className='p-3' src={xaltc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px] flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={teamagec} />
-              </div>
-            </div>
-
-            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-             flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={chabarc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-             flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={yagnac} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-             flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={alsacec} />
+                <Image className='p-3' src={teamagec} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={jttc} />
+                <Image className='p-3' src={chabarc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={biryaniqueenc} />
+                <Image className='p-3' src={yagnac} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={burgernationc} />
-              </div>
-            </div>
-
-            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-             flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={cubicalc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-             flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={soundtrailsc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-             flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={huntmyofficec} />
+                <Image className='p-3' src={alsacec} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={nublissc} />
+                <Image className='p-3' src={jttc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+             flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={biryaniqueenc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+             flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={burgernationc} alt='' />
+              </div>
+            </div>
+
+            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+             flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={cubicalc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+             flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={soundtrailsc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+             flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={huntmyofficec} alt='' />
+              </div>
+            </div>
+
+            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+             flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={nublissc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
               flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={protechc} />
+                <Image className='p-3' src={protechc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
               flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={sendbestgiftc} />
-              </div>
-            </div>
-
-            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={switcherc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={harimanc} />
-              </div>
-              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
-              flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={prmc} />
+                <Image className='p-3' src={sendbestgiftc} alt='' />
               </div>
             </div>
 
             <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
               flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={wgc} />
+                <Image className='p-3' src={switcherc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
               flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={gifolac} />
+                <Image className='p-3' src={harimanc} alt='' />
               </div>
               <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
               flex justify-center items-center border rounded-lg bg-gray-200">
-                <Image className='p-3' src={PleasuretoWorkWith} />
+                <Image className='p-3' src={prmc} alt='' />
+              </div>
+            </div>
+
+            <div className='flex space-x-2 my-3 md:m-10 md:space-x-10'>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+              flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={wgc} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+              flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={gifolac} alt='' />
+              </div>
+              <div className=" shadow-xl md:w-[125px] md:h-[85px] w-[100px] h-[68px]
+              flex justify-center items-center border rounded-lg bg-gray-200">
+                <Image className='p-3' src={PleasuretoWorkWith} alt='' />
               </div>
             </div>
           </div>
@@ -322,210 +322,210 @@ const Clients = () => {
         <div className='w-full mt-10'>
           <div className="flex justify-evenly items-center flex-wrap">
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-7' src={nrdc} />
+              <Image className='p-7' src={nrdc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={saral} />
+              <Image className='' src={saral} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={tkbc} />
+              <Image className='' src={tkbc} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={snc} />
+              <Image className='' src={snc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-3 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={logslm} />
+              <Image className='' src={logslm} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={smc} />
+              <Image className='' src={smc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={tbsc} />
+              <Image className='' src={tbsc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={touchlifec} />
+              <Image className='' src={touchlifec} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-2' src={haimc} />
+              <Image className='p-2' src={haimc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={instafitnessc} />
+              <Image className='' src={instafitnessc} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-6' src={airc} />
+              <Image className='p-6' src={airc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={vizhenc} />
+              <Image className='' src={vizhenc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={jskc} />
+              <Image className='' src={jskc} alt='' />
             </div>
             <div className="shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={mindcastc} />
+              <Image className='' src={mindcastc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className="shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={wealthrockc} />
+              <Image className='' src={wealthrockc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={iriscorpc} />
+              <Image className='' src={iriscorpc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={woofuc} />
+              <Image className='' src={woofuc} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={primorisc} />
+              <Image className='' src={primorisc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={etac} />
+              <Image className='' src={etac} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={svc} />
+              <Image className='' src={svc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={raktc} />
+              <Image className='' src={raktc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={logoplusofficesc} />
+              <Image className='' src={logoplusofficesc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={ns3c} />
+              <Image className='' src={ns3c} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={corritc} />
+              <Image className='' src={corritc} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={abcc} />
+              <Image className='' src={abcc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={exceamc} />
+              <Image className='' src={exceamc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={xaltc} />
+              <Image className='' src={xaltc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={teamagec} />
+              <Image className='' src={teamagec} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-0 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-8' src={chabarc} />
+              <Image className='p-8' src={chabarc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={yagnac} />
+              <Image className='' src={yagnac} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-6' src={alsacec} />
+              <Image className='p-6' src={alsacec} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={porasmotionc} />
+              <Image className='' src={porasmotionc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={cubicalc} />
+              <Image className='' src={cubicalc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={soundtrailsc} />
+              <Image className='' src={soundtrailsc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={huntmyofficec} />
+              <Image className='' src={huntmyofficec} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={navisitec} />
+              <Image className='' src={navisitec} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={bhartic} />
+              <Image className='' src={bhartic} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-5' src={dcbc} />
+              <Image className='p-5' src={dcbc} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={samsbrosc} />
+              <Image className='' src={samsbrosc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={biryaniqueenc} />
+              <Image className='' src={biryaniqueenc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={nublissc} />
+              <Image className='' src={nublissc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px]  flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={protechc} />
+              <Image className='' src={protechc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={sendbestgiftc} />
+              <Image className='' src={sendbestgiftc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-5' src={jttc} />
+              <Image className='p-5' src={jttc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={switcherc} />
+              <Image className='' src={switcherc} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={harimanc} />
+              <Image className='' src={harimanc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center m-5 md:m-20 flex-wrap'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={prmc} />
+              <Image className='' src={prmc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={burgernationc} />
+              <Image className='' src={burgernationc} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='' src={wgc} />
+              <Image className='' src={wgc} alt='' />
             </div>
           </div>
 
           <div className='flex justify-evenly items-center flex-wrap m-5 md:m-0'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-1' src={gifolac} />
+              <Image className='p-1' src={gifolac} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-10' src={IE} />
+              <Image className='p-10' src={IE} alt='' />
             </div>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-8' src={Queen} />
+              <Image className='p-8' src={Queen} alt='' />
             </div>
             <div className="mt-3 md:mt-0 shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-5' src={Flourish} />
+              <Image className='p-5' src={Flourish} alt='' />
             </div>
           </div>
           <div className='flex justify-evenly items-center md:m-20'>
             <div className=" shadow-xl md:w-[175px] md:h-[120px] w-[100px] h-[68px] flex justify-center items-center rounded-2xl bg-gray-100">
-              <Image className='p-2' src={CG_logo} />
+              <Image className='p-2' src={CG_logo} alt='' />
             </div>
           </div>
         </div>

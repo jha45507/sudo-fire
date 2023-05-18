@@ -29,9 +29,9 @@ import tnstaeats from '../public/images/portfolio/Laptop-screens-4.jpg'
 import Link from 'next/link'
 import Head from 'next/head'
 
-const PortFolio = () => {
+const Portfolio = () => {
   return (
-    <div className="mt-8 lg:mt-0">
+    <div className="mt-24 lg:mt-0">
         <Head>
           <title>Our Portfolio | Sudofire</title>
           <link rel="shortcut icon" href="/favicon.ico" />
@@ -49,40 +49,40 @@ const PortFolio = () => {
         <div className="my-5">
           <div className="flex justify-center items-center md:flex-nowrap flex-wrap md:flex-row">
             <div className="shadow-xl w-40 h-24 mx-1 flex justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={tkbl} />
+              <Image className='p-7' src={tkbl} alt='' />
             </div>
             <div className="shadow-xl w-36 h-42 mx-1 my-3 md:my-0 flex justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={AIR} />
+              <Image className='p-7' src={AIR} alt='' />
             </div>
             <div className="shadow-xl w-40 h-24 mx-1 flex justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={rakt} />
+              <Image className='p-7' src={rakt} alt='' />
             </div>
           </div>
 
           <div className="flex justify-center items-center my-3 md:my-5 md:flex-nowrap flex-wrap md:flex-row">
             <div className="shadow-xl w-40 h-24 mx-1 flex justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={instafit} />
+              <Image className='p-7' src={instafit} alt='' />
             </div>
             <div className="shadow-xl w-36 h-42 mx-1 my-3 md:my-0 flex justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={chabarl} />
+              <Image className='p-7' src={chabarl} alt='' />
             </div>
             <div className="shadow-xl w-40 h-24 flex mx-1 justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={IRIS} />
+              <Image className='p-7' src={IRIS} alt='' />
             </div>
           </div>
 
           <div className="flex md:justify-end justify-center items-center md:flex-nowrap flex-wrap md:flex-row">
             <div className="shadow-xl w-36 h-42 mx-1 flex justify-center items-center border rounded-lg bg-gray-200 ">
-              <Image className='p-7' src={medicause} />
+              <Image className='p-7' src={medicause} alt='' />
             </div>
             <div className="shadow-xl w-40 h-24 flex mx-1 my-3 lg:my-0 justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={biryaniqueen} />
+              <Image className='p-7' src={biryaniqueen} alt='' />
             </div>
             <div className="shadow-xl w-40 h-24 flex mx-1 md:mb-0 justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={exceamindialogo} />
+              <Image className='p-7' src={exceamindialogo} alt='' />
             </div>
             <div className="shadow-xl w-36 h-42 flex mx-1 justify-center items-center border rounded-lg bg-gray-200">
-              <Image className='p-7' src={nrdcl} />
+              <Image className='p-7' src={nrdcl} alt='' />
             </div>
           </div>
 
@@ -92,9 +92,9 @@ const PortFolio = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center my-5 w-3/4">
           <div className="">
-            <Image src={pair} />
+            <Image src={pair} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">All India Radio</h2>
             <p className="text-justify text-gray-600">
               AIR (All India Radio) provides several features to general
@@ -119,11 +119,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={pnrdc} />
+            <Image src={pnrdc} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">NRDC Royalty</h2>
             <p className="text-justify text-gray-600">
               NRDC Royalty is a type of record management system in which
@@ -150,11 +150,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={pbq} />
+            <Image src={pbq} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Biryani Queen</h2>
             <p className="text-justify text-gray-600">
               Biryani Queen is a culinary restaurant chain in India that delivers wonderful mouthwatering
@@ -174,11 +174,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={pchabar} />
+            <Image src={pchabar} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Cha Bar</h2>
             <p className="text-justify text-gray-600 word-spacing">
               Cha Bar is a one-of-a-kind urban contemporary place that made a splash in Kolkata in the
@@ -204,11 +204,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={pextream} />
+            <Image src={pextream} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Exceam India</h2>
             <p className="text-justify text-gray-600">
               Exceam India maximises the value of great commercial property
@@ -229,11 +229,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={pinsta} />
+            <Image src={pinsta} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">InstaFitness</h2>
             <p className="text-justify text-gray-600">
               Provision of a comprehensive enterprise mobility solution that is compatible with
@@ -252,11 +252,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={piris} />
+            <Image src={piris} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">IrisCorp</h2>
             <p className="text-justify text-gray-600">
               Development of web application has been taken place with vanguard technology. The vision is
@@ -275,11 +275,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="bg-gray-200">
-            <Image className='xl:h-[90vh] lg:h-[70vh] md:h-[56vh]' src={praktdaan} />
+            <Image className='xl:h-[90vh] lg:h-[70vh] md:h-[56vh]' src={praktdaan} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Raktdaan</h2>
             <p className="text-justify text-gray-600">
               Raktdaan is a mobile application that promotes blood donation as a valuable social activity.
@@ -297,11 +297,11 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={ptkb} />
+            <Image src={ptkb} alt='' />
           </div>
-          <div className='text-center my-5'>
+          <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">The Knowledge Bus Global School</h2>
             <p className="text-justify text-gray-600 word-spacing">
               TKB- Global web application is a comprehensive catalogue for all upcoming events.
@@ -321,9 +321,9 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={pmedicause} />
+            <Image src={pmedicause} alt='' />
           </div>
           <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Medicause</h2>
@@ -345,7 +345,7 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+        {/* <div className="flex flex-col items-center justify-center mt-5 w-3/4">
           <div className="">
             <Image src={col} />
           </div>
@@ -360,10 +360,10 @@ const PortFolio = () => {
               </button>
             </Link>
           </div>
-        </div>
-        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+        </div> */}
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={flourish} />
+            <Image src={flourish} alt='' />
           </div>
           <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Flourish</h2>
@@ -377,9 +377,9 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={queens} />
+            <Image src={queens} alt='' />
           </div>
           <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">Queen’s Gynecology</h2>
@@ -393,9 +393,9 @@ const PortFolio = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 w-3/4">
+        <div className="flex flex-col items-center justify-center mt-20 w-3/4">
           <div className="">
-            <Image src={tnstaeats} />
+            <Image src={tnstaeats} alt='' />
           </div>
           <div className='text-center mt-5'>
             <h2 className="text-2xl text-red-500 my-2">InstaEats</h2>
@@ -413,4 +413,4 @@ const PortFolio = () => {
     </div>
   )
 }
-export default PortFolio
+export default Portfolio
