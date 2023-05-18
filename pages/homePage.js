@@ -52,7 +52,7 @@ const HomePage = () => {
                 <div className="sm:mt-60 md:mt-0 z-10">
                     <h1 className='text-center md:text-left'><strong className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-bold text-gray-600 '>Building Solutions <br /> for Digital Age</strong></h1>
                     <div className='xl:my-8 md:my-5 my-10 xl:text-xl lg:text-lg text-md text-center md:text-left'>
-                        <Link href="/portfolio" className="bg-red-500 text-white rounded-full xl:py-2 lg:py-1 py-1 md:py-2 xl:px-5 px-3 hover:text-red-400 hover:bg-gray-200">View Case Studies</Link>
+                        <Link href="/portFolio" className="bg-red-500 text-white rounded-full xl:py-2 lg:py-1 py-1 md:py-2 xl:px-5 px-3 hover:text-red-400 hover:bg-gray-200">View Case Studies</Link>
                     </div>
                 </div>
                 <div className="md:w-[40%] w-[320px] h-[200px] md:h-auto flex justify-center items-center">
