@@ -63,9 +63,6 @@ const ContactUs = () => {
                 popup_ref.current.classList.replace('show', 'hidden')
             }, 3000);
         }
-        // if (popup_ref.current.classList.contains('smg_popup')) {
-        //     popup_ref.current.classList.add('hidden')
-        // }
     }
 
     return (
