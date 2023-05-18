@@ -61,7 +61,7 @@ const ContactUs = () => {
             popup_ref.current.classList.replace('hidden', 'show')
             setTimeout(() => {
                 popup_ref.current.classList.replace('show', 'hidden')
-            }, 3000);
+            }, 5000);
         }
     }
 
