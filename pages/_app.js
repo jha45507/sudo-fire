@@ -154,21 +154,21 @@ function MyApp({ Component, pageProps }) {
             </div>
             <div className='text-left list-none'>
               <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/Internet_of_Things">Internet of Things (IoT)</Link></h1>
-              <Link onClick={accordion} className="" href="/Internet_of_Things#HA"><p className="py-1 hover:text-red-400">Home Automation</p></Link>
-              <Link onClick={accordion} className="" href="/Internet_of_Things#IA"><p className="py-1 hover:text-red-400">Industrial Automation</p></Link>
-              <Link onClick={accordion} className="" href="/Internet_of_Things#SEI"><p className="py-1 hover:text-red-400">Smart Environment Implementation</p></Link>
+              <Link onClick={accordion} className="" href="/InternetOfThings#HA"><p className="py-1 hover:text-red-400">Home Automation</p></Link>
+              <Link onClick={accordion} className="" href="/InternetOfThings#IA"><p className="py-1 hover:text-red-400">Industrial Automation</p></Link>
+              <Link onClick={accordion} className="" href="/InternetOfThings#SEI"><p className="py-1 hover:text-red-400">Smart Environment Implementation</p></Link>
             </div>
             <div className='text-left list-none'>
-              <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/SaaS_Mobility_Solutions">SaaS & Mobility Solutions</Link></h1>
-              <Link onClick={accordion} href="/SaaS_Mobility_Solutions#RSS"><p className='py-1 hover:text-red-400'>Redefining Software Services</p></Link>
-              <Link onClick={accordion} href="/SaaS_Mobility_Solutions#NAMS"><p className='py-1 hover:text-red-400'>New Age Mobility Solutions</p></Link>
+              <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/SaaSMobilitySolutions">SaaS & Mobility Solutions</Link></h1>
+              <Link onClick={accordion} href="/SaaSMobilitySolutions#RSS"><p className='py-1 hover:text-red-400'>Redefining Software Services</p></Link>
+              <Link onClick={accordion} href="/SaaSMobilitySolutions#NAMS"><p className='py-1 hover:text-red-400'>New Age Mobility Solutions</p></Link>
             </div>
             <div className='text-left list-none'>
-              <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/Devops_Cloud_Services">Devops & Cloud Services</Link></h1>
-              <Link onClick={accordion} href="/Devops_Cloud_Services#CL"><p className='py-1 hover:text-red-400'>Cloud Consulting</p></Link>
-              <Link onClick={accordion} href="/Devops_Cloud_Services#CA"><p className='py-1 hover:text-red-400'>Cloud Architecture</p></Link>
-              <Link onClick={accordion} href="/Devops_Cloud_Services#CO"><p className='py-1 hover:text-red-400'>Cost Optimization</p></Link>
-              <Link onClick={accordion} href="/Devops_Cloud_Services#M&S"><p className='py-1 hover:text-red-400'>Migration & Security</p></Link>
+              <h1 className='text-lg py-3 hover:text-red-400' onClick={accordion}><Link href="/DevopsCloudServices">Devops & Cloud Services</Link></h1>
+              <Link onClick={accordion} href="/DevopsCloudServices#CL"><p className='py-1 hover:text-red-400'>Cloud Consulting</p></Link>
+              <Link onClick={accordion} href="/DevopsCloudServices#CA"><p className='py-1 hover:text-red-400'>Cloud Architecture</p></Link>
+              <Link onClick={accordion} href="/DevopsCloudServices#CO"><p className='py-1 hover:text-red-400'>Cost Optimization</p></Link>
+              <Link onClick={accordion} href="/DevopsCloudServices#M&S"><p className='py-1 hover:text-red-400'>Migration & Security</p></Link>
             </div>
           </div>
 
@@ -200,9 +200,9 @@ function MyApp({ Component, pageProps }) {
               <div ref={second_accordion_show} id="flush-collapseTwo" className="accordion-collapse border-0 hidden collapse" aria-labelledby="flush-headingTwo"
                 data-bs-parent="#accordionFlushExample">
                 <ul className="accordion-body py-4">
-                  <li><Link href="/Internet_of_Things#HA"><p className='hover:text-red-400' onClick={closeNavbar}>Home Automation</p></Link></li>
-                  <li><Link href="/Internet_of_Things#IA"><p className='hover:text-red-400' onClick={closeNavbar}>Industrial Automation</p></Link></li>
-                  <li><Link href="/Internet_of_Things#SEI"><p className='hover:text-red-400' onClick={closeNavbar}>Smart Environment Implementation</p></Link></li>
+                  <li><Link href="/InternetofThings#HA"><p className='hover:text-red-400' onClick={closeNavbar}>Home Automation</p></Link></li>
+                  <li><Link href="/InternetofThings#IA"><p className='hover:text-red-400' onClick={closeNavbar}>Industrial Automation</p></Link></li>
+                  <li><Link href="/InternetofThings#SEI"><p className='hover:text-red-400' onClick={closeNavbar}>Smart Environment Implementation</p></Link></li>
                 </ul>
               </div>
             </div>
@@ -216,8 +216,8 @@ function MyApp({ Component, pageProps }) {
               <div ref={third_accordion_show} id="flush-collapseThree" className="accordion-collapse hidden collapse" aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample">
                 <ul className="accordion-body py-4">
-                  <li><Link href="/SaaS_Mobility_Solutions#RSS"><p className='hover:text-red-400' onClick={closeNavbar}>Redefining Software Services</p></Link></li>
-                  <li><Link href="/SaaS_Mobility_Solutions#NAMS"><p className='hover:text-red-400' onClick={closeNavbar}>New Age Mobility Solutions</p></Link></li>
+                  <li><Link href="/SaaSMobilitySolutions#RSS"><p className='hover:text-red-400' onClick={closeNavbar}>Redefining Software Services</p></Link></li>
+                  <li><Link href="/SaaSMobilitySolutions#NAMS"><p className='hover:text-red-400' onClick={closeNavbar}>New Age Mobility Solutions</p></Link></li>
                 </ul>
               </div>
             </div>
@@ -231,10 +231,10 @@ function MyApp({ Component, pageProps }) {
               <div ref={fourth_accordion_show} id="flush-collapseThree" className="accordion-collapse hidden collapse" aria-labelledby="flush-headingThree"
                 data-bs-parent="#accordionFlushExample">
                 <ul className="accordion-body py-4">
-                  <li><Link href="/Devops_Cloud_Services#CL"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Consulting</p></Link></li>
-                  <li><Link href="/Devops_Cloud_Services#CA"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Architecture</p></Link></li>
-                  <li><Link href="/Devops_Cloud_Services#CO"><p className='hover:text-red-400' onClick={closeNavbar}>Cost Optimization</p></Link></li>
-                  <li><Link href="/Devops_Cloud_Services#M&S"><p className='hover:text-red-400' onClick={closeNavbar}>Migration & Security</p></Link></li>
+                  <li><Link href="/DevopsCloudServices#CL"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Consulting</p></Link></li>
+                  <li><Link href="/DevopsCloudServices#CA"><p className='hover:text-red-400' onClick={closeNavbar}>Cloud Architecture</p></Link></li>
+                  <li><Link href="/DevopsCloudServices#CO"><p className='hover:text-red-400' onClick={closeNavbar}>Cost Optimization</p></Link></li>
+                  <li><Link href="/DevopsCloudServices#M&S"><p className='hover:text-red-400' onClick={closeNavbar}>Migration & Security</p></Link></li>
                 </ul >
               </div >
             </div >

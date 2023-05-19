@@ -14,7 +14,7 @@ import IOTbuild from '../public/images/services/IOT-build.png'
 import { useEffect, useRef } from "react"
 import { RiArrowDropDownLine } from 'react-icons/ri'
 
-const Internet_of_Things = () => {
+const InternetOfThings = () => {
 
     const linkRef = useRef()
     const rotateRef = useRef()
@@ -200,4 +200,4 @@ const Internet_of_Things = () => {
     )
 }
 
-export default Internet_of_Things
+export default InternetOfThings

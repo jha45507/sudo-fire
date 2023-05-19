@@ -75,13 +75,13 @@ const HomePage = () => {
                                 Read More..
                             </Link>
                         </Link>
-                        <Link href="/Internet_of_Things" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
+                        <Link href="/InternetOfThings" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Path483} alt='' />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Internet of Things (IoT)</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> Building smart cities & smarter homes with WiFi devices for industrial & manufactural insights.</p>
                             </div>
-                            <Link className="flex justify-center items-center xl:mt-8 lg:mt-9 mt-10 text-red-600" href="/Internet_of_Things">
+                            <Link className="flex justify-center items-center xl:mt-8 lg:mt-9 mt-10 text-red-600" href="/InternetOfThings">
                                 <Image className="w-5" src={play_icon} alt='' />
                                 Read More..
                             </Link>
@@ -90,19 +90,19 @@ const HomePage = () => {
                     </div>
 
                     <div className='md:space-y-5 space-y-10 xl:space-y-0 xl:flex justify-center items-center xl:space-x-10 space-x-0'>
-                        <Link href="/SaaS_Mobility_Solutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
+                        <Link href="/SaaSMobilitySolutions" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group649} alt='' />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>SaaS & Mobility Solutions</h4>
                                 <p className='text-justify text-sm my-3 text-gray-700 word-spacing'> On the go solutions for routine business processes enabling remote and in-office management.</p>
                             </div>
-                            <Link className="flex justify-center items-center xl:mt-3 lg:mt-4 mt-5 text-red-600" href="/SaaS&SaaS_Mobility_Solutions">
+                            <Link className="flex justify-center items-center xl:mt-3 lg:mt-4 mt-5 text-red-600" href="/SaaS&SaaSMobilitySolutions">
                                 <Image className="w-5" src={play_icon} alt='' />
                                 Read More..
                             </Link>
                         </Link>
 
-                        <Link href="/Devops_Cloud_Services" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
+                        <Link href="/DevopsCloudServices" className="flex flex-col items-center service_box_shadow w-[250px] rounded-md p-5 h-[325px] hover:shadow-2xl">
                             <div className="flex flex-col items-center">
                                 <Image className="w-[53px] h-[53px] my-3" src={Group650} alt='' />
                                 <h4 className='text-center lg:text-2xl text-lg text-gray-800'>Devops & Cloud Services</h4>

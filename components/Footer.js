@@ -64,13 +64,13 @@ const Footer = () => {
 							<Link href="/EnterpriseITSolutions">
 								<p className='text-md hover:text-red-400 mt-3'>Enterprise Content Management</p>
 							</Link>
-							<Link href="/Internet_of_Things">
+							<Link href="/InternetOfThings">
 								<p className='text-md hover:text-red-400'>Internet Of Things(IoT)</p>
 							</Link>
-							<Link href="/SaaS_Mobility_Solutions">
+							<Link href="/SaaSMobilitySolutions">
 								<p className='text-md hover:text-red-400'>SaaS & Mobility Solutions</p>
 							</Link>
-							<Link href="/Devops_Cloud_Services">
+							<Link href="/DevopsCloudServices">
 								<p className='text-md hover:text-red-400'>Devops & Cloud Services</p>
 							</Link>
 						</div>

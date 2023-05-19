@@ -16,7 +16,7 @@ import SAASms from '../public/images/services/SAASms.png'
 import { useEffect, useRef } from "react"
 import { RiArrowDropDownLine } from 'react-icons/ri'
 
-const SaaS_Mobility_Solutions = () => {
+const SaaSMobilitySolutions = () => {
 
     const linkRef = useRef()
     const rotateRef = useRef()
@@ -186,4 +186,4 @@ const SaaS_Mobility_Solutions = () => {
     )
 }
 
-export default SaaS_Mobility_Solutions
+export default SaaSMobilitySolutions

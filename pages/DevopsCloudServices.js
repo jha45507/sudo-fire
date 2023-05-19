@@ -15,7 +15,7 @@ import DCpms from '../public/images/services/DC-pms.png'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { useEffect, useRef } from "react"
 
-const Devops_Cloud_Services = () => {
+const DevopsCloudServices = () => {
 
     const linkRef = useRef()
     const rotateRef = useRef()
@@ -252,4 +252,4 @@ const Devops_Cloud_Services = () => {
     )
 }
 
-export default Devops_Cloud_Services
+export default DevopsCloudServices
