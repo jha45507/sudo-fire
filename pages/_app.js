@@ -239,7 +239,7 @@ function MyApp({ Component, pageProps }) {
               </div >
             </div >
           </div >
-          <Link className='hover:text-red-400' onClick={closeNavbar} href="/portFolio">PORTFOLIO</Link>
+          <Link className='hover:text-red-400' onClick={closeNavbar} href="/portfolio">PORTFOLIO</Link>
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/careers">CAREERS</Link>
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/clients">CLIENTS</Link>
           <Link className='hover:text-red-400' onClick={closeNavbar} href="/contactUs">CONTACT US</Link>
